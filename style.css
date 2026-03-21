@@ -149,3 +149,38 @@ section { padding: 70px 10%; }
     .stats-bar { flex-direction: column; gap: 25px; }
     section { padding: 50px 5%; }
 }
+/* General button spacing in the Hero section */
+.hero-btns {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 25px;
+    flex-wrap: wrap; /* Keeps it mobile-friendly */
+}
+
+/* Make the WhatsApp button stand out with its brand color */
+.btn-wa {
+    background-color: #25D366 !important;
+    color: white !important;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-wa:hover {
+    background-color: #128C7E !important;
+    transform: translateY(-3px);
+}
+
+/* Make the Services button look slightly different (Outline or Primary) */
+.btn-services {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+}
+
+.btn-services:hover {
+    background-color: white;
+    color: var(--primary);
+}

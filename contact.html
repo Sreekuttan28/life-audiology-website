@@ -5,9 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us | Life Audiology And Speech Therapy Center</title>
     
-    <!-- Favicon -->
     <link rel="icon" type="image/png" href="favicon.png">
-    
     <link rel="stylesheet" href="style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -28,7 +26,7 @@
         <a href="index.html">Home</a>
         <a href="services.html">Services</a>
         <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
+        <a href="contact.html" style="color:var(--secondary)">Contact</a>
     </div>
 </nav>
 
@@ -61,7 +59,7 @@
                     <i class="fas fa-phone-alt" style="font-size: 1.5rem; color: var(--secondary);"></i>
                     <div>
                         <h4 style="color: var(--primary);">Call Us</h4>
-                        <p style="color: #666;">+91 8921015858</p>
+                        <p><a href="tel:+918921015858" style="color: #666; text-decoration: none;">+91 8921015858</a></p>
                     </div>
                 </div>
 
@@ -69,7 +67,7 @@
                     <i class="fas fa-envelope" style="font-size: 1.5rem; color: var(--secondary);"></i>
                     <div>
                         <h4 style="color: var(--primary);">Email Us</h4>
-                        <p style="color: #666;">lifeaudiologycenter@gmail.com</p>
+                        <p><a href="mailto:lifeaudiologycenter@gmail.com" style="color: #666; text-decoration: none;">lifeaudiologycenter@gmail.com</a></p>
                     </div>
                 </div>
 
@@ -89,105 +87,63 @@
             <h3 style="color: var(--primary); margin-bottom: 10px;">Fast Appointment</h3>
             <p style="color: #666; margin-bottom: 30px; line-height: 1.6;">Use our pre-filled WhatsApp link to send your details instantly.</p>
             
-            <!-- ADVANCED WHATSAPP LINK WITH PRE-FILLED TEXT -->
             <a href="https://wa.me/918921015858?text=Hello%20Life%20Audiology%21%20I%20would%20like%20to%20book%20an%20appointment.%0A%0A*Patient%20Name:*%20%0A*Service%20Needed:*%20%0A*Preferred%20Date:*%20" 
                target="_blank" 
                class="btn btn-wa" 
-               style="width: 100%; justify-content: center; margin-bottom: 15px; padding: 18px;">
+               style="width: 100%; justify-content: center; margin-bottom: 15px; padding: 18px; display: flex; align-items: center; gap: 10px;">
                <i class="fab fa-whatsapp" style="font-size: 1.3rem;"></i> Book via WhatsApp
             </a>
 
             <div style="margin: 15px 0; color: #bbb; font-size: 0.8rem; letter-spacing: 1px;">OR</div>
 
-            <!-- GOOGLE FORM BUTTON -->
             <a href="https://docs.google.com/forms/d/e/1FAIpQLScnkHwh6vlojwFPvTCuUmpGaQI2-o5Jx-KaYuPzXcamvnY54w/viewform?usp=header" 
                target="_blank" 
-               style="display: block; text-decoration: none; color: var(--primary); font-weight: 600; border: 1px solid var(--primary); padding: 12px; border-radius: 8px; transition: 0.3s;"
-               onmouseover="this.style.background='#f0f7ff'"
-               onmouseout="this.style.background='transparent'">
+               style="display: block; text-decoration: none; color: var(--primary); font-weight: 600; border: 1px solid var(--primary); padding: 12px; border-radius: 8px; transition: 0.3s;">
                <i class="fas fa-clipboard-list"></i> Use Online Form
             </a>
             
             <p style="margin-top: 20px; font-size: 0.8rem; color: #888;">Response time: Usually under 2 hours</p>
         </div>
-
     </div>
 </section>
 
 <!-- GOOGLE MAP -->
 <section style="padding: 0;">
     <iframe 
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15632.748682054238!2d75.5800!3d11.6000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba68fb99564f595%3A0xc3f9a7444c14c5b4!2sVadakara%2C%20Kerala!5e0!3m2!1sen!2sin!4v1710000000000!5m2!1sen!2sin" 
-        width="100%" height="400" style="border:0; display: block;" allowfullscreen="" loading="lazy">
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3908.770634661073!2d75.59002447413695!3d11.605333588599411!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba68fb99564f595%3A0xc3f9a7444c14c5b4!2sVadakara%2C%20Kerala!5e0!3m2!1sen!2sin!4v1710000000000!5m2!1sen!2sin" 
+        width="100%" height="450" style="border:0; display: block;" allowfullscreen="" loading="lazy">
     </iframe>
 </section>
 
-<!-- FULL PRO FOOTER -->
 <footer class="main-footer">
     <div class="footer-grid">
         <div class="footer-col">
             <h4>Life Audiology</h4>
             <p>Your trusted center for hearing and speech rehabilitation in Vadakara.</p>
-            <div style="margin-top: 15px; display: flex; gap: 15px;">
-                <a href="https://wa.me/918921015858" target="_blank" style="color:white; font-size: 1.4rem;"><i class="fab fa-whatsapp"></i></a>
-                <a href="https://www.instagram.com/your_handle" target="_blank" style="color:white; font-size: 1.4rem;"><i class="fab fa-instagram"></i></a>
-            </div>
         </div>
-
-        <div class="footer-col">
-            <h4>Navigation</h4>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </div>
-
-        <div class="footer-col">
-            <h4>Our Services</h4>
-            <ul>
-                <li><a href="services.html">Hearing Assessment</a></li>
-                <li><a href="services.html">Speech Therapy</a></li>
-                <li><a href="services.html">Hearing Aid Trial</a></li>
-                <li><a href="services.html">Newborn Screening</a></li>
-            </ul>
-        </div>
-
-        <div class="footer-col">
-    <h4>Contact & Hours</h4>
-    
-    <p><i class="fas fa-map-marker-alt"></i> Near Cee Yam Hospital, Vadakara</p>
-    <p><i class="fas fa-phone"></i> +91 8921015858</p>
-    <p><i class="fas fa-envelope"></i> lifeaudiologycenter@gmail.com</p>
-    
-    <div style="margin-top: 15px; padding-top: 15px; border-top: 1px solid rgba(255,255,255,0.1);">
-        <h5 style="color: var(--secondary); margin-bottom: 8px; text-transform: uppercase; font-size: 0.8rem; letter-spacing: 1px;">Opening Hours</h5>
-        <ul style="list-style: none; padding: 0; margin: 0;">
-            <li style="font-size: 0.9rem; margin-bottom: 5px; display: flex; justify-content: space-between;">
-                <span>Mon - Sat:</span>
-                <span style="color: #ccc;">9:30 AM - 6:00 PM</span>
-            </li>
-            <li style="font-size: 0.9rem; display: flex; justify-content: space-between;">
-                <span>Sunday:</span>
-                <span style="color: #ff4d4d;">Closed</span>
-            </li>
-        </ul>
+        <!-- ... (Keep your navigation/service columns) ... -->
     </div>
-</div>
-</div>
-
     <div class="footer-bottom">
         <p>&copy; 2026 Life Audiology And Speech Therapy Center. All Rights Reserved.</p>
     </div>
 </footer>
 
-<a href="https://wa.me/918921015858" class="wa-float"><i class="fab fa-whatsapp"></i></a>
-
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
     AOS.init({ duration: 1000, once: true });
+
+    // MOBILE MENU SCRIPT 
+    const menuToggle = document.getElementById('mobile-menu');
+    const navList = document.getElementById('nav-list');
+    
+    if(menuToggle && navList) {
+        menuToggle.addEventListener('click', () => {
+            navList.classList.toggle('active');
+            const icon = menuToggle.querySelector('i');
+            icon.classList.toggle('fa-bars');
+            icon.classList.toggle('fa-times');
+        });
+    }
 </script>
-    <script src="script.js"></script>
 </body>
 </html>

@@ -184,3 +184,46 @@ section { padding: 70px 10%; }
     background-color: white;
     color: var(--primary);
 }
+
+/* --- BUTTON STYLES --- */
+
+/* The Transparent 'Ghost' Button */
+.btn-outline {
+    background: transparent !important;
+    border: 2px solid #ffffff !important;
+    color: #ffffff !important;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+    background: #ffffff !important;
+    color: var(--primary) !important; /* Changes text to your dark blue theme color */
+    transform: translateY(-3px);
+}
+
+/* The Solid WhatsApp Button */
+.btn-wa {
+    background-color: #25D366 !important;
+    border: 2px solid #25D366 !important;
+    color: white !important;
+    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+}
+
+.btn-wa:hover {
+    background-color: #128C7E !important;
+    border-color: #128C7E !important;
+    transform: translateY(-3px);
+}
+
+/* Fix for mobile stacking */
+@media (max-width: 600px) {
+    .hero-btns {
+        flex-direction: column;
+        align-items: center;
+    }
+    .hero-btns .btn {
+        width: 80%;
+        text-align: center;
+    }
+}

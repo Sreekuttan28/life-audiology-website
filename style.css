@@ -338,3 +338,73 @@ section { padding: 70px 10%; }
         animation: ticker-move 15s linear infinite; /* Faster scroll for smaller screen */
     }
 }
+
+
+/* --- SERVICES PAGE MOBILE & ZOOM FIX --- */
+
+/* 1. Prevent Horizontal Scrolling */
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* 2. Fix the Navigation for Services Page */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block !important; /* Shows the hamburger icon */
+        padding: 10px;
+        z-index: 1001;
+    }
+
+    .nav-links {
+        display: none; /* Hide links by default on mobile */
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: white;
+        flex-direction: column;
+        box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+        padding: 20px 0;
+    }
+
+    .nav-links.active {
+        display: flex !important; /* Show links when menu is clicked */
+    }
+
+    .nav-links a {
+        margin: 10px 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    /* 3. Stack the Service Cards vertically on Mobile */
+    .grid {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 20px !important;
+        padding: 0 5%;
+    }
+
+    .card {
+        width: 100% !important;
+        margin-bottom: 10px;
+    }
+
+    /* 4. Fix Hero Header Text on Mobile */
+    header h1 {
+        font-size: 1.8rem !important;
+    }
+}
+
+/* 5. Zoom-Out Stability (Keep content centered on huge screens) */
+section, .footer-grid, header {
+    max-width: 1400px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+
+
+
+

@@ -253,3 +253,63 @@ section { padding: 70px 10%; }
     font-family: 'Courier New', monospace; /* Monospaced numbers are more stable */
     text-align: left;
 }
+
+/*Adding banner styling */
+.top-announcement-bar {
+    display: flex;
+    background: var(--primary); /* Your dark blue */
+    color: white;
+    height: 40px;
+    align-items: center;
+    overflow: hidden;
+    font-size: 0.9rem;
+    border-bottom: 2px solid var(--secondary);
+}
+
+/* The Countdown Box */
+.static-countdown {
+    background: var(--secondary); /* Use your accent color (Gold/Orange) */
+    padding: 0 20px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    white-space: nowrap;
+    z-index: 10;
+    box-shadow: 5px 0 15px rgba(0,0,0,0.2);
+}
+
+#opening-countdown {
+    font-family: monospace;
+    margin-left: 8px;
+    min-width: 120px;
+}
+
+/* The Ticker Area */
+.ticker-wrap {
+    flex: 1;
+    overflow: hidden;
+}
+
+.ticker {
+    display: inline-block;
+    white-space: nowrap;
+    padding-left: 20px;
+    animation: ticker-scroll 25s linear infinite;
+}
+
+.ticker-item {
+    padding: 0 40px;
+}
+
+@keyframes ticker-scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
+
+/* Mobile: On very small screens, stack them or hide the ticker */
+@media (max-width: 600px) {
+    .ticker-wrap { display: none; } /* On mobile, just show the countdown */
+    .static-countdown { width: 100%; justify-content: center; }
+}
+

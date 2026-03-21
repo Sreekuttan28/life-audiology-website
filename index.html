@@ -15,16 +15,14 @@
 <div class="ticker-wrap">
     <div class="ticker">
         <div class="ticker-item" style="color: #FFD700; font-weight: bold;">
-            ⏳ Opening In: <span id="opening-countdown">Loading...</span>
+            ⏳ Opening In: <span id="opening-countdown">0d 0h 0m 0s</span>
         </div>
-        
         <div class="ticker-item">📢 Grand Opening: March 28, 2026</div>
         <div class="ticker-item">🎁 Free Consultation during opening week!</div>
         <div class="ticker-item">📍 Near Cee Yam Hospital, Vadakara</div>
         <div class="ticker-item">പുതിയ തുടക്കം വടകരയിൽ! മാർച്ച് 28-ന് ഉദ്ഘാടനം.</div>
     </div>
 </div>
-
 <nav>
     <a href="index.html" class="nav-logo">
         <img src="logo.png" alt="Logo" style="height: 40px;" onerror="this.style.display='none'">
@@ -205,36 +203,38 @@
 </script>
     // adding the timer script
 <script>
-    (function() {
-        // Target: March 28, 2026, at 9:30 AM IST
-        const launchDate = new Date("March 28, 2026 09:30:00").getTime();
+document.addEventListener('DOMContentLoaded', function() {
+    // Target: March 28, 2026, at 9:30 AM IST
+    const launchDate = new Date("March 28, 2026 09:30:00").getTime();
 
-        const updateTimer = setInterval(function() {
-            const now = new Date().getTime();
-            const gap = launchDate - now;
+    function updateTimer() {
+        const now = new Date().getTime();
+        const gap = launchDate - now;
 
-            // Time math
-            const d = Math.floor(gap / (1000 * 60 * 60 * 24));
-            const h = Math.floor((gap % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const m = Math.floor((gap % (1000 * 60 * 60)) / (1000 * 60));
-            const s = Math.floor((gap % (1000 * 60)) / 1000);
+        // Time math
+        const d = Math.floor(gap / (1000 * 60 * 60 * 24));
+        const h = Math.floor((gap % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const m = Math.floor((gap % (1000 * 60 * 60)) / (1000 * 60));
+        const s = Math.floor((gap % (1000 * 60)) / 1000);
 
-            const display = document.getElementById("opening-countdown");
-            
-            if (display) {
-                // Formatting the string
-                display.innerHTML = d + "d " + h + "h " + m + "m " + s + "s ";
+        const display = document.getElementById("opening-countdown");
+        
+        if (display) {
+            display.innerHTML = d + "d " + h + "h " + m + "m " + s + "s ";
 
-                // Actions when the time is up
-                if (gap < 0) {
-                    clearInterval(updateTimer);
-                    display.innerHTML = "🎉 WE ARE OPEN!";
-                    display.parentElement.style.background = "#25D366"; // Success Green
-                    display.parentElement.style.color = "#ffffff";
-                }
+            if (gap < 0) {
+                clearInterval(timerInterval);
+                display.innerHTML = "WE ARE OPEN!";
+                display.style.color = "#25D366";
             }
-        }, 1000);
-    })();
+        }
+    }
+
+    // Run once immediately so it doesn't wait 1 second to show numbers
+    updateTimer();
+    // Then run every second
+    const timerInterval = setInterval(updateTimer, 1000);
+});
 </script>
     
 </body>

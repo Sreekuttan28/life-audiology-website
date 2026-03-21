@@ -5,9 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Services | Life Audiology And Speech Therapy Center</title>
     
-    <!-- Favicon -->
     <link rel="icon" type="image/png" href="favicon.png">
-    
     <link rel="stylesheet" href="style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -15,11 +13,18 @@
 <body>
 
 <nav>
-    <a href="index.html" style="display: flex; align-items: center; gap: 12px; text-decoration: none;">
+    <a href="index.html" class="nav-logo">
         <img src="logo.png" alt="Logo" style="height: 45px;" onerror="this.style.display='none'">
-        <span style="color: var(--primary); font-weight: 700; line-height: 1.2; font-size: 0.95rem;">Life Audiology And<br>Speech Therapy Center</span>
+        <span class="logo-text">Life Audiology And<br>Speech Therapy Center</span>
     </a>
-    <div class="nav-links">
+
+    <!-- ADDED: The Hamburger Menu Button -->
+    <div class="menu-toggle" id="mobile-menu">
+        <i class="fas fa-bars"></i>
+    </div>
+
+    <!-- ADDED ID: id="nav-list" so the script can find it -->
+    <div class="nav-links" id="nav-list">
         <a href="index.html">Home</a>
         <a href="services.html" style="color:var(--secondary)">Services</a>
         <a href="about.html">About</a>
@@ -43,22 +48,22 @@
     
     <div class="grid">
         <div class="card" data-aos="fade-up">
-            <i class="fas fa-wave-square" style="font-size: 2rem; color: var(--secondary); margin-bottom: 15px;"></i>
+            <i class="fas fa-wave-square"></i>
             <h3>Pure Tone Audiometry (PTA)</h3>
             <p>The standard behavioral test to measure hearing thresholds across different frequencies.</p>
         </div>
         <div class="card" data-aos="fade-up" data-aos-delay="100">
-            <i class="fas fa-comments" style="font-size: 2rem; color: var(--secondary); margin-bottom: 15px;"></i>
+            <i class="fas fa-comments"></i>
             <h3>Speech Audiometry</h3>
             <p>Tests how well you can hear and understand speech in quiet and noisy environments.</p>
         </div>
         <div class="card" data-aos="fade-up" data-aos-delay="200">
-            <i class="fas fa-stethoscope" style="font-size: 2rem; color: var(--secondary); margin-bottom: 15px;"></i>
+            <i class="fas fa-stethoscope"></i>
             <h3>Immittance Audiometry</h3>
             <p>Assessing middle ear function and reflex pathways to detect fluid or pressure issues.</p>
         </div>
         <div class="card" data-aos="fade-up" data-aos-delay="300">
-            <i class="fas fa-baby" style="font-size: 2rem; color: var(--secondary); margin-bottom: 15px;"></i>
+            <i class="fas fa-baby"></i>
             <h3>OAE Screening</h3>
             <p>Otoacoustic Emissions test, essential for newborn hearing screening and inner ear health.</p>
         </div>
@@ -74,17 +79,17 @@
     
     <div class="grid">
         <div class="card" data-aos="fade-right">
-            <i class="fas fa-user-graduate" style="font-size: 2rem; color: var(--secondary); margin-bottom: 15px;"></i>
+            <i class="fas fa-user-graduate"></i>
             <h3>Speech & Language Therapy</h3>
             <p>Professional support for misarticulation, stammering, and delayed speech development.</p>
         </div>
         <div class="card" data-aos="fade-up">
-            <i class="fas fa-ear-listening" style="font-size: 2rem; color: var(--secondary); margin-bottom: 15px;"></i>
+            <i class="fas fa-ear-listen"></i>
             <h3>Hearing Aid Solutions</h3>
             <p>Digital hearing aid trials, precision fitting, and lifetime service support.</p>
         </div>
         <div class="card" data-aos="fade-left">
-            <i class="fas fa-brain" style="font-size: 2rem; color: var(--secondary); margin-bottom: 15px;"></i>
+            <i class="fas fa-brain"></i>
             <h3>AVT & Tinnitus Management</h3>
             <p>Auditory Verbal Therapy for CI/HA users and specialized relief for "ringing in the ears."</p>
         </div>
@@ -96,9 +101,7 @@
     <div data-aos="zoom-in" style="background: var(--primary); padding: 40px; border-radius: 15px; color: white;">
         <h2>Not sure which test you need?</h2>
         <p style="margin: 15px 0 25px; opacity: 0.9;">Book a consultation and let our experts guide you.</p>
-        <!-- CHANGED FROM wa-float TO btn btn-wa -->
-        <a href="https://wa.me/918921015858?text=Hello%20Life%20Audiology%21%20I%20would%20like%20to%20book%20an%20appointment.%0A%0A*Patient%20Name:*%20%0A*Service%20Needed:*%20%0A*Preferred%20Date:*%20" 
-           class="btn btn-wa" target="_blank">
+        <a href="https://wa.me/918921015858?text=Hello%20Life%20Audiology!" class="btn btn-wa" target="_blank">
            <i class="fab fa-whatsapp"></i> Chat with us
         </a>
     </div>
@@ -110,9 +113,7 @@
             <h4>Life Audiology</h4>
             <p>Your trusted center for hearing and speech rehabilitation in Vadakara.</p>
             <div style="margin-top: 15px; display: flex; gap: 15px;">
-                <!-- FOOTER WHATSAPP -->
-                <a href="https://wa.me/918921015858?text=Hello%20Life%20Audiology%21%20I%20would%20like%20to%20book%20an%20appointment.%0A%0A*Patient%20Name:*%20%0A*Service%20Needed:*%20%0A*Preferred%20Date:*%20" 
-                   target="_blank" style="color:white; font-size: 1.4rem;"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://wa.me/918921015858" target="_blank" style="color:white; font-size: 1.4rem;"><i class="fab fa-whatsapp"></i></a>
                 <a href="#" target="_blank" style="color:white; font-size: 1.4rem;"><i class="fab fa-instagram"></i></a>
             </div>
         </div>
@@ -128,52 +129,45 @@
         </div>
 
         <div class="footer-col">
-            <h4>Our Services</h4>
-            <ul>
-                <li><a href="services.html">Hearing Assessment</a></li>
-                <li><a href="services.html">Speech Therapy</a></li>
-                <li><a href="services.html">Hearing Aid Trial</a></li>
-                <li><a href="services.html">Newborn Screening</a></li>
-            </ul>
+            <h4>Contact & Hours</h4>
+            <p><i class="fas fa-map-marker-alt"></i> Near Cee Yam Hospital, Vadakara</p>
+            <!-- UPDATED: Clickable Phone -->
+            <p><i class="fas fa-phone"></i> <a href="tel:+918921015858" style="color:inherit; text-decoration:none;">+91 8921015858</a></p>
+            <!-- UPDATED: Clickable Email -->
+            <p><i class="fas fa-envelope"></i> <a href="mailto:lifeaudiologycenter@gmail.com" style="color:inherit; text-decoration:none;">lifeaudiologycenter@gmail.com</a></p>
+            
+            <div style="margin-top: 15px; padding-top: 15px; border-top: 1px solid rgba(255,255,255,0.1);">
+                <h5 style="color: var(--secondary); margin-bottom: 8px; font-size: 0.8rem;">Opening Hours</h5>
+                <p style="font-size: 0.9rem;">Mon - Sat: 9:30 AM - 6:00 PM</p>
+                <p style="font-size: 0.9rem; color: #ff4d4d;">Sunday: Closed</p>
+            </div>
         </div>
-
-       <div class="footer-col">
-    <h4>Contact & Hours</h4>
-    
-    <p><i class="fas fa-map-marker-alt"></i> Near Cee Yam Hospital, Vadakara</p>
-    <p><i class="fas fa-phone"></i> +91 8921015858</p>
-    <p><i class="fas fa-envelope"></i> lifeaudiologycenter@gmail.com</p>
-    
-    <div style="margin-top: 15px; padding-top: 15px; border-top: 1px solid rgba(255,255,255,0.1);">
-        <h5 style="color: var(--secondary); margin-bottom: 8px; text-transform: uppercase; font-size: 0.8rem; letter-spacing: 1px;">Opening Hours</h5>
-        <ul style="list-style: none; padding: 0; margin: 0;">
-            <li style="font-size: 0.9rem; margin-bottom: 5px; display: flex; justify-content: space-between;">
-                <span>Mon - Sat:</span>
-                <span style="color: #ccc;">9:30 AM - 6:00 PM</span>
-            </li>
-            <li style="font-size: 0.9rem; display: flex; justify-content: space-between;">
-                <span>Sunday:</span>
-                <span style="color: #ff4d4d;">Closed</span>
-            </li>
-        </ul>
     </div>
-</div>
-</div>
     <div class="footer-bottom">
-        <p>&copy; 2026 Life Audiology And Speech Therapy Center. All Rights Reserved.</p>
+        <p>&copy; 2026 Life Audiology And Speech Therapy Center.</p>
     </div>
 </footer>
 
-<!-- FLOATING WHATSAPP BUTTON (Place once per page) -->
-<a href="https://wa.me/918921015858?text=Hello%20Life%20Audiology%21%20I%20would%20like%20to%20book%20an%20appointment.%0A%0A*Patient%20Name:*%20%0A*Service%20Needed:*%20%0A*Preferred%20Date:*%20" 
-   class="wa-float" target="_blank">
+<a href="https://wa.me/918921015858" class="wa-float" target="_blank">
     <i class="fab fa-whatsapp"></i>
 </a>
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
     AOS.init({ duration: 1000, once: true });
+
+    // MOBILE MENU SCRIPT (Crucial for sub-pages)
+    const menuToggle = document.getElementById('mobile-menu');
+    const navList = document.getElementById('nav-list');
+    
+    if(menuToggle) {
+        menuToggle.addEventListener('click', () => {
+            navList.classList.toggle('active');
+            const icon = menuToggle.querySelector('i');
+            icon.classList.toggle('fa-bars');
+            icon.classList.toggle('fa-times');
+        });
+    }
 </script>
-    <script src="script.js"></script>
 </body>
 </html>

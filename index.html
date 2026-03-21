@@ -190,15 +190,35 @@
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
+    // 1. Initialize Animations
     AOS.init({ duration: 1000, once: true });
+
+    // 2. Mobile Menu Logic
+    const menuToggle = document.getElementById('mobile-menu');
+    const navList = document.getElementById('nav-list');
+    
+    if(menuToggle) {
+        menuToggle.addEventListener('click', () => {
+            navList.classList.toggle('active');
+            // Changes the icon between bars and 'X'
+            const icon = menuToggle.querySelector('i');
+            icon.classList.toggle('fa-bars');
+            icon.classList.toggle('fa-times');
+        });
+    }
+
+    // 3. Image Slider Logic (Only for Index page)
     let currentSlide = 0;
     const slides = document.querySelectorAll('.slide');
-    function nextSlide() {
-        slides[currentSlide].classList.remove('active');
-        currentSlide = (currentSlide + 1) % slides.length;
-        slides[currentSlide].classList.add('active');
+    
+    if(slides.length > 0) {
+        function nextSlide() {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (currentSlide + 1) % slides.length;
+            slides[currentSlide].classList.add('active');
+        }
+        setInterval(nextSlide, 5000);
     }
-    setInterval(nextSlide, 5000);
 </script>
 </body>
 </html>

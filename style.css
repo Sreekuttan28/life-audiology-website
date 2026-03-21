@@ -273,3 +273,49 @@ section { padding: 60px 10%; }
     width: 20px;
     color: var(--secondary);
 }
+
+@media (max-width: 768px) {
+    nav {
+        padding: 10px 5%;
+        justify-content: space-between;
+    }
+
+    .logo-text { font-size: 0.8rem; }
+
+    .menu-toggle {
+        display: block; /* Shows the hamburger icon */
+        font-size: 1.5rem;
+        color: var(--primary);
+        cursor: pointer;
+    }
+
+    .nav-links {
+        display: none; /* Hides the links by default */
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: white;
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 0;
+        box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+        z-index: 1000;
+    }
+
+    .nav-links.active {
+        display: flex; /* Shows links when active */
+    }
+
+    .nav-links a {
+        padding: 15px;
+        width: 100%;
+    }
+}
+
+/* Hide toggle on desktop */
+@media (min-width: 769px) {
+    .menu-toggle { display: none; }
+}
+
+

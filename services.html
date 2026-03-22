@@ -107,6 +107,70 @@
     </div>
 </section>
 
+<!-- CALL TO ACTION -->
+<section style="text-align: center; padding: 60px 10%;">
+    <div data-aos="zoom-in" style="background: var(--primary); padding: 40px; border-radius: 15px; color: white;">
+        <h2>Not sure which test you need?</h2>
+        <p style="margin: 15px 0 25px; opacity: 0.9;">Book a consultation and let our experts guide you.</p>
+        <a href="https://wa.me/918921015858?text=Hello%20Life%20Audiology!" class="btn btn-wa" target="_blank">
+           <i class="fab fa-whatsapp"></i> Chat with us
+        </a>
+    </div>
+</section>
+<section id="quiz" style="background: #ffffff; border: 2px solid var(--secondary); margin: 40px 10%; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
+    <div style="padding: 40px; text-align: center;">
+        <h2 style="color: var(--primary); margin-bottom: 5px;">Hearing Self-Evaluation</h2>
+        <h3 style="color: var(--secondary); font-size: 1.1rem; margin-bottom: 25px;">സ്വയം പരിശോധന</h3>
+        
+        <div id="quiz-content" style="max-width: 600px; margin: 0 auto; text-align: left;">
+            <div class="quiz-item" style="margin-bottom: 20px; padding: 15px; background: var(--light-bg); border-radius: 10px;">
+                <input type="checkbox" class="sc-check" id="sc1" style="transform: scale(1.3); margin-right: 10px;">
+                <label for="sc1" style="font-weight: 500;">Do you often ask people to repeat themselves?<br><span style="color: #666; font-size: 0.9rem;">മറ്റുള്ളവർ പറയുന്നത് ആവർത്തിക്കാൻ നിങ്ങൾ ആവശ്യപ്പെടാറുണ്ടോ?</span></label>
+            </div>
+
+            <div class="quiz-item" style="margin-bottom: 20px; padding: 15px; background: var(--light-bg); border-radius: 10px;">
+                <input type="checkbox" class="sc-check" id="sc2" style="transform: scale(1.3); margin-right: 10px;">
+                <label for="sc2" style="font-weight: 500;">Is the TV volume louder than others prefer?<br><span style="color: #666; font-size: 0.9rem;">ടിവിയുടെ ശബ്ദം മറ്റുള്ളവർക്ക് ബുദ്ധിമുട്ടാവാറുണ്ടോ?</span></label>
+            </div>
+
+            <div class="quiz-item" style="margin-bottom: 20px; padding: 15px; background: var(--light-bg); border-radius: 10px;">
+                <input type="checkbox" class="sc-check" id="sc3" style="transform: scale(1.3); margin-right: 10px;">
+                <label for="sc3" style="font-weight: 500;">Do you struggle to hear in crowded places (like markets)?<br><span style="color: #666; font-size: 0.9rem;">തിരക്കുള്ള സ്ഥലങ്ങളിൽ സംസാരം മനസ്സിലാക്കാൻ പ്രയാസമുണ്ടോ?</span></label>
+            </div>
+
+            <button onclick="calculateQuiz()" class="btn" style="background: var(--primary); color: white; width: 100%; padding: 15px; border: none; border-radius: 8px; font-weight: bold; cursor: pointer;">Check Result / ഫലം കാണുക</button>
+        </div>
+
+        <div id="result-box" style="display: none; margin-top: 30px; padding: 30px; background: #e3f2fd; border-radius: 15px; border: 1px solid var(--secondary);">
+            <h4 id="result-status" style="color: var(--primary); font-size: 1.2rem; margin-bottom: 10px;"></h4>
+            <p style="margin-bottom: 20px;">We recommend a professional clinical evaluation at our Vadakara center.</p>
+            <a href="https://wa.me/918921015858?text=I%20completed%20the%20Self-Evaluation%20and%20want%20to%20book%20a%20test." class="btn btn-wa" style="display: inline-block; text-decoration: none;">
+                <i class="fab fa-whatsapp"></i> Book Free Consultation
+            </a>
+        </div>
+    </div>
+</section>
+
+<script>
+function calculateQuiz() {
+    const score = document.querySelectorAll('.sc-check:checked').length;
+    const resultBox = document.getElementById('result-box');
+    const statusText = document.getElementById('result-status');
+    
+    resultBox.style.display = "block";
+    
+    if(score >= 2) {
+        statusText.innerHTML = "Significant signs of hearing loss detected. (രണ്ടിലധികം ലക്ഷണങ്ങൾ കാണപ്പെടുന്നു)";
+    } else if(score == 1) {
+        statusText.innerHTML = "Early signs detected. (പ്രാരംഭ ലക്ഷണങ്ങൾ കാണപ്പെടുന്നു)";
+    } else {
+        statusText.innerHTML = "Your hearing seems fine, but periodic check-ups are good!";
+    }
+    
+    // Smooth scroll to the result
+    resultBox.scrollIntoView({ behavior: 'smooth' });
+}
+</script>
 <footer class="main-footer">
     <div class="footer-grid">
         <div class="footer-col">

@@ -10,15 +10,100 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     
-    <!-- Google Malayalam Fonts -->
+    <!-- Authentic Malayalam Handwriting (Chilanka & Baloo Chettan 2) + English Script Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manjari:wght@400;700&family=Gayathri:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@600;700;800&family=Chilanka&family=Caveat:wght@600;700&family=Great+Vibes&display=swap" rel="stylesheet">
 
     <meta name="google-site-verification" content="TNwDsCpj-ceJZMFH5-8pXSEoVfyGPrb0R7BiZpZ_d8Y" />
 
     <style>
-        /* --- MOBILE-OPTIMIZED 3D MAVELI & ONAM WIDGET --- */
+        /* --- SLIDER ENGINE & CROSSFADE --- */
+        .slider-container {
+            position: relative;
+            width: 100%;
+            height: 85vh;
+            min-height: 520px;
+            overflow: hidden;
+            background: #0b132b;
+        }
+
+        .slide {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 1s ease-in-out, visibility 1s ease-in-out;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1;
+        }
+
+        .slide.active {
+            opacity: 1;
+            visibility: visible;
+            z-index: 2;
+        }
+
+        .slide-overlay {
+            width: 100%;
+            max-width: 1000px;
+            padding: 0 20px;
+            text-align: center;
+            color: #ffffff;
+            z-index: 3;
+        }
+
+        /* --- ONAM SLIDE 1 (AUTHENTIC HANDWRITING & CALLIGRAPHY) --- */
+        .onam-hero-slide {
+            background: linear-gradient(rgba(10, 20, 15, 0.52), rgba(10, 20, 15, 0.68)),
+                        url('https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&q=80&w=1600') center/cover no-repeat;
+        }
+
+        .onam-cursive-intro {
+            font-family: 'Great Vibes', cursive;
+            font-size: clamp(2.2rem, 4.2vw, 3.4rem);
+            color: #FFE082;
+            letter-spacing: 1.5px;
+            margin-bottom: -6px;
+            text-shadow: 0 2px 8px rgba(0,0,0,0.7);
+        }
+
+        .onam-hero-title {
+            font-family: 'Baloo Chettan 2', cursive !important;
+            font-weight: 800 !important;
+            font-size: clamp(2rem, 4.8vw, 3.6rem) !important;
+            color: #FFFDF0 !important;
+            line-height: 1.35 !important;
+            text-shadow: 0 4px 16px rgba(0, 0, 0, 0.7), 0 0 30px rgba(255, 215, 0, 0.35) !important;
+            margin-bottom: 8px !important;
+        }
+
+        .kasavu-gold-accent {
+            color: #FFD700;
+            background: linear-gradient(45deg, #FFF176, #FFD700, #FFA000);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 800;
+        }
+
+        .onam-handwritten-note {
+            font-family: 'Chilanka', cursive !important;
+            font-size: clamp(1.2rem, 2.4vw, 1.7rem) !important;
+            color: #FFF8E7 !important;
+            max-width: 820px;
+            margin: 0 auto;
+            line-height: 1.6 !important;
+            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.85);
+            font-style: italic;
+        }
+
+        /* --- WALKING & WAVING MAVELI SEQUENCE --- */
         .onam-widget-container {
             position: fixed;
             bottom: clamp(75px, 12vh, 95px);
@@ -28,53 +113,58 @@
             flex-direction: column;
             align-items: flex-end;
             pointer-events: none;
-            font-family: 'Manjari', sans-serif;
-            animation: slideUpMaveli 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
-            max-width: 90vw;
+            font-family: 'Chilanka', cursive;
+            max-width: 95vw;
+            animation: walkIntoScreen 3.2s cubic-bezier(0.22, 1, 0.36, 1) forwards;
         }
 
         .onam-greeting-card {
             pointer-events: auto;
             background: linear-gradient(135deg, #FFFDF0, #FFF5CC);
             border: 1.5px solid #FFD700;
-            border-radius: 10px;
-            padding: 5px 10px;
-            display: flex;
+            border-radius: 12px;
+            padding: 6px 14px;
+            display: inline-flex;
             align-items: center;
-            gap: 6px;
-            margin-bottom: 5px;
+            gap: 8px;
+            margin-bottom: 6px;
             box-shadow: 0 4px 16px rgba(218, 165, 32, 0.3);
-            animation: pulseBanner 2.5s infinite ease-in-out;
-            max-width: 250px;
+            width: max-content;
+            max-width: 90vw;
+            opacity: 0;
+            transform: scale(0.6) translateY(10px);
+            animation: bannerPopIn 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) 3.2s forwards,
+                       pulseBanner 2.5s infinite ease-in-out 3.8s;
         }
 
         .onam-malayalam-text {
-            font-size: clamp(0.72rem, 2.5vw, 0.88rem);
+            font-family: 'Baloo Chettan 2', cursive;
+            font-size: clamp(0.85rem, 1.2vw, 1.05rem);
             font-weight: 700;
             color: #8B4513;
             line-height: 1.2;
             white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
         }
 
         .onam-close-btn {
             background: none;
             border: none;
-            font-size: 1rem;
+            font-size: 1.1rem;
             color: #8B4513;
             cursor: pointer;
-            padding: 0 0 0 4px;
+            padding: 0 0 0 6px;
             line-height: 1;
         }
 
         .maveli-box {
             position: relative;
-            width: clamp(75px, 20vw, 125px);
+            width: clamp(80px, 9vw, 130px);
             pointer-events: auto;
             cursor: pointer;
             transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
-            animation: floatMaveli 3.5s ease-in-out infinite alternate;
+            transform-origin: bottom center;
+            animation: maveliWalkingSteps 3.2s ease-in-out forwards,
+                       floatMaveli 3.5s ease-in-out infinite 3.2s alternate;
         }
 
         .maveli-box:hover, .maveli-box:active {
@@ -87,19 +177,20 @@
 
         .maveli-bubble {
             position: absolute;
-            top: -6px;
-            left: -20px;
+            top: -8px;
+            left: -35px;
             background: linear-gradient(135deg, #FFFFFF, #FFF9E6);
             color: #8B4513;
-            font-size: clamp(0.65rem, 2vw, 0.78rem);
+            font-family: 'Caveat', cursive;
+            font-size: clamp(0.95rem, 1.2vw, 1.15rem);
             font-weight: 700;
-            padding: 3px 8px;
-            border-radius: 10px;
+            padding: 3px 10px;
+            border-radius: 12px;
             box-shadow: 0 3px 10px rgba(0,0,0,0.12);
-            border: 1px solid #FFD700;
+            border: 1.5px solid #FFD700;
             opacity: 0;
             transform: translateY(6px);
-            animation: speechFade 4.5s infinite 1s;
+            animation: speechFade 4.5s infinite 3.5s;
             z-index: 10;
             white-space: nowrap;
         }
@@ -109,16 +200,67 @@
             height: auto;
             display: block;
             filter: drop-shadow(0 8px 14px rgba(0, 0, 0, 0.3));
-            transform-origin: bottom center;
-            animation: waveSubtle 2.4s infinite ease-in-out;
+            transform-origin: 75% 45%;
+            animation: maveliWavingHand 1.6s infinite ease-in-out 3.2s;
         }
 
-        @keyframes waveSubtle {
-            0%, 100% { transform: rotate(0deg); }
-            50% { transform: rotate(-3deg) scale(1.02); }
+        /* --- KEYFRAMES --- */
+        @keyframes walkIntoScreen {
+            0% { transform: translateX(180px); opacity: 0; }
+            20% { opacity: 1; }
+            100% { transform: translateX(0); opacity: 1; }
         }
 
-        /* --- MOBILE CELEBRATION MODAL & FIREWORKS --- */
+        @keyframes maveliWalkingSteps {
+            0% { transform: translateY(0) rotate(0deg); }
+            12% { transform: translateY(-12px) rotate(-6deg); }
+            25% { transform: translateY(0) rotate(4deg); }
+            37% { transform: translateY(-12px) rotate(-6deg); }
+            50% { transform: translateY(0) rotate(4deg); }
+            62% { transform: translateY(-10px) rotate(-5deg); }
+            75% { transform: translateY(0) rotate(3deg); }
+            87% { transform: translateY(-6px) rotate(-2deg); }
+            100% { transform: translateY(0) rotate(0deg); }
+        }
+
+        @keyframes maveliWavingHand {
+            0%, 100% { transform: rotate(0deg) scale(1); }
+            25% { transform: rotate(-7deg) scale(1.03); }
+            75% { transform: rotate(4deg) scale(0.98); }
+        }
+
+        @keyframes floatMaveli {
+            0% { transform: translateY(0px) rotate(0deg); }
+            100% { transform: translateY(-6px) rotate(1.2deg); }
+        }
+
+        @keyframes bannerPopIn {
+            0% { opacity: 0; transform: scale(0.6) translateY(10px); }
+            100% { opacity: 1; transform: scale(1) translateY(0); }
+        }
+
+        @keyframes speechFade {
+            0%, 100% { opacity: 0; transform: translateY(6px); }
+            20%, 80% { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes pulseBanner {
+            0%, 100% { box-shadow: 0 3px 10px rgba(255, 215, 0, 0.25); }
+            50% { box-shadow: 0 5px 16px rgba(255, 215, 0, 0.5); }
+        }
+
+        @keyframes maveliJump {
+            0%, 100% { transform: translateY(0) scale(1); }
+            40% { transform: translateY(-20px) scale(1.15) rotate(-3deg); }
+            70% { transform: translateY(-8px) scale(1.06) rotate(2deg); }
+        }
+
+        @keyframes spinSlow {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        /* --- CELEBRATION MODAL & FIREWORKS --- */
         #onamModalOverlay {
             position: fixed;
             inset: 0;
@@ -152,17 +294,16 @@
             z-index: 2;
             background: radial-gradient(circle at center, #FFFDEB 30%, #FFF4C2 100%);
             border: 2px solid #FFD700;
-            border-radius: 20px;
-            padding: clamp(25px, 6vw, 40px) clamp(18px, 5vw, 32px) clamp(20px, 5vw, 30px);
-            max-width: 480px;
+            border-radius: 24px;
+            padding: clamp(28px, 4vw, 45px) clamp(20px, 4vw, 36px) clamp(22px, 4vw, 32px);
+            max-width: 520px;
             width: 100%;
-            max-height: 85vh;
+            max-height: 88vh;
             overflow-y: auto;
             text-align: center;
             box-shadow: 0 15px 45px rgba(255, 215, 0, 0.35), 0 0 60px rgba(230, 81, 0, 0.2);
             transform: scale(0.7) translateY(30px);
             transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            font-family: 'Gayathri', 'Manjari', sans-serif;
         }
 
         #onamModalOverlay.active .onam-modal-content {
@@ -171,15 +312,15 @@
 
         .modal-close {
             position: absolute;
-            top: 12px;
-            right: 12px;
+            top: 14px;
+            right: 14px;
             background: #D84315;
             color: #fff;
             border: none;
-            width: 28px;
-            height: 28px;
+            width: 30px;
+            height: 30px;
             border-radius: 50%;
-            font-size: 1rem;
+            font-size: 1.1rem;
             cursor: pointer;
             display: flex;
             align-items: center;
@@ -188,79 +329,49 @@
         }
 
         .pookkalam-icon {
-            font-size: clamp(2.2rem, 7vw, 3rem);
-            margin-bottom: 6px;
+            font-size: clamp(2.4rem, 5vw, 3.2rem);
+            margin-bottom: 8px;
             display: inline-block;
             animation: spinSlow 12s linear infinite;
         }
 
+        .onam-modal-cursive {
+            font-family: 'Great Vibes', cursive;
+            font-size: clamp(2rem, 4vw, 2.6rem);
+            color: #C76A00;
+            margin-bottom: -6px;
+        }
+
         .onam-grand-title {
-            font-size: clamp(1.35rem, 5.2vw, 2rem);
-            font-weight: 700;
+            font-family: 'Baloo Chettan 2', cursive;
+            font-size: clamp(1.5rem, 3.4vw, 2.2rem);
+            font-weight: 800;
             color: #8E2800;
             margin-bottom: 6px;
-            line-height: 1.25;
+            line-height: 1.3;
             text-shadow: 1px 1px 3px rgba(218, 165, 32, 0.3);
         }
 
-        .onam-sub-title {
-            font-size: clamp(0.95rem, 3.5vw, 1.25rem);
-            font-weight: 700;
-            color: #C76A00;
-            margin-bottom: 12px;
-            font-family: 'Manjari', sans-serif;
-        }
-
         .onam-blessing-desc {
-            font-size: clamp(0.82rem, 2.8vw, 1rem);
+            font-family: 'Chilanka', cursive;
+            font-size: clamp(1.1rem, 2vw, 1.35rem);
             color: #4E342E;
-            line-height: 1.55;
-            margin-bottom: 18px;
-            font-family: 'Manjari', sans-serif;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            font-style: italic;
         }
 
         .onam-brand-tag {
-            font-size: clamp(0.72rem, 2.4vw, 0.85rem);
+            font-family: 'Baloo Chettan 2', cursive;
+            font-size: clamp(0.85rem, 1.4vw, 0.98rem);
             color: #8E2800;
-            font-weight: bold;
-            padding: 6px 14px;
+            font-weight: 700;
+            padding: 7px 16px;
             background: rgba(255, 215, 0, 0.25);
             border-radius: 20px;
             display: inline-block;
             border: 1px dashed #DAA520;
             line-height: 1.3;
-        }
-
-        /* --- KEYFRAMES --- */
-        @keyframes slideUpMaveli {
-            0% { transform: translateY(140px); opacity: 0; }
-            100% { transform: translateY(0); opacity: 1; }
-        }
-
-        @keyframes floatMaveli {
-            0% { transform: translateY(0px) rotate(0deg); }
-            100% { transform: translateY(-6px) rotate(1.2deg); }
-        }
-
-        @keyframes speechFade {
-            0%, 100% { opacity: 0; transform: translateY(6px); }
-            20%, 80% { opacity: 1; transform: translateY(0); }
-        }
-
-        @keyframes pulseBanner {
-            0%, 100% { box-shadow: 0 3px 10px rgba(255, 215, 0, 0.25); }
-            50% { box-shadow: 0 5px 16px rgba(255, 215, 0, 0.5); }
-        }
-
-        @keyframes maveliJump {
-            0%, 100% { transform: translateY(0) scale(1); }
-            40% { transform: translateY(-20px) scale(1.15) rotate(-3deg); }
-            70% { transform: translateY(-8px) scale(1.06) rotate(2deg); }
-        }
-
-        @keyframes spinSlow {
-            from { transform: rotate(0deg); }
-            to { transform: rotate(360deg); }
         }
     </style>
 </head>
@@ -299,11 +410,24 @@
     </div>
 </nav>
 
-<div class="slider-container">
-    <div class="slide active" style="background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&q=80&w=1500');">
+<!-- HERO CAROUSEL -->
+<div class="slider-container" id="heroSlider">
+    <!-- SLIDE 1: HANDWRITTEN AUTHENTIC ONAM FESTIVE THEME -->
+    <div class="slide active onam-hero-slide">
         <div class="slide-overlay">
-            <h1 data-aos="fade-up">Precision Hearing Care</h1>
-            <p data-aos="fade-up" data-aos-delay="200">Expert diagnostic testing and rehabilitation for all ages.</p>
+            <div class="onam-cursive-intro">Happy Onam 2026</div>
+            <h1 class="onam-hero-title">ഐശ്വര്യവും സമൃദ്ധിയും നിറഞ്ഞ<br><span class="kasavu-gold-accent">പൊന്നോണാശംസകൾ!</span></h1>
+            <p class="onam-handwritten-note">
+                നന്മയും സന്തോഷവും തുളുമ്പുന്ന ഈ നല്ല പൊന്നോണക്കാലം നിങ്ങളുടെ ജീവിതത്തിൽ ആയുരാരോഗ്യവും സമാധാനവും നിറയ്ക്കട്ടെ.
+            </p>
+        </div>
+    </div>
+
+    <!-- SLIDE 2: AUDIOLOGY CARE -->
+    <div class="slide" style="background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&q=80&w=1500');">
+        <div class="slide-overlay">
+            <h1>Precision Hearing Care</h1>
+            <p>Expert diagnostic testing and rehabilitation for all ages.</p>
             
             <div class="hero-btns" style="display: flex; gap: 15px; justify-content: center; margin-top: 25px;">
                 <a href="services.html" class="btn btn-outline">Our Services</a>
@@ -314,6 +438,7 @@
         </div>
     </div>
 
+    <!-- SLIDE 3: SPEECH THERAPY -->
     <div class="slide" style="background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1581056771107-24ca5f033842?auto=format&fit=crop&q=80&w=1500');">
         <div class="slide-overlay">
             <h1>Find Your Voice</h1>
@@ -452,11 +577,11 @@
     <i class="fab fa-whatsapp"></i>
 </a>
 
-<!-- 3D REAL DRAWING MAVELI WIDGET (RESPONSIVE) -->
+<!-- WALKING & WAVING MAVELI WIDGET -->
 <div class="onam-widget-container" id="onamGreeting">
     <div class="onam-greeting-card">
         <span>🌼</span>
-        <span class="onam-malayalam-text">തിരുവോണാശംസകൾ 🌸</span>
+        <span class="onam-malayalam-text">🌸 ഹൃദയം നിറഞ്ഞ തിരുവോണാശംസകൾ 🌸</span>
         <button class="onam-close-btn" onclick="dismissOnam()" title="Close">&times;</button>
     </div>
 
@@ -466,15 +591,15 @@
     </div>
 </div>
 
-<!-- FULL-SCREEN FIREWORKS & ONAM MODAL (RESPONSIVE) -->
+<!-- FULL-SCREEN FIREWORKS & ONAM MODAL -->
 <div id="onamModalOverlay" onclick="closeOnamModal(event)">
     <canvas id="fireworksCanvas"></canvas>
     
     <div class="onam-modal-content" onclick="event.stopPropagation()">
         <button class="modal-close" onclick="closeOnamModal()">&times;</button>
         <div class="pookkalam-icon">🌸</div>
+        <div class="onam-modal-cursive">Happy Onam 2026!</div>
         <h1 class="onam-grand-title">ഹൃദയം നിറഞ്ഞ തിരുവോണാശംസകൾ!</h1>
-        <div class="onam-sub-title">Happy Onam 2026! 🌾✨</div>
         <p class="onam-blessing-desc">
             ഐശ്വര്യവും സമൃദ്ധിയും ആരോഗ്യവും നിറഞ്ഞ ഒരു നല്ല ഓണക്കാലം നേരുന്നു.<br>
             നിങ്ങളുടെ സംസാരവും കേൾവിയും എന്നും മനോഹരമായി നിലനിൽക്കട്ടെ.
@@ -499,16 +624,34 @@
         icon.classList.toggle('fa-times');
     });
 
-    // Slider
-    let currentSlide = 0;
-    const slides = document.querySelectorAll('.slide');
-    function nextSlide() {
-        slides[currentSlide].classList.remove('active');
-        currentSlide = (currentSlide + 1) % slides.length;
-        slides[currentSlide].classList.add('active');
-        setTimeout(() => { AOS.refresh(); }, 100); 
+    // --- BULLETPROOF HERO SLIDER ENGINE ---
+    const slides = document.querySelectorAll('.slider-container .slide');
+    let currentSlideIdx = 0;
+    let sliderTimer = null;
+
+    function showSlide(index) {
+        slides.forEach((slide, i) => {
+            if (i === index) {
+                slide.classList.add('active');
+            } else {
+                slide.classList.remove('active');
+            }
+        });
+        currentSlideIdx = index;
     }
-    setInterval(nextSlide, 5000);
+
+    function advanceSlide() {
+        const nextIdx = (currentSlideIdx + 1) % slides.length;
+        showSlide(nextIdx);
+
+        // Slide 0 (Onam greeting) holds for 6.5s; regular slides hold for 5.0s
+        const nextDelay = nextIdx === 0 ? 6500 : 5000;
+        clearTimeout(sliderTimer);
+        sliderTimer = setTimeout(advanceSlide, nextDelay);
+    }
+
+    // Start initial timer
+    sliderTimer = setTimeout(advanceSlide, 6500);
 
     // Dismiss Onam Corner Badge
     function dismissOnam() {

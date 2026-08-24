@@ -3,27 +3,219 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Life Audiology And Speech Therapy Center | Vatakara</title>
-    
+
+    <!-- Primary SEO Meta Tags -->
+    <title>Life Audiology & Speech Therapy Centre | Vatakara | Authorized Hearing Aid Center</title>
+    <meta name="description" content="Leading hearing & speech center in Vatakara near Cee Yam Hospital. Authorized dispenser for Phonak, Oticon, Signia, GN ReSound & Rexton digital hearing aids with live trials.">
+    <meta name="keywords" content="Audiology Vatakara, Speech Therapy Vatakara, Phonak Hearing Aid Vatakara, Oticon Dealer Kerala, Signia Hearing Aid Kozhikode, ReSound M&RIE Vatakara, Rexton Hearing Aid, Speech Delay Therapy Vatakara">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://yourdomain.com/index.html">
+
+    <!-- Open Graph / WhatsApp / Social Preview Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourdomain.com/index.html">
+    <meta property="og:title" content="Life Audiology & Speech Therapy Centre | Vatakara">
+    <meta property="og:description" content="Authorized dispenser of Phonak, Oticon, Signia, ReSound & Rexton digital hearing aids. Computerized hearing testing & child speech therapy in Vatakara.">
+    <meta property="og:image" content="https://yourdomain.com/logo.png">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Life Audiology & Speech Therapy Centre Vatakara">
+    <meta name="twitter:description" content="Computerized hearing tests, pediatric speech therapy, and authorized digital hearing aid trials in Vatakara.">
+    <meta name="twitter:image" content="https://yourdomain.com/logo.png">
+
     <link rel="icon" type="image/png" href="favicon.png">
-    <link rel="stylesheet" href="style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
-    <!-- Authentic Malayalam Handwriting & English Script Fonts -->
+    <!-- Google Typography -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@600;700;800&family=Chilanka&family=Caveat:wght@600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Baloo+Chettan+2:wght@600;700;800&family=Chilanka&family=Caveat:wght@600;700&family=Great+Vibes&display=swap" rel="stylesheet">
 
     <meta name="google-site-verification" content="TNwDsCpj-ceJZMFH5-8pXSEoVfyGPrb0R7BiZpZ_d8Y" />
 
+    <!-- Google Local Medical Clinic Schema Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalClinic",
+      "name": "Life Audiology & Speech Therapy Centre",
+      "image": "https://yourdomain.com/logo.png",
+      "telephone": "+918921015858",
+      "email": "lifeaudiologycenter@gmail.com",
+      "url": "https://yourdomain.com/index.html",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Opp. Near Cee Yam Hospital",
+        "addressLocality": "Vatakara",
+        "addressRegion": "Kerala",
+        "postalCode": "673101",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "11.6086",
+        "longitude": "75.5921"
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"
+        ],
+        "opens": "09:30",
+        "closes": "18:00"
+      },
+      "medicalSpecialty": [
+        "Audiology",
+        "SpeechTherapy"
+      ],
+      "brand": [
+        "Phonak", "Oticon", "Signia", "GN ReSound", "Rexton"
+      ],
+      "priceRange": "$$"
+    }
+    </script>
+
     <style>
-        /* --- SLIDER ENGINE --- */
+        :root {
+            --primary: #0A2540;
+            --primary-dark: #061829;
+            --accent: #00D4B2;
+            --accent-glow: rgba(0, 212, 178, 0.4);
+            --secondary: #0077B6;
+            --bg-glass: rgba(255, 255, 255, 0.88);
+            --border-glass: rgba(255, 255, 255, 0.45);
+            --text-dark: #1E293B;
+            --text-muted: #64748B;
+            --surface: #FFFFFF;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background: #F8FAFC;
+            color: var(--text-dark);
+            overflow-x: hidden;
+        }
+
+        /* --- TICKER ANNOUNCEMENT --- */
+        .top-announcement-bar {
+            background: linear-gradient(90deg, #0A2540, #0077B6);
+            color: #ffffff;
+            padding: 10px 5%;
+            font-size: 0.85rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .ticker-wrap {
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        .ticker {
+            display: inline-block;
+            animation: tickerSlide 26s linear infinite;
+        }
+
+        .ticker-item {
+            margin-right: 35px;
+            font-weight: 500;
+        }
+
+        @keyframes tickerSlide {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+
+        /* --- NAVIGATION --- */
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: var(--bg-glass);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-bottom: 1px solid var(--border-glass);
+            padding: 14px 6%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+        }
+
+        .nav-logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+        }
+
+        .logo-text {
+            font-weight: 800;
+            color: var(--primary);
+            font-size: 1.1rem;
+            line-height: 1.2;
+            letter-spacing: -0.3px;
+        }
+
+        .logo-text span {
+            color: var(--secondary);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 28px;
+            align-items: center;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: color 0.2s;
+        }
+
+        .nav-links a:hover {
+            color: var(--secondary);
+        }
+
+        .btn-nav {
+            background: var(--primary);
+            color: #ffffff !important;
+            padding: 10px 22px;
+            border-radius: 50px;
+            box-shadow: 0 4px 14px rgba(10, 37, 64, 0.2);
+            transition: all 0.3s ease !important;
+        }
+
+        .btn-nav:hover {
+            transform: translateY(-2px);
+            background: var(--secondary);
+        }
+
+        .menu-toggle {
+            display: none;
+            font-size: 1.4rem;
+            color: var(--primary);
+            cursor: pointer;
+        }
+
+        /* --- HERO SLIDER ENGINE & CROSSFADE --- */
         .slider-container {
             position: relative;
             width: 100%;
             height: 85vh;
-            min-height: 540px;
+            min-height: 560px;
             overflow: hidden;
             background: #0b132b;
         }
@@ -60,7 +252,7 @@
             box-sizing: border-box;
         }
 
-        /* --- ONAM SLIDE 1 (RESPONSIVE TYPOGRAPHY) --- */
+        /* Slide 1: Onam Festive */
         .onam-hero-slide {
             background: linear-gradient(rgba(10, 20, 15, 0.55), rgba(10, 20, 15, 0.72)),
                         url('https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&q=80&w=1600') center/cover no-repeat;
@@ -78,14 +270,12 @@
         .onam-hero-title {
             font-family: 'Baloo Chettan 2', cursive !important;
             font-weight: 800 !important;
-            font-size: clamp(1.55rem, 4.5vw, 3.2rem) !important;
+            font-size: clamp(1.6rem, 4.5vw, 3.2rem) !important;
             color: #FFFDF0 !important;
             line-height: 1.35 !important;
             text-shadow: 0 4px 16px rgba(0, 0, 0, 0.8), 0 0 30px rgba(255, 215, 0, 0.35) !important;
             margin: 0 auto 10px auto !important;
             max-width: 95%;
-            word-wrap: break-word;
-            overflow-wrap: break-word;
         }
 
         .kasavu-gold-accent {
@@ -105,11 +295,525 @@
             line-height: 1.55 !important;
             text-shadow: 0 2px 8px rgba(0, 0, 0, 0.85);
             font-style: italic;
-            word-wrap: break-word;
-            padding: 0 5px;
         }
 
-        /* --- MOBILE-PERFECT WALKING & WAVING MAVELI SEQUENCE --- */
+        .hero-btns-row {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            align-items: center;
+            margin-top: 25px;
+            flex-wrap: wrap;
+        }
+
+        .btn-outline-glow {
+            background: rgba(255, 255, 255, 0.12);
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(255, 255, 255, 0.8);
+            color: #ffffff;
+            font-weight: 700;
+            padding: 13px 28px;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .btn-outline-glow:hover {
+            background: #ffffff;
+            color: var(--primary);
+            transform: translateY(-2px);
+        }
+
+        .btn-primary-glow {
+            background: linear-gradient(135deg, #00D4B2 0%, #0077B6 100%);
+            color: var(--primary);
+            font-weight: 800;
+            padding: 14px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0 10px 25px rgba(0, 212, 178, 0.4);
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: none;
+        }
+
+        .btn-primary-glow:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 14px 30px rgba(0, 212, 178, 0.6);
+        }
+
+        /* --- STATS STRIP --- */
+        .stats-strip {
+            background: var(--primary);
+            color: #ffffff;
+            padding: 40px 6%;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            text-align: center;
+        }
+
+        .stat-box h3 {
+            font-size: 2.4rem;
+            font-weight: 800;
+            color: var(--accent);
+            margin-bottom: 4px;
+        }
+
+        .stat-box p {
+            font-size: 0.9rem;
+            color: #CBD5E1;
+            font-weight: 500;
+        }
+
+        /* --- SECTION BASE STYLING --- */
+        .section-wrap {
+            padding: 90px 6%;
+            max-width: 1300px;
+            margin: 0 auto;
+        }
+
+        .section-header {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 55px auto;
+        }
+
+        .section-tag {
+            color: var(--secondary);
+            font-weight: 800;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        .section-heading {
+            font-size: clamp(2rem, 3.5vw, 2.6rem);
+            color: var(--primary);
+            font-weight: 800;
+            line-height: 1.25;
+        }
+
+        /* ============================================================ */
+        /* --- 3D DYNAMIC EXPLODING & RECONNECTING DEVICE LAB --- */
+        /* ============================================================ */
+        .cinematic-3d-section {
+            background: radial-gradient(circle at center, #0B243B 0%, #051424 70%, #020A12 100%);
+            color: #ffffff;
+            padding: 100px 6%;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .exploded-lab-grid {
+            max-width: 1300px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            align-items: center;
+            gap: 50px;
+        }
+
+        .lab-interactive-stage {
+            position: relative;
+            width: 100%;
+            height: 480px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            perspective: 1200px;
+            cursor: pointer;
+        }
+
+        .exploded-device-wrap {
+            position: relative;
+            width: 320px;
+            height: 380px;
+            transform-style: preserve-3d;
+            transition: transform 0.15s ease-out;
+        }
+
+        .device-float-carrier {
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+            animation: deviceLevitate 5s ease-in-out infinite alternate;
+        }
+
+        @keyframes deviceLevitate {
+            0% { transform: translateY(0px) rotateZ(0deg); }
+            100% { transform: translateY(-16px) rotateZ(1.5deg); }
+        }
+
+        .part-titanium-shell,
+        .part-ai-processor,
+        .part-acoustic-tube,
+        .part-silicone-dome,
+        .part-microphones {
+            transition: transform 0.85s cubic-bezier(0.34, 1.56, 0.64, 1), filter 0.5s;
+            transform-origin: center;
+        }
+
+        .exploded-device-wrap.exploded .part-titanium-shell {
+            transform: translateX(45px) translateY(-32px) translateZ(40px) rotate(8deg);
+        }
+        .exploded-device-wrap.exploded .part-ai-processor {
+            transform: translateX(-40px) translateY(12px) translateZ(80px) scale(1.15);
+            filter: drop-shadow(0 0 15px #00D4B2);
+        }
+        .exploded-device-wrap.exploded .part-acoustic-tube {
+            transform: translateY(-50px) translateX(-35px) translateZ(30px) rotate(-10deg);
+        }
+        .exploded-device-wrap.exploded .part-silicone-dome {
+            transform: translateX(-80px) translateY(55px) translateZ(60px);
+            filter: drop-shadow(0 0 12px rgba(255,255,255,0.6));
+        }
+        .exploded-device-wrap.exploded .part-microphones {
+            transform: translateY(-42px) translateX(25px);
+        }
+
+        .telemetry-badge {
+            position: absolute;
+            background: rgba(10, 37, 64, 0.88);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(0, 212, 178, 0.5);
+            padding: 8px 14px;
+            border-radius: 12px;
+            font-size: 0.8rem;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            opacity: 0;
+            transform: scale(0.7);
+            transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            pointer-events: none;
+        }
+
+        .exploded-device-wrap.exploded .telemetry-badge {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        .tb-1 { top: 12%; right: -10%; }
+        .tb-2 { top: 48%; left: -18%; border-color: #00D4B2; }
+        .tb-3 { bottom: 10%; left: -15%; }
+
+        .lab-hint {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(0, 212, 178, 0.12);
+            color: var(--accent);
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 0.82rem;
+            font-weight: 700;
+            margin-top: 15px;
+            border: 1px dashed var(--accent);
+        }
+
+        /* --- BENTO GRID SERVICES --- */
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .bento-card {
+            background: #ffffff;
+            border-radius: 24px;
+            padding: 35px 30px;
+            border: 1.5px solid #F1F5F9;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+            transition: all 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .bento-card:hover {
+            transform: translateY(-8px);
+            border-color: rgba(0, 212, 178, 0.5);
+            box-shadow: 0 20px 40px rgba(0, 119, 182, 0.1);
+        }
+
+        .bento-icon-circle {
+            width: 60px;
+            height: 60px;
+            border-radius: 18px;
+            background: #EDF9FB;
+            color: var(--secondary);
+            font-size: 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 24px;
+            transition: 0.3s;
+        }
+
+        .bento-card:hover .bento-icon-circle {
+            background: var(--secondary);
+            color: #ffffff;
+            transform: scale(1.1) rotate(5deg);
+        }
+
+        .bento-card h3 {
+            font-size: 1.35rem;
+            color: var(--primary);
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+
+        .bento-card p {
+            font-size: 0.92rem;
+            color: var(--text-muted);
+            line-height: 1.65;
+            margin-bottom: 20px;
+        }
+
+        .bento-link {
+            text-decoration: none;
+            color: var(--secondary);
+            font-weight: 700;
+            font-size: 0.9rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        /* ============================================================ */
+        /* --- HOMEPAGE AUTHORIZED BRANDS SHOWCASE --- */
+        /* ============================================================ */
+        .home-brand-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 22px;
+            margin-top: 15px;
+        }
+
+        .home-brand-card {
+            background: #ffffff;
+            border-radius: 20px;
+            padding: 24px 20px;
+            border: 1.5px solid #F1F5F9;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.03);
+            transition: all 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: relative;
+        }
+
+        .home-brand-card:hover {
+            transform: translateY(-8px);
+            border-color: rgba(0, 212, 178, 0.5);
+            box-shadow: 0 18px 35px rgba(0, 119, 182, 0.12);
+        }
+
+        .home-brand-thumb {
+            width: 100%;
+            height: 140px;
+            border-radius: 14px;
+            overflow: hidden;
+            background: #F8FAFC;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 15px;
+        }
+
+        .home-brand-thumb img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+
+        .home-brand-card:hover .home-brand-thumb img {
+            transform: scale(1.08);
+        }
+
+        .home-brand-badge {
+            font-size: 0.72rem;
+            font-weight: 700;
+            color: var(--secondary);
+            background: #EDF9FB;
+            padding: 3px 10px;
+            border-radius: 16px;
+            display: inline-block;
+            margin-bottom: 8px;
+            width: fit-content;
+        }
+
+        .home-brand-card h4 {
+            font-size: 1.15rem;
+            color: var(--primary);
+            font-weight: 800;
+            margin-bottom: 6px;
+        }
+
+        .home-brand-card p {
+            font-size: 0.84rem;
+            color: var(--text-muted);
+            line-height: 1.5;
+            margin-bottom: 15px;
+        }
+
+        .home-brand-link {
+            text-decoration: none;
+            color: var(--secondary);
+            font-weight: 700;
+            font-size: 0.85rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            transition: gap 0.2s;
+        }
+
+        .home-brand-card:hover .home-brand-link {
+            gap: 10px;
+            color: var(--accent);
+        }
+
+        /* --- SELF ASSESSMENT QUIZ HUB --- */
+        .quiz-container {
+            background: linear-gradient(135deg, #0A2540, #0E3E66);
+            border-radius: 30px;
+            padding: clamp(35px, 6vw, 60px);
+            color: #ffffff;
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            gap: 40px;
+            align-items: center;
+            box-shadow: 0 25px 60px rgba(10, 37, 64, 0.25);
+        }
+
+        .quiz-form {
+            background: rgba(255, 255, 255, 0.06);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 20px;
+            padding: 28px;
+        }
+
+        .quiz-option {
+            background: rgba(255, 255, 255, 0.08);
+            border: 1.5px solid rgba(255, 255, 255, 0.18);
+            padding: 14px 18px;
+            border-radius: 14px;
+            margin-bottom: 12px;
+            cursor: pointer;
+            transition: all 0.25s ease;
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+        }
+
+        .quiz-option i {
+            color: rgba(255, 255, 255, 0.4);
+            font-size: 1.2rem;
+            margin-top: 2px;
+            transition: color 0.2s, transform 0.2s;
+        }
+
+        .quiz-option-text {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+        }
+
+        .en-txt {
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: #ffffff;
+        }
+
+        .ml-txt {
+            font-family: 'Baloo Chettan 2', cursive;
+            font-size: 0.86rem;
+            color: #94A3B8;
+            font-weight: 600;
+        }
+
+        .quiz-option:hover {
+            background: rgba(0, 212, 178, 0.15);
+            border-color: rgba(0, 212, 178, 0.5);
+        }
+
+        .quiz-option.active {
+            background: linear-gradient(135deg, rgba(0, 212, 178, 0.25), rgba(0, 119, 182, 0.35));
+            border-color: var(--accent);
+            box-shadow: 0 4px 15px rgba(0, 212, 178, 0.25);
+        }
+
+        .quiz-option.active i {
+            color: var(--accent);
+            transform: scale(1.15);
+        }
+
+        .quiz-option.active .ml-txt {
+            color: var(--accent);
+        }
+
+        .match-result-card {
+            display: none;
+            background: rgba(0, 212, 178, 0.12);
+            border: 1.5px dashed var(--accent);
+            border-radius: 14px;
+            padding: 14px 18px;
+            margin: 15px 0 10px 0;
+            animation: fadeInMatch 0.4s ease forwards;
+        }
+
+        .match-header {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--accent);
+            font-weight: 800;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            margin-bottom: 4px;
+        }
+
+        .match-title {
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: #ffffff;
+        }
+
+        .match-malayalam {
+            font-family: 'Baloo Chettan 2', cursive;
+            font-size: 0.85rem;
+            color: #E2E8F0;
+        }
+
+        @keyframes fadeInMatch {
+            from { opacity: 0; transform: translateY(8px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .quiz-validation-alert {
+            display: none;
+            background: rgba(239, 68, 68, 0.2);
+            border: 1px solid #EF4444;
+            color: #FCA5A5;
+            font-size: 0.85rem;
+            font-weight: 600;
+            padding: 10px 14px;
+            border-radius: 10px;
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        /* --- ONAM MAVELI FLOATING WIDGET --- */
         .onam-widget-container {
             position: fixed;
             bottom: clamp(75px, 12vh, 95px);
@@ -137,8 +841,6 @@
             margin-bottom: 6px;
             box-shadow: 0 4px 16px rgba(218, 165, 32, 0.3);
             width: fit-content;
-            max-width: 100%;
-            box-sizing: border-box;
             opacity: 0;
             transform: scale(0.6) translateY(10px);
             animation: bannerPopIn 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) 3.2s forwards,
@@ -151,9 +853,6 @@
             font-weight: 700;
             color: #8B4513;
             line-height: 1.25;
-            white-space: normal;
-            text-align: left;
-            word-wrap: break-word;
         }
 
         .onam-close-btn {
@@ -163,13 +862,11 @@
             color: #8B4513;
             cursor: pointer;
             padding: 0 0 0 4px;
-            line-height: 1;
-            flex-shrink: 0;
         }
 
         .maveli-box {
             position: relative;
-            width: clamp(75px, 18vw, 125px);
+            width: clamp(75px, 18vw, 120px);
             pointer-events: auto;
             cursor: pointer;
             transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
@@ -178,12 +875,8 @@
                        floatMaveli 3.5s ease-in-out infinite 3.2s alternate;
         }
 
-        .maveli-box:hover, .maveli-box:active {
+        .maveli-box:hover {
             transform: scale(1.08) translateY(-4px);
-        }
-
-        .maveli-box.clicked {
-            animation: maveliJump 0.6s ease;
         }
 
         .maveli-bubble {
@@ -215,68 +908,12 @@
             animation: maveliWavingHand 1.6s infinite ease-in-out 3.2s;
         }
 
-        /* --- KEYFRAME ANIMATIONS --- */
-        @keyframes walkIntoScreen {
-            0% { transform: translateX(180px); opacity: 0; }
-            20% { opacity: 1; }
-            100% { transform: translateX(0); opacity: 1; }
-        }
-
-        @keyframes maveliWalkingSteps {
-            0% { transform: translateY(0) rotate(0deg); }
-            12% { transform: translateY(-12px) rotate(-6deg); }
-            25% { transform: translateY(0) rotate(4deg); }
-            37% { transform: translateY(-12px) rotate(-6deg); }
-            50% { transform: translateY(0) rotate(4deg); }
-            62% { transform: translateY(-10px) rotate(-5deg); }
-            75% { transform: translateY(0) rotate(3deg); }
-            87% { transform: translateY(-6px) rotate(-2deg); }
-            100% { transform: translateY(0) rotate(0deg); }
-        }
-
-        @keyframes maveliWavingHand {
-            0%, 100% { transform: rotate(0deg) scale(1); }
-            25% { transform: rotate(-7deg) scale(1.03); }
-            75% { transform: rotate(4deg) scale(0.98); }
-        }
-
-        @keyframes floatMaveli {
-            0% { transform: translateY(0px) rotate(0deg); }
-            100% { transform: translateY(-6px) rotate(1.2deg); }
-        }
-
-        @keyframes bannerPopIn {
-            0% { opacity: 0; transform: scale(0.6) translateY(10px); }
-            100% { opacity: 1; transform: scale(1) translateY(0); }
-        }
-
-        @keyframes speechFade {
-            0%, 100% { opacity: 0; transform: translateY(6px); }
-            20%, 80% { opacity: 1; transform: translateY(0); }
-        }
-
-        @keyframes pulseBanner {
-            0%, 100% { box-shadow: 0 3px 10px rgba(255, 215, 0, 0.25); }
-            50% { box-shadow: 0 5px 16px rgba(255, 215, 0, 0.5); }
-        }
-
-        @keyframes maveliJump {
-            0%, 100% { transform: translateY(0) scale(1); }
-            40% { transform: translateY(-20px) scale(1.15) rotate(-3deg); }
-            70% { transform: translateY(-8px) scale(1.06) rotate(2deg); }
-        }
-
-        @keyframes spinSlow {
-            from { transform: rotate(0deg); }
-            to { transform: rotate(360deg); }
-        }
-
-        /* --- CELEBRATION MODAL & FIREWORKS --- */
+        /* --- MODAL CELEBRATION --- */
         #onamModalOverlay {
             position: fixed;
             inset: 0;
             background: rgba(10, 15, 30, 0.88);
-            backdrop-filter: blur(5px);
+            backdrop-filter: blur(6px);
             z-index: 99999;
             display: flex;
             align-items: center;
@@ -285,7 +922,6 @@
             opacity: 0;
             pointer-events: none;
             transition: opacity 0.35s ease;
-            box-sizing: border-box;
         }
 
         #onamModalOverlay.active {
@@ -306,129 +942,231 @@
             z-index: 2;
             background: radial-gradient(circle at center, #FFFDEB 30%, #FFF4C2 100%);
             border: 2px solid #FFD700;
-            border-radius: 20px;
-            padding: clamp(24px, 5vw, 40px) clamp(16px, 4vw, 32px) clamp(20px, 4vw, 30px);
-            max-width: 500px;
+            border-radius: 24px;
+            padding: 35px 25px;
+            max-width: 480px;
             width: 100%;
-            max-height: 88vh;
-            overflow-y: auto;
             text-align: center;
-            box-shadow: 0 15px 45px rgba(255, 215, 0, 0.35), 0 0 60px rgba(230, 81, 0, 0.2);
-            transform: scale(0.7) translateY(30px);
-            transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            box-sizing: border-box;
-        }
-
-        #onamModalOverlay.active .onam-modal-content {
-            transform: scale(1) translateY(0);
+            box-shadow: 0 15px 45px rgba(255, 215, 0, 0.35);
         }
 
         .modal-close {
             position: absolute;
-            top: 12px;
-            right: 12px;
+            top: 14px;
+            right: 14px;
             background: #D84315;
             color: #fff;
             border: none;
             width: 28px;
             height: 28px;
             border-radius: 50%;
-            font-size: 1rem;
             cursor: pointer;
+        }
+
+        /* --- BORDERLESS SMART REDIRECTION FOOTER --- */
+        footer {
+            background: var(--primary-dark);
+            color: #ffffff;
+            padding: 85px 6% 30px;
+            border-top: 1px solid rgba(0, 212, 178, 0.2);
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1.6fr;
+            gap: 45px;
+            margin-bottom: 50px;
+        }
+
+        .footer-col h4 {
+            font-size: 1.18rem;
+            margin-bottom: 22px;
+            color: var(--accent);
+        }
+
+        .footer-col p {
+            color: #94A3B8;
+            font-size: 0.95rem;
+            line-height: 1.75;
+        }
+
+        .clean-contact-links {
+            margin-top: 15px;
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+
+        .clean-contact-item {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            color: #E2E8F0;
+            text-decoration: none;
+            font-size: 0.98rem;
+            font-weight: 600;
+            transition: all 0.25s ease;
+            width: fit-content;
+        }
+
+        .clean-contact-item i {
+            color: var(--accent);
+            font-size: 1.15rem;
+            transition: transform 0.25s, color 0.25s;
+        }
+
+        .clean-contact-item:hover {
+            color: var(--accent);
+            transform: translateX(5px);
+        }
+
+        .clean-contact-item:hover i {
+            color: #ffffff;
+            transform: scale(1.2);
+        }
+
+        .social-connector-row {
+            display: flex;
+            gap: 14px;
+            margin-top: 22px;
+        }
+
+        .social-btn {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.15);
             display: flex;
             align-items: center;
             justify-content: center;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 1.25rem;
+            transition: all 0.3s ease;
         }
 
-        .pookkalam-icon {
-            font-size: clamp(2rem, 5vw, 3rem);
-            margin-bottom: 6px;
+        .social-btn.wa:hover {
+            background: #25D366;
+            color: #ffffff;
+            border-color: #25D366;
+            transform: translateY(-4px);
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+        }
+
+        .social-btn.insta:hover {
+            background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+            color: #ffffff;
+            border-color: transparent;
+            transform: translateY(-4px);
+            box-shadow: 0 6px 20px rgba(214, 36, 159, 0.4);
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 12px;
+        }
+
+        .footer-links a {
+            color: #CBD5E1;
+            text-decoration: none;
+            transition: color 0.2s, padding-left 0.2s;
             display: inline-block;
-            animation: spinSlow 12s linear infinite;
         }
 
-        .onam-modal-cursive {
-            font-family: 'Great Vibes', cursive;
-            font-size: clamp(1.6rem, 3.8vw, 2.4rem);
-            color: #C76A00;
-            margin-bottom: -4px;
+        .footer-links a:hover {
+            color: var(--accent);
+            padding-left: 6px;
         }
 
-        .onam-grand-title {
-            font-family: 'Baloo Chettan 2', cursive;
-            font-size: clamp(1.35rem, 3.8vw, 2.1rem);
-            font-weight: 800;
-            color: #8E2800;
-            margin-bottom: 8px;
-            line-height: 1.3;
-            text-shadow: 1px 1px 3px rgba(218, 165, 32, 0.3);
-            word-wrap: break-word;
+        /* Floating WhatsApp */
+        .wa-float {
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            background: #25D366;
+            color: #fff;
+            width: 58px;
+            height: 58px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.9rem;
+            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
+            z-index: 9990;
+            text-decoration: none;
+            transition: transform 0.3s;
         }
 
-        .onam-blessing-desc {
-            font-family: 'Chilanka', cursive;
-            font-size: clamp(0.95rem, 2.6vw, 1.25rem);
-            color: #4E342E;
-            line-height: 1.6;
-            margin-bottom: 18px;
-            font-style: italic;
-            word-wrap: break-word;
+        .wa-float:hover {
+            transform: scale(1.12);
         }
 
-        .onam-brand-tag {
-            font-family: 'Baloo Chettan 2', cursive;
-            font-size: clamp(0.75rem, 2vw, 0.92rem);
-            color: #8E2800;
-            font-weight: 700;
-            padding: 6px 14px;
-            background: rgba(255, 215, 0, 0.25);
-            border-radius: 20px;
-            display: inline-block;
-            border: 1px dashed #DAA520;
-            line-height: 1.3;
+        /* Keyframes */
+        @keyframes walkIntoScreen { 0% { transform: translateX(180px); opacity: 0; } 100% { transform: translateX(0); opacity: 1; } }
+        @keyframes maveliWalkingSteps { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px) rotate(4deg); } }
+        @keyframes maveliWavingHand { 0%, 100% { transform: rotate(0deg); } 50% { transform: rotate(-8deg) scale(1.02); } }
+        @keyframes floatMaveli { 0% { transform: translateY(0); } 100% { transform: translateY(-6px); } }
+        @keyframes bannerPopIn { to { opacity: 1; transform: scale(1) translateY(0); } }
+        @keyframes pulseBanner { 0%, 100% { box-shadow: 0 4px 16px rgba(218, 165, 32, 0.3); } 50% { box-shadow: 0 6px 22px rgba(218, 165, 32, 0.6); } }
+        @keyframes speechFade { 0%, 100% { opacity: 0; } 20%, 80% { opacity: 1; } }
+
+        @media (max-width: 992px) {
+            .exploded-lab-grid, .quiz-container { grid-template-columns: 1fr; text-align: center; }
+            .bento-grid, .home-brand-grid { grid-template-columns: 1fr; }
+            .stats-strip { grid-template-columns: repeat(2, 1fr); }
+            .footer-grid { grid-template-columns: 1fr; }
+            .nav-links { display: none; }
+            .menu-toggle { display: block; }
         }
     </style>
 </head>
 <body>
 
+<!-- TICKER BAR -->
 <div class="top-announcement-bar">
-    <div class="static-countdown" style="color: #ffcc00; font-weight: bold; text-shadow: 1px 1px 2px rgba(0,0,0,0.2);">
+    <div style="font-weight: 700; color: #FFD700;">
         <i class="fas fa-check-circle"></i> NOW OPEN IN VATAKARA
     </div>
-
     <div class="ticker-wrap">
         <div class="ticker">
-           <span class="ticker-item"> 🌸ഹൃദയം നിറഞ്ഞ തിരുവോണാശംസകൾ!🌸</span>
-            <span class="ticker-item">📢 Now Accepting New Patients</span>
-            <span class="ticker-item">📍 Near Cee Yam Hospital, Vatakara</span>
-            <span class="ticker-item">📞 Book Appointment: +91 8921015858</span>
-             <span class="ticker-item">വടകരയിൽ ഞങ്ങൾ ഇപ്പോൾ പ്രവർത്തനമാരംഭിച്ചിരിക്കുന്നു!</span>
+            <span class="ticker-item">📢 Authorized Dispenser: Phonak • Oticon • Signia • ReSound • Rexton</span>
+            <span class="ticker-item">📍 Opp. Near Cee Yam Hospital, Vatakara</span>
+            <span class="ticker-item">📞 Book Free Device Trial: +91 8921015858</span>
         </div>
     </div>
 </div>
 
+<!-- NAVIGATION -->
 <nav>
     <a href="index.html" class="nav-logo">
-        <img src="logo.png" alt="Logo" style="height: 40px;" onerror="this.style.display='none'">
-        <span class="logo-text">Life Audiology And<br>Speech Therapy Center</span>
+        <img src="logo.png" alt="Logo" style="height: 38px;" onerror="this.style.display='none'">
+        <div class="logo-text">Life Audiology &<br><span>Speech Therapy</span></div>
     </a>
-    
-    <div class="menu-toggle" id="mobile-menu">
-        <i class="fas fa-bars"></i>
-    </div>
+
+    <div class="menu-toggle" id="mobile-menu"><i class="fas fa-bars"></i></div>
 
     <div class="nav-links" id="nav-list">
         <a href="index.html">Home</a>
-        <a href="services.html">Services</a>
-        <a href="about.html">About</a>
+        <a href="services.html">Clinical Services</a>
+        <a href="#brands-overview">Hearing Aid Brands</a>
+        <a href="#cinematic-lab">3D Device Lab</a>
+        <a href="#assessment">Self-Test</a>
+        <a href="about.html">About Specialist</a>
         <a href="contact.html">Contact</a>
+        <a href="https://wa.me/918921015858?text=Hello%20Life%20Audiology!%20I%20would%20like%20to%20book%20an%20appointment." class="btn-nav" target="_blank">
+            <i class="fas fa-calendar-check"></i> Book Consultation
+        </a>
     </div>
 </nav>
 
 <!-- HERO CAROUSEL -->
 <div class="slider-container" id="heroSlider">
-    <!-- SLIDE 1: HANDWRITTEN AUTHENTIC ONAM FESTIVE THEME -->
+    <!-- SLIDE 1: ONAM FESTIVE THEME -->
     <div class="slide active onam-hero-slide">
         <div class="slide-overlay">
             <div class="onam-cursive-intro">Happy Onam 2026</div>
@@ -442,12 +1180,11 @@
     <!-- SLIDE 2: AUDIOLOGY CARE -->
     <div class="slide" style="background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&q=80&w=1500');">
         <div class="slide-overlay">
-            <h1>Precision Hearing Care</h1>
-            <p>Expert diagnostic testing and rehabilitation for all ages.</p>
-            
-            <div class="hero-btns" style="display: flex; gap: 15px; justify-content: center; margin-top: 25px;">
-                <a href="services.html" class="btn btn-outline">Our Services</a>
-                <a href="https://wa.me/918921015858?text=Hello%20Life%20Audiology%21%20I%20would%20like%20to%20book%20an%20appointment." class="btn btn-wa" target="_blank">
+            <h1 style="font-size: clamp(2rem, 4vw, 3.4rem); font-weight: 800; margin-bottom: 12px;">Precision Diagnostic Hearing Care</h1>
+            <p style="font-size: 1.1rem; max-width: 680px; margin: 0 auto;">Comprehensive computerized evaluations from newborn screenings to adult speech audiometry.</p>
+            <div class="hero-btns-row">
+                <a href="services.html" class="btn-outline-glow">Our Services</a>
+                <a href="https://wa.me/918921015858?text=Hello%20Life%20Audiology!%20I%20would%20like%20to%20book%20an%20audiology%20test." class="btn-primary-glow" target="_blank">
                     <i class="fab fa-whatsapp"></i> Book Now
                 </a>
             </div>
@@ -457,12 +1194,11 @@
     <!-- SLIDE 3: SPEECH THERAPY -->
     <div class="slide" style="background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1581056771107-24ca5f033842?auto=format&fit=crop&q=80&w=1500');">
         <div class="slide-overlay">
-            <h1>Find Your Voice</h1>
-            <p>Professional speech therapy for confident communication.</p>
-            
-            <div class="hero-btns" style="display: flex; gap: 15px; justify-content: center; margin-top: 25px;">
-                <a href="services.html" class="btn btn-outline">Our Services</a>
-                <a href="https://wa.me/918921015858?text=Hello%20Life%20Audiology%21%20I%20would%20like%20to%20book%20an%20appointment." class="btn btn-wa" target="_blank">
+            <h1 style="font-size: clamp(2rem, 4vw, 3.4rem); font-weight: 800; margin-bottom: 12px;">Find Confidence in Every Word</h1>
+            <p style="font-size: 1.1rem; max-width: 680px; margin: 0 auto;">Evidence-based speech therapy for pediatric speech delay, stuttering, and voice recovery.</p>
+            <div class="hero-btns-row">
+                <a href="services.html" class="btn-outline-glow">Our Services</a>
+                <a href="https://wa.me/918921015858?text=Hello%20Life%20Audiology!%20I%20would%20like%20to%20book%20a%20speech%20therapy%20session." class="btn-primary-glow" target="_blank">
                     <i class="fab fa-whatsapp"></i> Book Now
                 </a>
             </div>
@@ -470,177 +1206,415 @@
     </div>
 </div>
 
-<div class="stats-bar">
-    <div class="stat-item"><h2>2026</h2><p>Founded</p></div>
-    <div class="stat-item"><h2>Expert</h2><p>Care Team</p></div>
-    <div class="stat-item"><h2>Modern</h2><p>Equipment</p></div>
+<!-- STATS STRIP -->
+<div class="stats-strip">
+    <div class="stat-box" data-aos="fade-up"><h3>11th</h3><p>Center Branch</p></div>
+    <div class="stat-box" data-aos="fade-up" data-aos-delay="100"><h3>100%</h3><p>RCI Certified Specialists</p></div>
+    <div class="stat-box" data-aos="fade-up" data-aos-delay="200"><h3>Digital</h3><p>Diagnostic Audio Lab</p></div>
+    <div class="stat-box" data-aos="fade-up" data-aos-delay="300"><h3>Pediatric</h3><p>& Adult Rehabilitation</p></div>
 </div>
 
-<section>
-    <div class="section-title" data-aos="fade-up">
-        <h2>Our Specializations</h2>
-        <div class="underline"></div>
-    </div>
-    <div class="grid">
-        <div class="card" data-aos="fade-up">
-            <i class="fas fa-ear-listen"></i>
-            <h3>Audiology</h3>
-            <p>Comprehensive evaluations from newborn screening to adult hearing tests.</p>
-        </div>
-        <div class="card" data-aos="fade-up" data-aos-delay="100">
-            <i class="fas fa-comment-dots"></i>
-            <h3>Speech Therapy</h3>
-            <p>Effective treatment for speech delay, stuttering, and voice disorders.</p>
-        </div>
-        <div class="card" data-aos="fade-up" data-aos-delay="200">
-            <i class="fas fa-headset"></i>
-            <h3>Hearing Aids</h3>
-            <p>Advanced digital hearing aids with personalized trials and fitting.</p>
-        </div>
-    </div>
-</section>
-
-<section style="background: #f4f7f6;">
-    <div class="section-title" data-aos="fade-up">
-        <h2>Your Journey with Us</h2>
-        <div class="underline"></div>
-    </div>
-    <div class="grid">
-        <div class="card" data-aos="zoom-in">
-            <div class="step-number">1</div>
-            <h4>Consultation</h4>
-            <p>Initial discussion to understand your communication needs.</p>
-        </div>
-        <div class="card" data-aos="zoom-in" data-aos-delay="100">
-            <div class="step-number">2</div>
-            <h4>Analysis</h4>
-            <p>Clinical testing using state-of-the-art medical technology.</p>
-        </div>
-        <div class="card" data-aos="zoom-in" data-aos-delay="200">
-            <div class="step-number">3</div>
-            <h4>Rehabilitation</h4>
-            <p>Continuous support and therapy for long-term improvement.</p>
-        </div>
-    </div>
-</section>
-
-<section style="background: #fff; padding: 60px 10%;">
-    <div class="grid" style="align-items: center;">
+<!-- 3D INTERACTIVE EXPLODING & RECONNECTING DEVICE LAB -->
+<section class="cinematic-3d-section" id="cinematic-lab">
+    <div class="exploded-lab-grid">
         <div data-aos="fade-right">
-            <h2 style="color: var(--primary); margin-bottom: 10px;">Expert Care in Vatakara</h2>
-            <p style="color: #666; margin-bottom: 20px;">
-                Our clinic is led by highly qualified professionals dedicated to restoring your world of sound. 
-                With RCI certification and years of clinical experience, we provide evidence-based care 
-                for both pediatric and adult cases.
+            <span class="section-tag">Interactive Micro-Engineering</span>
+            <h2 style="font-size: clamp(2rem, 3.5vw, 2.7rem); line-height: 1.25; margin-bottom: 20px;">
+                Anatomy of Precision Hearing in Motion.
+            </h2>
+            <p style="color: #94A3B8; line-height: 1.7; margin-bottom: 15px;">
+                Experience the harmony of medical nano-engineering. Scroll into view to watch the hearing device automatically detach into its core acoustic components, or move your mouse to explore the device in 3D space.
             </p>
-            <ul style="list-style: none; margin-bottom: 25px;">
-                <li style="margin-bottom: 10px;"><i class="fas fa-check-circle" style="color: var(--secondary);"></i> RCI Registered Specialist</li>
-                <li style="margin-bottom: 10px;"><i class="fas fa-check-circle" style="color: var(--secondary);"></i> Expert in Pediatric & Adult Rehab</li>
-                <li><i class="fas fa-check-circle" style="color: var(--secondary);"></i> State-of-the-art Diagnostic Lab</li>
-            </ul>
-            <a href="about.html" class="btn-outline" style="color: var(--primary); border-color: var(--primary); padding: 10px 20px; text-decoration: none; border: 2px solid; border-radius: 5px;">View Credentials</a>
+
+            <div class="lab-hint">
+                <i class="fas fa-hand-pointer"></i> Click device or move cursor to interact
+            </div>
         </div>
 
-        <div data-aos="fade-left" style="background: #f4f7f6; padding: 30px; border-radius: 15px; border-left: 5px solid var(--secondary); box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
-            <h3 style="margin-bottom: 15px; color: var(--primary);">Are you worried about your hearing?</h3>
-            <p style="margin-bottom: 25px; font-size: 0.95rem; color: #555; line-height: 1.6;">Don't ignore the early signs. Take our 1-minute self-evaluation to see if you need a professional check-up.</p>
-            <a href="services.html#quiz" style="background: var(--secondary); color: white; padding: 12px 25px; border-radius: 50px; font-weight: bold; text-decoration: none; display: inline-flex; align-items: center; gap: 10px; transition: 0.3s; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-                Start Self-Evaluation <i class="fas fa-arrow-right"></i>
-            </a>
+        <div class="lab-interactive-stage" id="labStage" data-aos="zoom-in" onclick="toggleExplodedClick()">
+            <div class="exploded-device-wrap" id="device3DContainer">
+                <div class="device-float-carrier">
+                    
+                    <div class="telemetry-badge tb-1">
+                        <i class="fas fa-microchip" style="color: var(--accent);"></i> AI Neural Core
+                    </div>
+                    <div class="telemetry-badge tb-2">
+                        <i class="fas fa-shield-halved" style="color: #60A5FA;"></i> IP68 Titanium Shell
+                    </div>
+                    <div class="telemetry-badge tb-3">
+                        <i class="fas fa-ear-listen" style="color: #FCD34D;"></i> Acoustic Silicone Dome
+                    </div>
+
+                    <svg viewBox="0 0 320 380" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 100%; height: 100%;">
+                        <defs>
+                            <linearGradient id="shellShader" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#FFFFFF" />
+                                <stop offset="35%" stop-color="#CFE5EB" />
+                                <stop offset="70%" stop-color="#6F98A6" />
+                                <stop offset="100%" stop-color="#1B3A45" />
+                            </linearGradient>
+                            <linearGradient id="chipShader" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#00D4B2" />
+                                <stop offset="100%" stop-color="#005A60" />
+                            </linearGradient>
+                            <radialGradient id="domeShader" cx="40%" cy="40%" r="60%">
+                                <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.95" />
+                                <stop offset="70%" stop-color="#B2D8DF" />
+                                <stop offset="100%" stop-color="#4F7980" />
+                            </radialGradient>
+                        </defs>
+
+                        <path class="part-titanium-shell" d="M190 50 C240 55, 260 105, 255 190 C250 255, 210 295, 165 290 C135 285, 155 230, 170 190 C185 150, 170 70, 190 50 Z" fill="url(#shellShader)" />
+
+                        <g class="part-microphones">
+                            <circle cx="210" cy="75" r="4" fill="#0A1820" />
+                            <circle cx="230" cy="105" r="4" fill="#0A1820" />
+                        </g>
+
+                        <rect class="part-ai-processor" x="180" y="145" width="26" height="34" rx="4" fill="url(#chipShader)" stroke="#FFFFFF" stroke-width="1.2" />
+
+                        <path class="part-acoustic-tube" d="M190 50 C170 30, 120 35, 100 85 C85 130, 95 180, 115 210" stroke="#89B8C2" stroke-width="5" stroke-linecap="round" fill="none" />
+
+                        <ellipse class="part-silicone-dome" cx="120" cy="218" rx="22" ry="18" fill="url(#domeShader)" />
+                    </svg>
+                </div>
+            </div>
         </div>
     </div>
 </section>
 
-<footer class="main-footer">
-    <div class="footer-grid">
-        <div class="footer-col">
-            <h4>Life Audiology And Speech Therapy Center</h4>
-            <p>Your trusted center for hearing and speech rehabilitation in North Kerala.</p>
-            <div style="margin-top: 15px; display: flex; gap: 15px;">
-                <a href="https://wa.me/918921015858" target="_blank" style="color:white; font-size: 1.2rem;"><i class="fab fa-whatsapp"></i></a>
-                <a href="https://www.instagram.com/lifeaudiology/" target="_blank" style="color:white; font-size: 1.2rem;"><i class="fab fa-instagram"></i></a>
+<!-- CLINICAL SERVICES SECTION -->
+<section class="section-wrap" id="services">
+    <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Clinical Excellence</span>
+        <h2 class="section-heading">Comprehensive Audiology & Speech Solutions</h2>
+    </div>
+
+    <div class="bento-grid">
+        <div class="bento-card" data-aos="fade-up">
+            <div>
+                <div class="bento-icon-circle"><i class="fas fa-ear-listen"></i></div>
+                <h3>Advanced Audiology</h3>
+                <p>Pure Tone, Speech, & Immittance Audiometry, along with specialized Newborn OAE hearing screenings.</p>
+            </div>
+            <a href="services.html" class="bento-link">Learn Test Details <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="bento-card" data-aos="fade-up" data-aos-delay="100">
+            <div>
+                <div class="bento-icon-circle"><i class="fas fa-comments"></i></div>
+                <h3>Speech & Language Rehab</h3>
+                <p>Evidence-based interventions for child speech delay, stammering, autism communication, and voice disorders.</p>
+            </div>
+            <a href="services.html" class="bento-link">Explore Therapies <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="bento-card" data-aos="fade-up" data-aos-delay="200">
+            <div>
+                <div class="bento-icon-circle"><i class="fas fa-headset"></i></div>
+                <h3>Digital Hearing Aid Lab</h3>
+                <p>Live hearing aid trials, custom ear-mold fitting, programming, and comprehensive warranty service.</p>
+            </div>
+            <a href="services.html" class="bento-link">View Device Trials <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- NEW: AUTHORIZED GLOBAL HEARING AID BRANDS OVERVIEW -->
+<!-- ============================================================ -->
+<section class="section-wrap" id="brands-overview" style="background: #ffffff; border-radius: 32px; margin: 30px auto; box-shadow: 0 10px 40px rgba(0,0,0,0.03);">
+    <div class="section-header" data-aos="fade-up">
+        <span class="section-tag" style="color: var(--secondary);">Authorized Global Partners</span>
+        <h2 class="section-heading">Premier Digital Hearing Aid Brands</h2>
+        <p style="color: var(--text-muted); margin-top: 10px;">We program, custom fit, and service international hearing aid technology calibrated specifically to your audiogram in Vatakara.</p>
+    </div>
+
+    <div class="home-brand-grid">
+        <!-- Phonak -->
+        <div class="home-brand-card" data-aos="fade-up">
+            <div>
+                <div class="home-brand-thumb">
+                    <img src="https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcRM8DA5u2FYHUsG3UKIt7u0HnyIbIcqxaa3Win9v7dLygpiPS3uDNRouVTG4iHoDjQAQeVSV26k5R6HDro" alt="Phonak Hearing Aid Dealer Vatakara">
+                </div>
+                <span class="home-brand-badge">Universal Bluetooth</span>
+                <h4>Phonak</h4>
+                <p>Hands-free direct audio streaming to Android & iPhone with AutoSense OS acoustic adaptation.</p>
+            </div>
+            <a href="services.html#brands" class="home-brand-link">Explore Phonak Specs &rarr;</a>
+        </div>
+
+        <!-- Oticon -->
+        <div class="home-brand-card" data-aos="fade-up" data-aos-delay="100">
+            <div>
+                <div class="home-brand-thumb">
+                    <img src="https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcRuCyr6l1ESOTdNwKOURG5OHxsVpihU8IRQBTNhKnWvKNFjdGglm-us4lK17UfmqYpnHzes67X338D1Tbc" alt="Oticon Hearing Aid Dealer Vatakara">
+                </div>
+                <span class="home-brand-badge">BrainHearing™ AI</span>
+                <h4>Oticon</h4>
+                <p>Deep Neural Network (DNN) chip providing a 360° natural open soundscape without listening fatigue.</p>
+            </div>
+            <a href="services.html#brands" class="home-brand-link">Explore Oticon Specs &rarr;</a>
+        </div>
+
+        <!-- Signia -->
+        <div class="home-brand-card" data-aos="fade-up" data-aos-delay="200">
+            <div>
+                <div class="home-brand-thumb">
+                    <img src="https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcRFy-ffZIV0m6xLLUqPQMeB3Zv67TTwahpGQ2oUFRuCzwA623dgU3F_Njff_oy_Udv06iJ3n-cnGrRcVUU" alt="Signia Hearing Aid Dealer Vatakara">
+                </div>
+                <span class="home-brand-badge">Own Voice Processing</span>
+                <h4>Signia</h4>
+                <p>Dual-processor Augmented Focus technology that preserves natural own-voice perception.</p>
+            </div>
+            <a href="services.html#brands" class="home-brand-link">Explore Signia Specs &rarr;</a>
+        </div>
+
+        <!-- GN ReSound -->
+        <div class="home-brand-card" data-aos="fade-up" data-aos-delay="300">
+            <div>
+                <div class="home-brand-thumb">
+                    <img src="https://www.gnhearing.com/-/media/partnerportal/resound/products/omnia/full-line-up/lifestyle/1800x1800/rs_omnia_minirie_hero_light-bg-1800x1800.ashx?h=1800&w=1800&la=en-IN&hash=CEFC9395384C9251626C243053A064B2" alt="GN ReSound Hearing Aid Dealer Vatakara">
+                </div>
+                <span class="home-brand-badge">M&RIE In-Ear Mic</span>
+                <h4>GN ReSound</h4>
+                <p>Organic 3rd microphone inside ear canal for natural spatial localization & wind protection.</p>
+            </div>
+            <a href="services.html#brands" class="home-brand-link">Explore ReSound Specs &rarr;</a>
+        </div>
+
+        <!-- Rexton -->
+        <div class="home-brand-card" data-aos="fade-up" data-aos-delay="400">
+            <div>
+                <div class="home-brand-thumb">
+                    <img src="https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcRFy-ffZIV0m6xLLUqPQMeB3Zv67TTwahpGQ2oUFRuCzwA623dgU3F_Njff_oy_Udv06iJ3n-cnGrRcVUU" alt="Rexton Hearing Aid Dealer Vatakara">
+                </div>
+                <span class="home-brand-badge">Rugged BiCore</span>
+                <h4>Rexton</h4>
+                <p>Moisture-proof and dust-sealed durable casings engineered for long battery life and high value.</p>
+            </div>
+            <a href="services.html#brands" class="home-brand-link">Explore Rexton Specs &rarr;</a>
+        </div>
+    </div>
+</section>
+
+<!-- BILINGUAL SELF-ASSESSMENT QUIZ HUB -->
+<section class="section-wrap" id="assessment">
+    <div class="quiz-container" data-aos="zoom-in">
+        <div>
+            <span class="section-tag" style="color: var(--accent);">Self-Screening Tool</span>
+            <h2 style="font-size: clamp(1.8rem, 3vw, 2.5rem); line-height: 1.25; margin-bottom: 12px;">
+                Find the Recommended Service for Your Symptoms.
+            </h2>
+            <p style="font-family: 'Baloo Chettan 2', cursive; font-size: 1.15rem; color: #E2E8F0; margin-bottom: 15px;">
+                നിങ്ങളുടെ ബുദ്ധിമുട്ടുകൾ തിരഞ്ഞെടുത്ത് കൃത്യമായ പരിഹാരം അറിയൂ.
+            </p>
+            <p style="color: #CBD5E1; line-height: 1.6; margin-bottom: 25px; font-size: 0.95rem;">
+                Select your primary concern below. Our system will immediately identify your clinical match and generate a direct WhatsApp booking link with pre-filled test details.
+            </p>
+            <div style="font-size: 0.88rem; color: var(--accent); font-weight: 700;">
+                <i class="fas fa-user-shield"></i> Confidential & Verified by Certified Clinicians
             </div>
         </div>
 
-        <div class="footer-col">
-            <h4>Quick Links</h4>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="services.html">Our Services</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="contact.html">Contact US </a></li>
-            </ul>
-        </div>
-
-        <div class="footer-col">
-            <h4>Contact & Hours</h4>
-            <p><i class="fas fa-map-marker-alt"></i> Opp. Near Cee Yam Hospital, Vatakara, 673101</p>
-            <p><i class="fas fa-phone"></i> <a href="tel:+918921015858" class="footer-link">+91 8921015858</a></p>
-            <p><i class="fas fa-envelope"></i> <a href="mailto:lifeaudiologycenter@gmail.com" class="footer-link">lifeaudiologycenter@gmail.com</a></p>
-            <div style="margin-top: 15px; padding-top: 10px; border-top: 1px solid rgba(255,255,255,0.1);">
-                <p style="font-size: 0.85rem; color: #00a8cc;">MON - SAT: 9:30 AM - 6:00 PM</p>
-                <p style="font-size: 0.85rem; color: #ff4d4d;">SUNDAY: CLOSED</p>
+        <div class="quiz-form">
+            <div class="quiz-option" onclick="handleOptionSelect(this, 'Pure Tone & Speech Audiometry Assessment', 'പ്യുവർ ടോൺ & സ്പീച്ച് ഓഡിയോമെട്രി പരിശോധന')">
+                <i class="fas fa-circle-check"></i>
+                <div class="quiz-option-text">
+                    <span class="en-txt">Asking people to repeat / TV volume is louder than normal</span>
+                    <span class="ml-txt">മറ്റുള്ളവർ പറയുന്നത് ആവർത്തിക്കാൻ ആവശ്യപ്പെടുക / ടിവി ശബ്ദം കൂടുതൽ വെക്കുക</span>
+                </div>
             </div>
+
+            <div class="quiz-option" onclick="handleOptionSelect(this, 'Digital Hearing Aid Assessment & Trial', 'ഡിജിറ്റൽ ഹിയറിംഗ് എയ്ഡ് ട്രയലും പരിശോധനയും')">
+                <i class="fas fa-circle-check"></i>
+                <div class="quiz-option-text">
+                    <span class="en-txt">Difficulty following conversations in crowded or noisy places</span>
+                    <span class="ml-txt">തിരക്കുള്ള സ്ഥലങ്ങളിൽ ആളുകൾ സംസാരിക്കുന്നത് മനസ്സിലാക്കാൻ പ്രയാസം</span>
+                </div>
+            </div>
+
+            <div class="quiz-option" onclick="handleOptionSelect(this, 'Pediatric Speech-Language Evaluation', 'കുട്ടികൾക്കായുള്ള സ്പീച്ച് തെറാപ്പിയും വിലയിരുത്തലും')">
+                <i class="fas fa-circle-check"></i>
+                <div class="quiz-option-text">
+                    <span class="en-txt">Child speech delay / misarticulation / unclear pronunciation</span>
+                    <span class="ml-txt">കുട്ടികളിലെ സംസാര വൈകൽ, വാക്കുകളിലെ ഉച്ചാരണ വ്യക്തതക്കുറവ്</span>
+                </div>
+            </div>
+
+            <div class="quiz-option" onclick="handleOptionSelect(this, 'Tinnitus & Middle Ear Evaluation', 'ടിന്നിറ്റസ് & ഇമ്മറ്റൻസ് ചെവി പരിശോധന')">
+                <i class="fas fa-circle-check"></i>
+                <div class="quiz-option-text">
+                    <span class="en-txt">Continuous ringing/buzzing sensation in ears or ear heaviness</span>
+                    <span class="ml-txt">ചെവിയിൽ നിരന്തരമായ മൂളിച്ചയോ ശബ്ദങ്ങളോ അടച്ചിൽ അനുഭവപ്പെടുകയോ ചെയ്യുക</span>
+                </div>
+            </div>
+
+            <div class="match-result-card" id="matchCard">
+                <div class="match-header"><i class="fas fa-sparkles"></i> Recommended Clinical Match • അനുയോജ്യമായ സേവനം</div>
+                <div class="match-title" id="matchTitle"></div>
+                <div class="match-malayalam" id="matchMalayalam"></div>
+            </div>
+
+            <div class="quiz-validation-alert" id="quizAlert">
+                <i class="fas fa-exclamation-triangle"></i> ദയവായി ഒരു ഓപ്ഷൻ തിരഞ്ഞെടുക്കുക / Please select an option before proceeding.
+            </div>
+
+            <button type="button" onclick="submitAssessment()" class="btn-primary-glow" style="width: 100%; justify-content: center; margin-top: 15px;">
+                Book Clinical Consultation <i class="fas fa-arrow-right"></i>
+            </button>
         </div>
     </div>
-    <div class="footer-bottom">
-        <p>&copy; 2026 Life Audiology And Speech Therapy Center. All Rights Reserved.</p>
-    </div>
-</footer>
+</section>
 
-<!-- WHATSAPP FLOATING BUTTON -->
-<a href="https://wa.me/918921015858?text=Hello%20Life%20Audiology%21%20I%27m%20interested%20in%20your%20services.%20Please%20let%20me%20know%20how%20I%20can%20book%20an%20appointment." class="wa-float" target="_blank">
-    <i class="fab fa-whatsapp"></i>
-</a>
-
-<!-- WALKING & WAVING MAVELI WIDGET -->
+<!-- WALKING MAVELI ONAM WIDGET -->
 <div class="onam-widget-container" id="onamGreeting">
     <div class="onam-greeting-card">
         <span>🌼</span>
-        <span class="onam-malayalam-text">ഹൃദയം നിറഞ്ഞ പൊന്നോണാശംസകൾ!</span>
+        <span class="onam-malayalam-text">ഹൃദയം നിറഞ്ഞ തിരുവോണാശംസകൾ!</span>
         <button class="onam-close-btn" onclick="dismissOnam()" title="Close">&times;</button>
     </div>
 
     <div class="maveli-box" id="maveliTrigger" onclick="celebrateOnam()" title="Click Maveli for a surprise!">
         <div class="maveli-bubble">Happy Onam! 🥳</div>
-        <img src="Maveli.png" alt="3D Maveli Character" class="maveli-3d-img" />
+        <img src="Maveli.png" alt="Maveli Character" class="maveli-3d-img" />
     </div>
 </div>
 
-<!-- FULL-SCREEN FIREWORKS & ONAM MODAL -->
+<!-- FIREWORKS MODAL OVERLAY -->
 <div id="onamModalOverlay" onclick="closeOnamModal(event)">
     <canvas id="fireworksCanvas"></canvas>
-    
     <div class="onam-modal-content" onclick="event.stopPropagation()">
         <button class="modal-close" onclick="closeOnamModal()">&times;</button>
-        <div class="pookkalam-icon">🌸</div>
-        <div class="onam-modal-cursive">Happy Onam 2026!</div>
-        <h1 class="onam-grand-title">ഹൃദയം നിറഞ്ഞ തിരുവോണാശംസകൾ!</h1>
-        <p class="onam-blessing-desc">
-            ഐശ്വര്യവും സമൃദ്ധിയും ആരോഗ്യവും നിറഞ്ഞ ഒരു നല്ല ഓണക്കാലം നേരുന്നു.<br>
-           
+        <div style="font-size: 2.5rem; margin-bottom: 5px;">🌸</div>
+        <div style="font-family: 'Great Vibes', cursive; font-size: 2rem; color: #C76A00;">Happy Onam 2026!</div>
+        <h2 style="font-family: 'Baloo Chettan 2', cursive; font-size: 1.6rem; color: #8E2800; margin-bottom: 8px;">ഹൃദയം നിറഞ്ഞ തിരുവോണാശംസകൾ!</h2>
+        <p style="font-family: 'Chilanka', cursive; color: #4E342E; line-height: 1.6; margin-bottom: 15px;">
+            ഐശ്വര്യവും സമൃദ്ധിയും ആരോഗ്യവും നിറഞ്ഞ ഒരു നല്ല ഓണക്കാലം നേരുന്നു.
         </p>
-        <div class="onam-brand-tag">
-            ❤️ Life Audiology And Speech Therapy Center, Vatakara
+        <div style="font-weight: 700; color: #8E2800; font-size: 0.85rem;">
+            ❤️ Life Audiology & Speech Therapy Centre, Vatakara
         </div>
     </div>
 </div>
 
+<!-- FLOATING WHATSAPP -->
+<a href="https://wa.me/918921015858?text=Hello%20Life%20Audiology!%20I%20would%20like%20to%20book%20an%20appointment." class="wa-float" target="_blank" title="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+<!-- BORDERLESS SMART REDIRECTION FOOTER -->
+<footer>
+    <div class="footer-grid">
+        <div class="footer-col">
+            <h4>Life Audiology & Speech Therapy Centre</h4>
+            <p>North Kerala's modern clinical center for diagnostic audiology, digital hearing device dispensing, and personalized pediatric & adult speech rehabilitation.</p>
+            
+            <div class="social-connector-row">
+                <a href="https://wa.me/918921015858?text=Hello%20Life%20Audiology!" class="social-btn wa" target="_blank" title="Connect on WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="https://www.instagram.com/lifeaudiology/" class="social-btn insta" target="_blank" title="Follow on Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul class="footer-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Clinical Services</a></li>
+                <li><a href="about.html">About Specialist</a></li>
+                <li><a href="contact.html">Contact Clinic</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Connect with Clinic</h4>
+            <p><i class="fas fa-map-marker-alt" style="color: var(--accent);"></i> Opp. Near Cee Yam Hospital, Vatakara, Kerala 673101</p>
+            
+            <div class="clean-contact-links">
+                <a href="tel:+918921015858" class="clean-contact-item" title="Click to Call Direct">
+                    <i class="fas fa-phone-alt"></i>
+                    <span>+91 8921015858</span>
+                </a>
+
+                <a href="mailto:lifeaudiologycenter@gmail.com" class="clean-contact-item" title="Click to Send Email">
+                    <i class="fas fa-envelope"></i>
+                    <span>lifeaudiologycenter@gmail.com</span>
+                </a>
+            </div>
+            
+            <p style="margin-top: 18px; color: var(--accent); font-size: 0.88rem;">
+                <i class="fas fa-clock"></i> MON - SAT: 9:30 AM - 6:00 PM
+            </p>
+        </div>
+    </div>
+
+    <div style="text-align: center; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px; font-size: 0.85rem; color: #64748B;">
+        &copy; 2026 Life Audiology And Speech Therapy Centre. All Rights Reserved.
+    </div>
+</footer>
+
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
-    AOS.init({ duration: 1000, once: true });
+    AOS.init({ duration: 900, once: true });
 
-    // Mobile Navbar Toggle
-    const menuToggle = document.getElementById('mobile-menu');
+    // Mobile Navigation Toggle
+    const mobileMenu = document.getElementById('mobile-menu');
     const navList = document.getElementById('nav-list');
-    menuToggle.addEventListener('click', () => {
-        navList.classList.toggle('active');
-        const icon = menuToggle.querySelector('i');
-        icon.classList.toggle('fa-bars');
-        icon.classList.toggle('fa-times');
+    mobileMenu.addEventListener('click', () => {
+        navList.style.display = navList.style.display === 'flex' ? 'none' : 'flex';
+        navList.style.flexDirection = 'column';
+        navList.style.position = 'absolute';
+        navList.style.top = '100%';
+        navList.style.left = '0';
+        navList.style.width = '100%';
+        navList.style.background = '#ffffff';
+        navList.style.padding = '20px';
     });
 
-    // --- HERO SLIDER ENGINE ---
+    // --- 3D HEARING AID LAB: MOUSE PARALLAX, SCROLL AUTO-EXPLODE & CLICK TOGGLE ---
+    const labStage = document.getElementById('labStage');
+    const device3D = document.getElementById('device3DContainer');
+
+    if (labStage && device3D) {
+        labStage.addEventListener('mousemove', (e) => {
+            const rect = labStage.getBoundingClientRect();
+            const x = (e.clientX - rect.left) - (rect.width / 2);
+            const y = (e.clientY - rect.top) - (rect.height / 2);
+            const rotY = (x / (rect.width / 2)) * 22;
+            const rotX = -(y / (rect.height / 2)) * 22;
+            device3D.style.transform = `rotateY(${rotY}deg) rotateX(${rotX}deg)`;
+        });
+
+        labStage.addEventListener('mouseleave', () => {
+            device3D.style.transform = `rotateY(0deg) rotateX(0deg)`;
+        });
+    }
+
+    function toggleExplodedClick() {
+        if (device3D) {
+            device3D.classList.toggle('exploded');
+        }
+    }
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                device3D.classList.add('exploded');
+            } else {
+                device3D.classList.remove('exploded');
+            }
+        });
+    }, { threshold: 0.45 });
+
+    if (labStage) {
+        observer.observe(labStage);
+    }
+
+    // Hero Slider Controller
     const slides = document.querySelectorAll('.slider-container .slide');
     let currentSlideIdx = 0;
     let sliderTimer = null;
@@ -659,15 +1633,43 @@
     function advanceSlide() {
         const nextIdx = (currentSlideIdx + 1) % slides.length;
         showSlide(nextIdx);
-
-        // Slide 0 (Onam greeting) holds for 6.5s; regular slides hold for 5.0s
         const nextDelay = nextIdx === 0 ? 6500 : 5000;
         clearTimeout(sliderTimer);
         sliderTimer = setTimeout(advanceSlide, nextDelay);
     }
-
-    // Start initial timer
     sliderTimer = setTimeout(advanceSlide, 6500);
+
+    // Bilingual Self-Evaluation Quiz Engine
+    let selectedTestEn = "";
+    let selectedTestMl = "";
+
+    function handleOptionSelect(element, testEn, testMl) {
+        document.querySelectorAll('.quiz-option').forEach(opt => opt.classList.remove('active'));
+        
+        element.classList.add('active');
+        selectedTestEn = testEn;
+        selectedTestMl = testMl;
+
+        document.getElementById('quizAlert').style.display = 'none';
+
+        const matchCard = document.getElementById('matchCard');
+        document.getElementById('matchTitle').textContent = testEn;
+        document.getElementById('matchMalayalam').textContent = testMl;
+        matchCard.style.display = 'block';
+    }
+
+    function submitAssessment() {
+        if (!selectedTestEn) {
+            const alertBox = document.getElementById('quizAlert');
+            alertBox.style.display = 'block';
+            alertBox.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            return;
+        }
+
+        const message = `Hello Life Audiology! I completed the Self-Screening evaluation on your Home page. My requirement matches with: *${selectedTestEn}* (${selectedTestMl}). Please schedule my consultation at your Vatakara center.`;
+        const waUrl = `https://wa.me/918921015858?text=${encodeURIComponent(message)}`;
+        window.open(waUrl, '_blank');
+    }
 
     // Dismiss Onam Corner Badge
     function dismissOnam() {
@@ -680,7 +1682,7 @@
         }
     }
 
-    // --- FIREWORKS & CELEBRATION ENGINE ---
+    // Fireworks Canvas Engine
     let fireworksActive = false;
     let particles = [];
     const canvas = document.getElementById('fireworksCanvas');
@@ -703,7 +1705,7 @@
             this.vy = Math.sin(angle) * speed;
             this.alpha = 1;
             this.decay = Math.random() * 0.015 + 0.012;
-            this.size = Math.random() * 3.5 + 1.5;
+            this.size = Math.random() * 3 + 1.5;
         }
         update() {
             this.x += this.vx;
@@ -723,10 +1725,10 @@
     }
 
     function createFirework(x, y) {
-        const colors = ['#FFD700', '#FF3D00', '#FFEA00', '#00E676', '#FF1744', '#FFF', '#FF9100'];
-        const chosenColor = colors[Math.floor(Math.random() * colors.length)];
+        const colors = ['#FFD700', '#FF3D00', '#00D4B2', '#0077B6', '#FFF'];
+        const color = colors[Math.floor(Math.random() * colors.length)];
         for (let i = 0; i < 35; i++) {
-            particles.push(new Particle(x, y, chosenColor));
+            particles.push(new Particle(x, y, color));
         }
     }
 
@@ -736,50 +1738,32 @@
             return;
         }
         ctx.clearRect(0, 0, canvas.width, canvas.height);
-
         if (fireworksActive && Math.random() < 0.12) {
-            createFirework(
-                Math.random() * canvas.width * 0.8 + canvas.width * 0.1,
-                Math.random() * canvas.height * 0.4 + canvas.height * 0.1
-            );
+            createFirework(Math.random() * canvas.width * 0.8 + canvas.width * 0.1, Math.random() * canvas.height * 0.4 + canvas.height * 0.1);
         }
-
-        particles.forEach((p, index) => {
+        particles.forEach((p, idx) => {
             p.update();
             p.draw();
-            if (p.alpha <= 0) particles.splice(index, 1);
+            if (p.alpha <= 0) particles.splice(idx, 1);
         });
-
         requestAnimationFrame(loopFireworks);
     }
 
     function celebrateOnam() {
-        const maveli = document.getElementById('maveliTrigger');
-        maveli.classList.add('clicked');
-        setTimeout(() => maveli.classList.remove('clicked'), 600);
-
         resizeCanvas();
         fireworksActive = true;
         particles = [];
-        
         for (let i = 0; i < 3; i++) {
             setTimeout(() => {
-                createFirework(
-                    window.innerWidth * (0.2 + i * 0.3),
-                    window.innerHeight * (0.25 + Math.random() * 0.2)
-                );
+                createFirework(window.innerWidth * (0.2 + i * 0.3), window.innerHeight * 0.3);
             }, i * 200);
         }
-
         requestAnimationFrame(loopFireworks);
-
-        const modal = document.getElementById('onamModalOverlay');
-        modal.classList.add('active');
+        document.getElementById('onamModalOverlay').classList.add('active');
     }
 
     function closeOnamModal() {
-        const modal = document.getElementById('onamModalOverlay');
-        modal.classList.remove('active');
+        document.getElementById('onamModalOverlay').classList.remove('active');
         fireworksActive = false;
     }
 </script>

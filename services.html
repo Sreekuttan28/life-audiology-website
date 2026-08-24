@@ -3,226 +3,1502 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Services | Life Audiology And Speech Therapy Center</title>
-    
+
+    <!-- Primary SEO Meta Tags -->
+    <title>Hearing Aid Brands Comparison & Clinical Services | Life Audiology Vatakara</title>
+    <meta name="description" content="Compare authorized digital hearing aids from Phonak, Oticon, Signia, ReSound & Rexton in Vatakara. Full technical specs, AI sound technology, and clinical trials near Cee Yam Hospital.">
+    <meta name="keywords" content="Phonak vs Oticon Vatakara, Signia Hearing Aid Price Kerala, ReSound M&RIE Vatakara, Rexton Hearing Aid, Best Hearing Aid Brands Kozhikode, Pure Tone Audiometry Vatakara">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://yourdomain.com/services.html">
+
+    <!-- Open Graph / WhatsApp / Facebook Preview Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourdomain.com/services.html">
+    <meta property="og:title" content="Digital Hearing Aid Brand Technology & Comparison | Life Audiology">
+    <meta property="og:description" content="Compare top digital hearing aid brands (Phonak, Oticon, Signia, ReSound, Rexton) with live clinical trials and expert audiogram fitting in Vatakara.">
+    <meta property="og:image" content="https://yourdomain.com/logo.png">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Digital Hearing Aid Tech Hub | Life Audiology Vatakara">
+    <meta name="twitter:description" content="Explore and compare Phonak, Oticon, Signia, ReSound, and Rexton digital hearing aids with certified clinical audiologists in Vatakara.">
+    <meta name="twitter:image" content="https://yourdomain.com/logo.png">
+
     <link rel="icon" type="image/png" href="favicon.png">
-    <link rel="stylesheet" href="style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Baloo+Chettan+2:wght@600;700;800&family=Chilanka&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+    <meta name="google-site-verification" content="TNwDsCpj-ceJZMFH5-8pXSEoVfyGPrb0R7BiZpZ_d8Y" />
+
+    <!-- Google Local Medical Clinic Schema Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalClinic",
+      "name": "Life Audiology & Speech Therapy Centre",
+      "image": "https://yourdomain.com/logo.png",
+      "telephone": "+918921015858",
+      "email": "lifeaudiologycenter@gmail.com",
+      "url": "https://yourdomain.com/services.html",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Opp. Near Cee Yam Hospital",
+        "addressLocality": "Vatakara",
+        "addressRegion": "Kerala",
+        "postalCode": "673101",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "11.6086",
+        "longitude": "75.5921"
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"
+        ],
+        "opens": "09:30",
+        "closes": "18:00"
+      },
+      "medicalSpecialty": [
+        "Audiology",
+        "SpeechTherapy"
+      ],
+      "priceRange": "$$"
+    }
+    </script>
+
+    <style>
+        :root {
+            --primary: #0A2540;
+            --primary-dark: #04101D;
+            --accent: #00D4B2;
+            --accent-glow: rgba(0, 212, 178, 0.45);
+            --secondary: #0077B6;
+            --bg-glass: rgba(255, 255, 255, 0.88);
+            --border-glass: rgba(255, 255, 255, 0.45);
+            --text-dark: #1E293B;
+            --text-muted: #64748B;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background: #F8FAFC;
+            color: var(--text-dark);
+            overflow-x: hidden;
+        }
+
+        /* --- TICKER BAR --- */
+        .top-announcement-bar {
+            background: linear-gradient(90deg, #0A2540, #0077B6);
+            color: #ffffff;
+            padding: 10px 5%;
+            font-size: 0.85rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .ticker-wrap {
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        .ticker {
+            display: inline-block;
+            animation: tickerSlide 26s linear infinite;
+        }
+
+        .ticker-item {
+            margin-right: 35px;
+            font-weight: 500;
+        }
+
+        @keyframes tickerSlide {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+
+        /* --- NAVIGATION --- */
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: var(--bg-glass);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-bottom: 1px solid var(--border-glass);
+            padding: 12px 6%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+        }
+
+        .nav-logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+        }
+
+        .logo-text {
+            font-weight: 800;
+            color: var(--primary);
+            font-size: 1rem;
+            line-height: 1.2;
+        }
+
+        .logo-text span {
+            color: var(--secondary);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 24px;
+            align-items: center;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: color 0.2s;
+        }
+
+        .nav-links a:hover, .nav-links a.active {
+            color: var(--secondary);
+        }
+
+        .btn-nav {
+            background: var(--primary);
+            color: #ffffff !important;
+            padding: 9px 20px;
+            border-radius: 50px;
+            font-size: 0.88rem;
+            box-shadow: 0 4px 14px rgba(10, 37, 64, 0.2);
+            transition: all 0.3s ease !important;
+        }
+
+        .btn-nav:hover {
+            transform: translateY(-2px);
+            background: var(--secondary);
+        }
+
+        .menu-toggle {
+            display: none;
+            font-size: 1.3rem;
+            color: var(--primary);
+            cursor: pointer;
+        }
+
+        /* ============================================================ */
+        /* --- CLEAN & ELEGANT HERO HEADER --- */
+        /* ============================================================ */
+        .services-header {
+            background: linear-gradient(rgba(10, 37, 64, 0.82), rgba(10, 37, 64, 0.88)), 
+                        url('https://images.unsplash.com/photo-1590611936760-eeb9bc593018?auto=format&fit=crop&q=80&w=1500') center/cover no-repeat;
+            padding: clamp(60px, 7vw, 90px) 6%;
+            color: #ffffff;
+            text-align: center;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .header-content-box {
+            max-width: 750px;
+            margin: 0 auto;
+        }
+
+        .header-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(0, 212, 178, 0.15);
+            border: 1px solid var(--accent);
+            color: var(--accent);
+            padding: 5px 16px;
+            border-radius: 30px;
+            font-size: 0.78rem;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            margin-bottom: 16px;
+        }
+
+        .services-header h1 {
+            font-size: clamp(1.8rem, 3.2vw, 2.6rem);
+            font-weight: 800;
+            line-height: 1.25;
+            margin-bottom: 14px;
+            letter-spacing: -0.5px;
+        }
+
+        .services-header h1 span {
+            color: var(--accent);
+        }
+
+        .services-header p {
+            font-size: clamp(0.95rem, 1.2vw, 1.05rem);
+            color: #CBD5E1;
+            max-width: 620px;
+            margin: 0 auto;
+            line-height: 1.65;
+        }
+
+        /* --- SECTION BASE WRAPPERS --- */
+        .section-wrap {
+            padding: 70px 6%;
+            max-width: 1250px;
+            margin: 0 auto;
+        }
+
+        .section-header {
+            text-align: center;
+            max-width: 650px;
+            margin: 0 auto 45px auto;
+        }
+
+        .section-tag {
+            color: var(--secondary);
+            font-weight: 800;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 6px;
+            display: block;
+        }
+
+        .section-heading {
+            font-size: clamp(1.6rem, 2.8vw, 2.2rem);
+            color: var(--primary);
+            font-weight: 800;
+            line-height: 1.25;
+        }
+
+        /* ============================================================ */
+        /* --- BRAND SHOWCASE WITH PHOTOGRAPHY --- */
+        /* ============================================================ */
+        .brand-filter-bar {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            background: #ffffff;
+            border: 1.5px solid #E2E8F0;
+            color: var(--primary);
+            padding: 10px 22px;
+            border-radius: 30px;
+            font-weight: 700;
+            font-size: 0.88rem;
+            cursor: pointer;
+            transition: all 0.25s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.02);
+        }
+
+        .filter-btn:hover, .filter-btn.active {
+            background: var(--primary);
+            color: #ffffff;
+            border-color: var(--primary);
+            box-shadow: 0 8px 20px rgba(10, 37, 64, 0.15);
+        }
+
+        .filter-btn.active i {
+            color: var(--accent);
+        }
+
+        .brand-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 20px;
+        }
+
+        .brand-card {
+            background: #ffffff;
+            border-radius: 20px;
+            padding: 24px;
+            border: 1.5px solid #F1F5F9;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.03);
+            transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .brand-card:hover {
+            transform: translateY(-6px);
+            border-color: rgba(0, 212, 178, 0.5);
+            box-shadow: 0 16px 35px rgba(0, 119, 182, 0.1);
+        }
+
+        .brand-img-wrap {
+            width: 100%;
+            height: 160px;
+            border-radius: 14px;
+            overflow: hidden;
+            background: #F8FAFC;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 16px;
+        }
+
+        .brand-img-wrap img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+
+        .brand-card:hover .brand-img-wrap img {
+            transform: scale(1.06);
+        }
+
+        .brand-badge {
+            font-size: 0.72rem;
+            font-weight: 700;
+            color: var(--secondary);
+            background: #EDF9FB;
+            padding: 4px 10px;
+            border-radius: 20px;
+            display: inline-block;
+            margin-bottom: 8px;
+            width: fit-content;
+        }
+
+        .brand-card h3 {
+            font-size: 1.2rem;
+            color: var(--primary);
+            font-weight: 800;
+            margin-bottom: 6px;
+        }
+
+        .brand-card p {
+            font-size: 0.88rem;
+            color: var(--text-muted);
+            line-height: 1.55;
+            margin-bottom: 16px;
+        }
+
+        .tech-spec-pills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-bottom: 18px;
+        }
+
+        .spec-pill {
+            font-size: 0.72rem;
+            font-weight: 700;
+            background: #F1F5F9;
+            color: var(--primary);
+            padding: 4px 10px;
+            border-radius: 8px;
+            border: 1px solid #E2E8F0;
+        }
+
+        .brand-cta-link {
+            text-decoration: none;
+            color: var(--secondary);
+            font-weight: 700;
+            font-size: 0.85rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            transition: gap 0.2s;
+        }
+
+        .brand-card:hover .brand-cta-link {
+            gap: 8px;
+            color: var(--accent);
+        }
+
+        /* ============================================================ */
+        /* --- CINEMATIC DARK GLASSMORPHISM COMPARISON MATRIX TABLE --- */
+        /* ============================================================ */
+        .comparison-matrix-container {
+            margin-top: 60px;
+            background: radial-gradient(circle at center, #0B243B 0%, #061829 100%);
+            border-radius: 28px;
+            padding: clamp(30px, 5vw, 45px);
+            border: 1.5px solid rgba(0, 212, 178, 0.4);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.4), inset 0 0 30px rgba(0, 212, 178, 0.08);
+            overflow-x: auto;
+            color: #ffffff;
+        }
+
+        .comparison-matrix-container h3 {
+            font-size: 1.6rem;
+            color: #ffffff;
+            font-weight: 800;
+            margin-bottom: 6px;
+            text-align: center;
+        }
+
+        .matrix-subtitle {
+            text-align: center;
+            color: #94A3B8;
+            font-size: 0.92rem;
+        }
+
+        .matrix-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            margin-top: 28px;
+            min-width: 720px;
+        }
+
+        .matrix-table th {
+            background: rgba(10, 37, 64, 0.95);
+            color: var(--accent);
+            font-weight: 800;
+            font-size: 0.92rem;
+            padding: 16px 18px;
+            border-bottom: 2px solid var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .matrix-table th:first-child {
+            border-top-left-radius: 14px;
+        }
+        .matrix-table th:last-child {
+            border-top-right-radius: 14px;
+        }
+
+        .matrix-table td {
+            padding: 16px 18px;
+            text-align: left;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+            font-size: 0.9rem;
+            color: #E2E8F0;
+        }
+
+        .matrix-table tr:nth-child(even) td {
+            background: rgba(255, 255, 255, 0.02);
+        }
+
+        .matrix-table tr:hover td {
+            background: rgba(0, 212, 178, 0.12);
+            color: #ffffff;
+        }
+
+        .tech-highlight-pill {
+            background: rgba(0, 212, 178, 0.2);
+            color: var(--accent);
+            border: 1px solid var(--accent);
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            display: inline-block;
+        }
+
+        /* --- BENTO SERVICE CARDS --- */
+        .bento-services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 22px;
+        }
+
+        .service-card {
+            background: #ffffff;
+            border-radius: 20px;
+            padding: 28px 24px;
+            border: 1.5px solid #F1F5F9;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.03);
+            transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .service-card:hover {
+            transform: translateY(-6px);
+            border-color: rgba(0, 212, 178, 0.5);
+            box-shadow: 0 16px 35px rgba(0, 119, 182, 0.1);
+        }
+
+        .service-icon-box {
+            width: 50px;
+            height: 50px;
+            border-radius: 14px;
+            background: #EDF9FB;
+            color: var(--secondary);
+            font-size: 1.3rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 18px;
+            transition: all 0.3s;
+        }
+
+        .service-card:hover .service-icon-box {
+            background: var(--secondary);
+            color: #ffffff;
+            transform: scale(1.08);
+        }
+
+        .service-card h3 {
+            font-size: 1.15rem;
+            color: var(--primary);
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .service-card p {
+            font-size: 0.88rem;
+            color: var(--text-muted);
+            line-height: 1.6;
+            margin-bottom: 18px;
+        }
+
+        .service-card-footer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 14px;
+            border-top: 1px solid #F1F5F9;
+        }
+
+        .service-badge {
+            background: #F1F5F9;
+            color: var(--primary);
+            font-size: 0.75rem;
+            font-weight: 700;
+            padding: 3px 10px;
+            border-radius: 16px;
+        }
+
+        .service-book-link {
+            text-decoration: none;
+            color: var(--secondary);
+            font-weight: 700;
+            font-size: 0.85rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            transition: gap 0.2s;
+        }
+
+        .service-card:hover .service-book-link {
+            gap: 8px;
+        }
+
+        /* --- 60-SEC SELF-EVALUATION QUIZ --- */
+        .quiz-container {
+            background: linear-gradient(135deg, #0A2540, #0E3E66);
+            border-radius: 24px;
+            padding: clamp(30px, 5vw, 50px);
+            color: #ffffff;
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            gap: 35px;
+            align-items: center;
+            box-shadow: 0 20px 50px rgba(10, 37, 64, 0.2);
+        }
+
+        .quiz-container h2 {
+            font-size: clamp(1.5rem, 2.5vw, 2rem);
+            line-height: 1.3;
+            margin-bottom: 10px;
+        }
+
+        .quiz-form {
+            background: rgba(255, 255, 255, 0.06);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 18px;
+            padding: 24px;
+        }
+
+        .quiz-option {
+            background: rgba(255, 255, 255, 0.08);
+            border: 1.5px solid rgba(255, 255, 255, 0.18);
+            padding: 12px 16px;
+            border-radius: 12px;
+            margin-bottom: 10px;
+            cursor: pointer;
+            transition: all 0.25s ease;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+
+        .quiz-option i {
+            color: rgba(255, 255, 255, 0.4);
+            font-size: 1.1rem;
+            margin-top: 2px;
+        }
+
+        .quiz-option-text {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+        }
+
+        .en-txt {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: #ffffff;
+        }
+
+        .ml-txt {
+            font-family: 'Baloo Chettan 2', cursive;
+            font-size: 0.82rem;
+            color: #94A3B8;
+            font-weight: 600;
+        }
+
+        .quiz-option:hover {
+            background: rgba(0, 212, 178, 0.15);
+            border-color: rgba(0, 212, 178, 0.5);
+        }
+
+        .quiz-option.active {
+            background: linear-gradient(135deg, rgba(0, 212, 178, 0.25), rgba(0, 119, 182, 0.35));
+            border-color: var(--accent);
+            box-shadow: 0 4px 15px rgba(0, 212, 178, 0.25);
+        }
+
+        .quiz-option.active i {
+            color: var(--accent);
+            transform: scale(1.1);
+        }
+
+        .quiz-option.active .ml-txt {
+            color: var(--accent);
+        }
+
+        .match-result-card {
+            display: none;
+            background: rgba(0, 212, 178, 0.12);
+            border: 1.5px dashed var(--accent);
+            border-radius: 12px;
+            padding: 12px 16px;
+            margin: 12px 0 8px 0;
+            animation: fadeInMatch 0.4s ease forwards;
+        }
+
+        .match-header {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--accent);
+            font-weight: 800;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            margin-bottom: 3px;
+        }
+
+        .match-title {
+            font-size: 0.9rem;
+            font-weight: 700;
+            color: #ffffff;
+        }
+
+        .match-malayalam {
+            font-family: 'Baloo Chettan 2', cursive;
+            font-size: 0.82rem;
+            color: #E2E8F0;
+        }
+
+        @keyframes fadeInMatch {
+            from { opacity: 0; transform: translateY(6px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .quiz-validation-alert {
+            display: none;
+            background: rgba(239, 68, 68, 0.2);
+            border: 1px solid #EF4444;
+            color: #FCA5A5;
+            font-size: 0.82rem;
+            font-weight: 600;
+            padding: 8px 12px;
+            border-radius: 8px;
+            margin-top: 8px;
+            text-align: center;
+        }
+
+        .btn-primary-glow {
+            background: linear-gradient(135deg, #00D4B2 0%, #0077B6 100%);
+            color: var(--primary);
+            font-weight: 800;
+            padding: 12px 26px;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            box-shadow: 0 8px 20px rgba(0, 212, 178, 0.35);
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: none;
+        }
+
+        .btn-primary-glow:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 25px rgba(0, 212, 178, 0.5);
+        }
+
+        /* --- BORDERLESS SMART REDIRECTION FOOTER --- */
+        footer {
+            background: var(--primary-dark);
+            color: #ffffff;
+            padding: 70px 6% 25px;
+            border-top: 1px solid rgba(0, 212, 178, 0.2);
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1.6fr;
+            gap: 40px;
+            margin-bottom: 45px;
+        }
+
+        .footer-col h4 {
+            font-size: 1.1rem;
+            margin-bottom: 18px;
+            color: var(--accent);
+        }
+
+        .footer-col p {
+            color: #94A3B8;
+            font-size: 0.9rem;
+            line-height: 1.7;
+        }
+
+        .clean-contact-links {
+            margin-top: 12px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .clean-contact-item {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            color: #E2E8F0;
+            text-decoration: none;
+            font-size: 0.92rem;
+            font-weight: 600;
+            transition: all 0.25s ease;
+            width: fit-content;
+        }
+
+        .clean-contact-item i {
+            color: var(--accent);
+            font-size: 1.05rem;
+            transition: transform 0.25s;
+        }
+
+        .clean-contact-item:hover {
+            color: var(--accent);
+            transform: translateX(4px);
+        }
+
+        .clean-contact-item:hover i {
+            color: #ffffff;
+            transform: scale(1.15);
+        }
+
+        .social-connector-row {
+            display: flex;
+            gap: 12px;
+            margin-top: 18px;
+        }
+
+        .social-btn {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 1.15rem;
+            transition: all 0.3s ease;
+        }
+
+        .social-btn.wa:hover {
+            background: #25D366;
+            color: #ffffff;
+            border-color: #25D366;
+            transform: translateY(-3px);
+        }
+
+        .social-btn.insta:hover {
+            background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+            color: #ffffff;
+            border-color: transparent;
+            transform: translateY(-3px);
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+
+        .footer-links a {
+            color: #CBD5E1;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.2s, padding-left 0.2s;
+            display: inline-block;
+        }
+
+        .footer-links a:hover {
+            color: var(--accent);
+            padding-left: 5px;
+        }
+
+        /* Floating WhatsApp */
+        .wa-float {
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            background: #25D366;
+            color: #fff;
+            width: 54px;
+            height: 54px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
+            z-index: 9990;
+            text-decoration: none;
+            transition: transform 0.3s;
+        }
+
+        .wa-float:hover {
+            transform: scale(1.1);
+        }
+
+        @media (max-width: 992px) {
+            .quiz-container { grid-template-columns: 1fr; text-align: center; }
+            .bento-services-grid { grid-template-columns: 1fr; }
+            .footer-grid { grid-template-columns: 1fr; }
+            .nav-links { display: none; }
+            .menu-toggle { display: block; }
+        }
+    </style>
 </head>
 <body>
 
+<!-- TICKER BAR -->
+<div class="top-announcement-bar">
+    <div style="font-weight: 700; color: #FFD700;">
+        <i class="fas fa-check-circle"></i> NOW OPEN IN VATAKARA
+    </div>
+    <div class="ticker-wrap">
+        <div class="ticker">
+            <span class="ticker-item">📢 Authorized Dispenser: Phonak • Oticon • Signia • ReSound • Rexton</span>
+            <span class="ticker-item">📍 Opp. Near Cee Yam Hospital, Vatakara</span>
+            <span class="ticker-item">📞 Book Free Device Trial: +91 8921015858</span>
+        </div>
+    </div>
+</div>
+
+<!-- NAVIGATION -->
 <nav>
     <a href="index.html" class="nav-logo">
-        <img src="logo.png" alt="Logo" style="height: 45px;" onerror="this.style.display='none'">
-        <span class="logo-text">Life Audiology And<br>Speech Therapy Center</span>
+        <img src="logo.png" alt="Logo" style="height: 38px;" onerror="this.style.display='none'">
+        <div class="logo-text">Life Audiology &<br><span>Speech Therapy</span></div>
     </a>
 
-    <!-- ADDED: The Hamburger Menu Button -->
-    <div class="menu-toggle" id="mobile-menu">
-        <i class="fas fa-bars"></i>
-    </div>
+    <div class="menu-toggle" id="mobile-menu"><i class="fas fa-bars"></i></div>
 
-    <!-- ADDED ID: id="nav-list" so the script can find it -->
     <div class="nav-links" id="nav-list">
         <a href="index.html">Home</a>
-        <a href="services.html" style="color:var(--secondary)">Services</a>
-        <a href="about.html">About</a>
+        <a href="services.html" class="active" style="color: var(--secondary);">Clinical Services</a>
+        <a href="#brands">Hearing Aid Brands</a>
+        <a href="#quiz">Self-Test</a>
+        <a href="about.html">About Specialist</a>
         <a href="contact.html">Contact</a>
+        <a href="https://wa.me/918921015858?text=Hello%20Life%20Audiology!%20I%20would%20like%20to%20book%20an%20appointment." class="btn-nav" target="_blank">
+            <i class="fas fa-calendar-check"></i> Book Consultation
+        </a>
     </div>
 </nav>
 
-<!-- HERO HEADER -->
-<header style="background: linear-gradient(rgba(0,51,102,0.8), rgba(0,51,102,0.8)), url('https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&q=80&w=1500'); background-size: cover; background-position: center; padding: 80px 10%; text-align: center; color: white;">
-    <h1 data-aos="fade-down" style="font-size: 2.5rem; margin-bottom: 10px;">Our Specialized Services</h1>
-    <p data-aos="fade-up" style="opacity: 0.9; font-size: 1.1rem;">World-class diagnostic and rehabilitative care in Vatakara.</p>
+<!-- ============================================================ -->
+<!-- SIMPLE & ELEGANT HERO HEADER -->
+<!-- ============================================================ -->
+<header class="services-header">
+    <div class="header-content-box" data-aos="zoom-in">
+        <div class="header-tag">
+            <i class="fas fa-microscope"></i> Specialized Clinical Care
+        </div>
+        <h1>World-Class Diagnostic &<br><span>Hearing Aid Solutions</span></h1>
+        <p>Providing precision computerized audiology tests, certified dispensing of international hearing aid brands, and evidence-based speech rehabilitation in Vatakara.</p>
+    </div>
 </header>
 
-<!-- SECTION: HEARING ASSESSMENT -->
-<section>
-    <div class="section-title" data-aos="fade-up">
-        <h2>Hearing Assessment</h2>
-        <div class="underline"></div>
-        <p style="max-width: 600px; margin: 15px auto; color: #666;">We use gold-standard clinical equipment to ensure the most accurate results for all age groups.</p>
+<!-- ============================================================ -->
+<!-- AUTHORIZED GLOBAL DIGITAL HEARING AID BRANDS SHOWCASE -->
+<!-- ============================================================ -->
+<section class="section-wrap" id="brands">
+    <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Global Technology Partners</span>
+        <h2 class="section-heading">Authorized Hearing Aid Brands</h2>
+        <p style="color: var(--text-muted); margin-top: 8px; font-size: 0.95rem;">We program, custom fit, and service world-leading digital hearing aids calibrated precisely to your individual audiogram curve.</p>
     </div>
-    
-    <div class="grid">
-        <div class="card" data-aos="fade-up">
-            <i class="fas fa-wave-square"></i>
-            <h3>Pure Tone Audiometry (PTA)</h3>
-            <p>The standard behavioral test to measure hearing thresholds across different frequencies.</p>
+
+    <!-- Lifestyle Need Filter Bar -->
+    <div class="brand-filter-bar" data-aos="fade-up">
+        <button class="filter-btn active" onclick="filterBrands('all', this)"><i class="fas fa-layer-group"></i> All Brands</button>
+        <button class="filter-btn" onclick="filterBrands('noise', this)"><i class="fas fa-volume-xmark"></i> Best for Noisy Places</button>
+        <button class="filter-btn" onclick="filterBrands('bluetooth', this)"><i class="fas fa-bluetooth-b"></i> Universal Bluetooth</button>
+        <button class="filter-btn" onclick="filterBrands('natural', this)"><i class="fas fa-user-gear"></i> Natural Own Voice</button>
+        <button class="filter-btn" onclick="filterBrands('rugged', this)"><i class="fas fa-shield-halved"></i> Heavy Duty & Outdoor</button>
+    </div>
+
+    <div class="brand-grid">
+        <!-- 1. Phonak -->
+        <div class="brand-card" data-category="bluetooth noise" data-aos="fade-up">
+            <div>
+                <div class="brand-card-header">
+                    <span class="brand-badge">Universal Bluetooth 5.3</span>
+                </div>
+
+                <div class="brand-img-wrap">
+                    <img src="https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcRM8DA5u2FYHUsG3UKIt7u0HnyIbIcqxaa3Win9v7dLygpiPS3uDNRouVTG4iHoDjQAQeVSV26k5R6HDro" alt="Phonak Hearing Aid Model">
+                </div>
+
+                <h3>Phonak</h3>
+                <p>Industry-leading universal Bluetooth streaming for both Android & iOS devices, paired with AutoSense OS 5.0 for automatic noise adaptation.</p>
+
+                <div class="tech-spec-pills">
+                    <span class="spec-pill">64 Channels</span>
+                    <span class="spec-pill">StereoZoom 2.0</span>
+                    <span class="spec-pill">TapControl</span>
+                </div>
+            </div>
+            <a href="https://wa.me/918921015858?text=Hello%20Life%20Audiology!%20I%20am%20interested%20in%20a%20Phonak%20hearing%20aid%20trial." class="brand-cta-link" target="_blank">Book Phonak Trial &rarr;</a>
         </div>
-        <div class="card" data-aos="fade-up" data-aos-delay="100">
-            <i class="fas fa-comments"></i>
-            <h3>Speech Audiometry</h3>
-            <p>Tests how well you can hear and understand speech in quiet and noisy environments.</p>
+
+        <!-- 2. Oticon -->
+        <div class="brand-card" data-category="noise natural" data-aos="fade-up" data-aos-delay="100">
+            <div>
+                <div class="brand-card-header">
+                    <span class="brand-badge">BrainHearing™ AI</span>
+                </div>
+
+                <div class="brand-img-wrap">
+                    <img src="https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcRuCyr6l1ESOTdNwKOURG5OHxsVpihU8IRQBTNhKnWvKNFjdGglm-us4lK17UfmqYpnHzes67X338D1Tbc" alt="Oticon Hearing Aid Model">
+                </div>
+
+                <h3>Oticon</h3>
+                <p>Powered by an onboard Deep Neural Network (DNN 2.0) trained on 12 million real-world sound scenes. Delivers a natural 360-degree open soundscape without cognitive listening fatigue.</p>
+
+                <div class="tech-spec-pills">
+                    <span class="spec-pill">DNN 2.0 Core</span>
+                    <span class="spec-pill">MoreSound Intelligence</span>
+                    <span class="spec-pill">Sudden Sound Stabilizer</span>
+                </div>
+            </div>
+            <a href="https://wa.me/918921015858?text=Hello%20Life%20Audiology!%20I%20am%20interested%20in%20an%20Oticon%20hearing%20aid%20trial." class="brand-cta-link" target="_blank">Book Oticon Trial &rarr;</a>
         </div>
-        <div class="card" data-aos="fade-up" data-aos-delay="200">
-            <i class="fas fa-stethoscope"></i>
-            <h3>Immittance Audiometry</h3>
-            <p>Assessing middle ear function and reflex pathways to detect fluid or pressure issues.</p>
+
+        <!-- 3. Signia -->
+        <div class="brand-card" data-category="natural bluetooth" data-aos="fade-up" data-aos-delay="200">
+            <div>
+                <div class="brand-card-header">
+                    <span class="brand-badge">Own Voice Processing</span>
+                </div>
+
+                <div class="brand-img-wrap">
+                    <img src="https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcRFy-ffZIV0m6xLLUqPQMeB3Zv67TTwahpGQ2oUFRuCzwA623dgU3F_Njff_oy_Udv06iJ3n-cnGrRcVUU" alt="Signia Hearing Aid Model">
+                </div>
+
+                <h3>Signia</h3>
+                <p>Dual-processor Augmented Focus technology. Processes conversation partner and background environment on split paths to eliminate echo.</p>
+
+                <div class="tech-spec-pills">
+                    <span class="spec-pill">OVP 2.0</span>
+                    <span class="spec-pill">Augmented Focus</span>
+                    <span class="spec-pill">SlimRIC Form Factor</span>
+                </div>
+            </div>
+            <a href="https://wa.me/918921015858?text=Hello%20Life%20Audiology!%20I%20am%20interested%20in%20a%20Signia%20hearing%20aid%20trial." class="brand-cta-link" target="_blank">Book Signia Trial &rarr;</a>
         </div>
-        <div class="card" data-aos="fade-up" data-aos-delay="300">
-            <i class="fas fa-baby"></i>
-            <h3>OAE Screening</h3>
-            <p>Otoacoustic Emissions test, essential for newborn hearing screening and inner ear health.</p>
+
+        <!-- 4. GN ReSound -->
+        <div class="brand-card" data-category="natural rugged" data-aos="fade-up" data-aos-delay="300">
+            <div>
+                <div class="brand-card-header">
+                    <span class="brand-badge">Organic M&RIE Tech</span>
+                </div>
+
+                <div class="brand-img-wrap">
+                    <img src="https://www.gnhearing.com/-/media/partnerportal/resound/products/omnia/full-line-up/lifestyle/1800x1800/rs_omnia_minirie_hero_light-bg-1800x1800.ashx?h=1800&w=1800&la=en-IN&hash=CEFC9395384C9251626C243053A064B2" alt="ReSound Hearing Aid Model">
+                </div>
+
+                <h3>GN ReSound</h3>
+                <p>Patented 3rd microphone placed inside the ear canal (M&RIE) to collect sound organically, preserving natural spatial awareness and wind noise suppression.</p>
+
+                <div class="tech-spec-pills">
+                    <span class="spec-pill">M&RIE In-Ear Mic</span>
+                    <span class="spec-pill">Auracast Ready</span>
+                    <span class="spec-pill">150% Speech Clarity</span>
+                </div>
+            </div>
+            <a href="https://wa.me/918921015858?text=Hello%20Life%20Audiology!%20I%20am%20interested%20in%20a%20GN%20ReSound%20hearing%20aid%20trial." class="brand-cta-link" target="_blank">Book ReSound Trial &rarr;</a>
+        </div>
+
+        <!-- 5. Rexton -->
+        <div class="brand-card" data-category="rugged noise" data-aos="fade-up" data-aos-delay="400">
+            <div>
+                <div class="brand-card-header">
+                    <span class="brand-badge">Rugged BiCore Durability</span>
+                </div>
+
+                <div class="brand-img-wrap">
+                    <img src="https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcRFy-ffZIV0m6xLLUqPQMeB3Zv67TTwahpGQ2oUFRuCzwA623dgU3F_Njff_oy_Udv06iJ3n-cnGrRcVUU" alt="Rexton Hearing Aid Model">
+                </div>
+
+                <h3>Rexton</h3>
+                <p>Submersible IP68 lifeproof architecture with BiCore dual-chip processing. Designed for humid, dusty, and demanding daily environments.</p>
+
+                <div class="tech-spec-pills">
+                    <span class="spec-pill">IP68 Submersible</span>
+                    <span class="spec-pill">BiCore Sync</span>
+                    <span class="spec-pill">Voice Ranger</span>
+                </div>
+            </div>
+            <a href="https://wa.me/918921015858?text=Hello%20Life%20Audiology!%20I%20am%20interested%20in%20a%20Rexton%20hearing%20aid%20trial." class="brand-cta-link" target="_blank">Book Rexton Trial &rarr;</a>
+        </div>
+    </div>
+
+    <!-- CINEMATIC DARK GLASSMORPHISM COMPARISON MATRIX TABLE -->
+    <div class="comparison-matrix-container" data-aos="fade-up">
+        <h3>Side-by-Side Brand Feature Matrix</h3>
+        <p class="matrix-subtitle">Clinical comparison across key patient requirements.</p>
+
+        <table class="matrix-table">
+            <thead>
+                <tr>
+                    <th>Technology Feature</th>
+                    <th>Phonak</th>
+                    <th>Oticon</th>
+                    <th>Signia</th>
+                    <th>GN ReSound</th>
+                    <th>Rexton</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Primary Chip Engine</strong></td>
+                    <td>PRISM™ OS 5.0</td>
+                    <td>MoreSound DNN 2.0</td>
+                    <td>Augmented Focus IX</td>
+                    <td>Organic Hearing C4</td>
+                    <td>BiCore Core Processor</td>
+                </tr>
+                <tr>
+                    <td><strong>Bluetooth Protocol</strong></td>
+                    <td><span class="tech-highlight-pill">Classic + LE (All Devices)</span></td>
+                    <td>Made for iPhone / ASHA</td>
+                    <td>Made for iPhone / ASHA</td>
+                    <td>LE Audio / Auracast Ready</td>
+                    <td>Made for iPhone / ASHA</td>
+                </tr>
+                <tr>
+                    <td><strong>Noise Cancellation dB</strong></td>
+                    <td>AutoSense Dynamic 20dB</td>
+                    <td>DNN 12M Sound Scene</td>
+                    <td>Split Path 18dB</td>
+                    <td>M&RIE Pinna Directional</td>
+                    <td>Voice Ranger Noise Filter</td>
+                </tr>
+                <tr>
+                    <td><strong>Ingress Rating</strong></td>
+                    <td>IP68 Water Sealed</td>
+                    <td>IP68 Water Sealed</td>
+                    <td>IP68 Water Sealed</td>
+                    <td>IP68 Nano-Coated</td>
+                    <td><span class="tech-highlight-pill">IP68 Submersible ATEX</span></td>
+                </tr>
+                <tr>
+                    <td><strong>Rechargeable Battery Life</strong></td>
+                    <td>Up to 24 Hours</td>
+                    <td>Up to 24 Hours</td>
+                    <td>Up to 28 Hours</td>
+                    <td>Up to 30 Hours</td>
+                    <td><span class="tech-highlight-pill">Up to 36 Hours</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<!-- SECTION: DIAGNOSTIC AUDIOLOGY -->
+<section class="section-wrap" style="background: #F1F5F9; border-radius: 28px; margin: 30px auto;">
+    <div class="section-header" data-aos="fade-up">
+        <span class="section-tag" style="color: var(--secondary);">Computerized Diagnostics</span>
+        <h2 class="section-heading">Clinical Hearing Evaluations</h2>
+    </div>
+
+    <div class="bento-services-grid">
+        <div class="service-card" data-aos="fade-up">
+            <div>
+                <div class="service-icon-box"><i class="fas fa-wave-square"></i></div>
+                <h3>Pure Tone Audiometry (PTA)</h3>
+                <p>Gold-standard behavioral test in calibrated soundproof booths to measure minimum hearing thresholds across speech and high frequencies.</p>
+            </div>
+            <div class="service-card-footer">
+                <span class="service-badge">Adults & Pediatrics</span>
+                <a href="https://wa.me/918921015858?text=Hello%20Life%20Audiology!%20I%20want%20to%20book%20a%20Pure%20Tone%20Audiometry%20Test." class="service-book-link" target="_blank">Book Test <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+
+        <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+            <div>
+                <div class="service-icon-box"><i class="fas fa-comments"></i></div>
+                <h3>Speech Audiometry</h3>
+                <p>Quantifies speech reception thresholds (SRT) and speech discrimination scores (SDS) in quiet and simulated noisy environments.</p>
+            </div>
+            <div class="service-card-footer">
+                <span class="service-badge">Speech Clarity</span>
+                <a href="https://wa.me/918921015858?text=Hello%20Life%20Audiology!%20I%20want%20to%20book%20Speech%20Audiometry." class="service-book-link" target="_blank">Book Test <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+
+        <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+            <div>
+                <div class="service-icon-box"><i class="fas fa-stethoscope"></i></div>
+                <h3>Immittance Audiometry</h3>
+                <p>Assesses middle ear status, eardrum mobility (Tympanometry), and acoustic reflex thresholds to diagnose middle ear fluid or Eustachian tube issues.</p>
+            </div>
+            <div class="service-card-footer">
+                <span class="service-badge">Middle Ear Health</span>
+                <a href="https://wa.me/918921015858?text=Hello%20Life%20Audiology!%20I%20want%20to%20book%20Tympanometry." class="service-book-link" target="_blank">Book Test <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+
+        <div class="service-card" data-aos="fade-up">
+            <div>
+                <div class="service-icon-box"><i class="fas fa-baby"></i></div>
+                <h3>OAE Newborn Screening</h3>
+                <p>Otoacoustic Emission testing to verify cochlear outer hair cell function for infants and newborn early hearing detection.</p>
+            </div>
+            <div class="service-card-footer">
+                <span class="service-badge">Infants & Toddlers</span>
+                <a href="https://wa.me/918921015858?text=Hello%20Life%20Audiology!%20I%20want%20to%20book%20OAE%20Newborn%20Screening." class="service-book-link" target="_blank">Book Test <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+
+        <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+            <div>
+                <div class="service-icon-box"><i class="fas fa-bell-slash"></i></div>
+                <h3>Tinnitus Retraining (TRT)</h3>
+                <p>Specialized acoustic sound therapy and counseling protocols to reduce the awareness and irritation of ringing sensations in the ear.</p>
+            </div>
+            <div class="service-card-footer">
+                <span class="service-badge">Tinnitus Relief</span>
+                <a href="https://wa.me/918921015858?text=Hello%20Life%20Audiology!%20I%20want%20to%20book%20Tinnitus%20Management." class="service-book-link" target="_blank">Book Test <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+
+        <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+            <div>
+                <div class="service-icon-box"><i class="fas fa-headset"></i></div>
+                <h3>Custom Ear Molds & Plugs</h3>
+                <p>Custom-molded waterproof swimming plugs, musician noise filters, and personalized hearing aid silicone ear-molds.</p>
+            </div>
+            <div class="service-card-footer">
+                <span class="service-badge">Custom Mold Lab</span>
+                <a href="https://wa.me/918921015858?text=Hello%20Life%20Audiology!%20I%20want%20to%20order%20Custom%20Ear%20Molds." class="service-book-link" target="_blank">Book Test <i class="fas fa-arrow-right"></i></a>
+            </div>
         </div>
     </div>
 </section>
 
-<!-- SECTION: THERAPY & REHAB -->
-<section style="background: var(--light-bg);">
-    <div class="section-title" data-aos="fade-up">
-        <h2>Therapy & Rehabilitation</h2>
-        <div class="underline"></div>
+<!-- SECTION: SPEECH & LANGUAGE THERAPY -->
+<section class="section-wrap">
+    <div class="section-header" data-aos="fade-up">
+        <span class="section-tag" style="color: var(--secondary);">Communication Development</span>
+        <h2 class="section-heading">Speech, Voice & Language Therapy</h2>
     </div>
-    
-    <div class="grid">
-        <div class="card" data-aos="fade-right">
-            <i class="fas fa-user-graduate"></i>
-            <h3>Speech & Language Therapy</h3>
-            <p>Professional support for misarticulation, stammering, and delayed speech development.</p>
+
+    <div class="bento-services-grid">
+        <div class="service-card" data-aos="fade-up">
+            <div>
+                <div class="service-icon-box"><i class="fas fa-child"></i></div>
+                <h3>Child Speech Delay Therapy</h3>
+                <p>Structured developmental protocols to help children attain age-appropriate vocabulary, sentence structure, and conversational clarity.</p>
+            </div>
+            <div class="service-card-footer">
+                <span class="service-badge">Early Intervention</span>
+                <a href="https://wa.me/918921015858?text=Hello%20Life%20Audiology!%20I%20want%20to%20consult%20for%20Child%20Speech%20Delay." class="service-book-link" target="_blank">Book Therapy <i class="fas fa-arrow-right"></i></a>
+            </div>
         </div>
-        <div class="card" data-aos="fade-up">
-            <i class="fas fa-ear-listen"></i>
-            <h3>Hearing Aid Solutions</h3>
-            <p>Digital hearing aid trials, precision fitting, and lifetime service support.</p>
+
+        <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+            <div>
+                <div class="service-icon-box"><i class="fas fa-brain"></i></div>
+                <h3>Auditory Verbal Therapy (AVT)</h3>
+                <p>Specialized listening and spoken language therapy for children with Cochlear Implants and Digital Hearing Aids.</p>
+            </div>
+            <div class="service-card-footer">
+                <span class="service-badge">CI & HA Users</span>
+                <a href="https://wa.me/918921015858?text=Hello%20Life%20Audiology!%20I%20want%20to%20consult%20for%20AVT%20Therapy." class="service-book-link" target="_blank">Book Therapy <i class="fas fa-arrow-right"></i></a>
+            </div>
         </div>
-        <div class="card" data-aos="fade-left">
-            <i class="fas fa-brain"></i>
-            <h3>AVT & Tinnitus Management</h3>
-            <p>Auditory Verbal Therapy for CI/HA users and specialized relief for "ringing in the ears."</p>
+
+        <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+            <div>
+                <div class="service-icon-box"><i class="fas fa-microphone-lines"></i></div>
+                <h3>Stammering & Voice Therapy</h3>
+                <p>Fluency shaping techniques and vocal hygiene therapy for stuttering, puberphonia, vocal cord nodules, and hoarseness.</p>
+            </div>
+            <div class="service-card-footer">
+                <span class="service-badge">Fluency & Voice</span>
+                <a href="https://wa.me/918921015858?text=Hello%20Life%20Audiology!%20I%20want%20to%20consult%20for%20Stammering/Voice%20Therapy." class="service-book-link" target="_blank">Book Therapy <i class="fas fa-arrow-right"></i></a>
+            </div>
         </div>
     </div>
 </section>
 
-<!-- CALL TO ACTION -->
-<section style="text-align: center; padding: 60px 10%;">
-    <div data-aos="zoom-in" style="background: var(--primary); padding: 40px; border-radius: 15px; color: white;">
-        <h2>Not sure which test you need?</h2>
-        <p style="margin: 15px 0 25px; opacity: 0.9;">Book a consultation and let our experts guide you.</p>
-        <a href="https://wa.me/918921015858?text=Hello%20Life%20Audiology!" class="btn btn-wa" target="_blank">
-           <i class="fab fa-whatsapp"></i> Chat with us
-        </a>
-    </div>
-</section>
+<!-- ============================================================ -->
+<!-- 60-SEC SELF-EVALUATION QUIZ WITH BILINGUAL MATCH -->
+<!-- ============================================================ -->
+<section class="section-wrap" id="quiz">
+    <div class="quiz-container" data-aos="zoom-in">
+        <div>
+            <span class="section-tag" style="color: var(--accent);">Self-Screening Tool</span>
+            <h2>Find the Recommended Service for Your Symptoms.</h2>
+            <p style="font-family: 'Baloo Chettan 2', cursive; font-size: 1.1rem; color: #E2E8F0; margin-bottom: 12px;">
+                നിങ്ങളുടെ ബുദ്ധിമുട്ടുകൾ തിരഞ്ഞെടുത്ത് കൃത്യമായ പരിഹാരം അറിയൂ.
+            </p>
+            <p style="color: #CBD5E1; line-height: 1.6; margin-bottom: 20px; font-size: 0.92rem;">
+                Select your primary concern below. Our system will immediately identify your clinical match and generate a direct WhatsApp booking link with pre-filled test details.
+            </p>
+            <div style="font-size: 0.85rem; color: var(--accent); font-weight: 700;">
+                <i class="fas fa-user-shield"></i> Confidential & Verified by Certified Clinicians
+            </div>
+        </div>
 
-<!-- Quiz starting -->
-<section id="quiz" style="background: #ffffff; border: 2px solid var(--secondary); margin: 40px 10%; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
-    <div style="padding: 40px; text-align: center;">
-        <h2 style="color: var(--primary); margin-bottom: 5px;">Hearing Self-Evaluation</h2>
-        <h3 style="color: var(--secondary); font-size: 1.1rem; margin-bottom: 25px;">സ്വയം പരിശോധന</h3>
-        
-        <div id="quiz-content" style="max-width: 600px; margin: 0 auto; text-align: left;">
-            <div class="quiz-item" style="margin-bottom: 20px; padding: 15px; background: var(--light-bg); border-radius: 10px;">
-                <input type="checkbox" class="sc-check" id="sc1" style="transform: scale(1.3); margin-right: 10px;">
-                <label for="sc1" style="font-weight: 500;">Do you often ask people to repeat themselves?<br><span style="color: #666; font-size: 0.9rem;">മറ്റുള്ളവർ പറയുന്നത് ആവർത്തിക്കാൻ നിങ്ങൾ ആവശ്യപ്പെടാറുണ്ടോ?</span></label>
+        <div class="quiz-form">
+            <!-- Option 1 -->
+            <div class="quiz-option" onclick="handleOptionSelect(this, 'Pure Tone & Speech Audiometry Assessment', 'പ്യുവർ ടോൺ & സ്പീച്ച് ഓഡിയോമെട്രി പരിശോധന')">
+                <i class="fas fa-circle-check"></i>
+                <div class="quiz-option-text">
+                    <span class="en-txt">Asking people to repeat / TV volume is louder than normal</span>
+                    <span class="ml-txt">മറ്റുള്ളവർ പറയുന്നത് ആവർത്തിക്കാൻ ആവശ്യപ്പെടുക / ടിവി ശബ്ദം കൂടുതൽ വെക്കുക</span>
+                </div>
             </div>
 
-            <div class="quiz-item" style="margin-bottom: 20px; padding: 15px; background: var(--light-bg); border-radius: 10px;">
-                <input type="checkbox" class="sc-check" id="sc2" style="transform: scale(1.3); margin-right: 10px;">
-                <label for="sc2" style="font-weight: 500;">Is the TV volume louder than others prefer?<br><span style="color: #666; font-size: 0.9rem;">ടിവിയുടെ ശബ്ദം മറ്റുള്ളവർക്ക് ബുദ്ധിമുട്ടാവാറുണ്ടോ?</span></label>
+            <!-- Option 2 -->
+            <div class="quiz-option" onclick="handleOptionSelect(this, 'Digital Hearing Aid Assessment & Trial', 'ഡിജിറ്റൽ ഹിയറിംഗ് എയ്ഡ് ട്രയലും പരിശോധനയും')">
+                <i class="fas fa-circle-check"></i>
+                <div class="quiz-option-text">
+                    <span class="en-txt">Difficulty following conversations in crowded or noisy places</span>
+                    <span class="ml-txt">തിരക്കുള്ള സ്ഥലങ്ങളിൽ ആളുകൾ സംസാരിക്കുന്നത് മനസ്സിലാക്കാൻ പ്രയാസം</span>
+                </div>
             </div>
 
-            <div class="quiz-item" style="margin-bottom: 20px; padding: 15px; background: var(--light-bg); border-radius: 10px;">
-                <input type="checkbox" class="sc-check" id="sc3" style="transform: scale(1.3); margin-right: 10px;">
-                <label for="sc3" style="font-weight: 500;">Do you struggle to hear in crowded places (like markets)?<br><span style="color: #666; font-size: 0.9rem;">തിരക്കുള്ള സ്ഥലങ്ങളിൽ സംസാരം മനസ്സിലാക്കാൻ പ്രയാസമുണ്ടോ?</span></label>
+            <!-- Option 3 -->
+            <div class="quiz-option" onclick="handleOptionSelect(this, 'Pediatric Speech-Language Evaluation', 'കുട്ടികൾക്കായുള്ള സ്പീച്ച് തെറാപ്പിയും വിലയിരുത്തലും')">
+                <i class="fas fa-circle-check"></i>
+                <div class="quiz-option-text">
+                    <span class="en-txt">Child speech delay / misarticulation / unclear pronunciation</span>
+                    <span class="ml-txt">കുട്ടികളിലെ സംസാര വൈകൽ, വാക്കുകളിലെ ഉച്ചാരണ വ്യക്തതക്കുറവ്</span>
+                </div>
             </div>
 
-            <button onclick="calculateQuiz()" class="btn" style="background: var(--primary); color: white; width: 100%; padding: 15px; border: none; border-radius: 8px; font-weight: bold; cursor: pointer;">Check Result / ഫലം കാണുക</button>
-        </div>
+            <!-- Option 4 -->
+            <div class="quiz-option" onclick="handleOptionSelect(this, 'Tinnitus & Middle Ear Evaluation', 'ടിന്നിറ്റസ് & ഇമ്മറ്റൻസ് ചെവി പരിശോധന')">
+                <i class="fas fa-circle-check"></i>
+                <div class="quiz-option-text">
+                    <span class="en-txt">Continuous ringing/buzzing sensation in ears or ear heaviness</span>
+                    <span class="ml-txt">ചെവിയിൽ നിരന്തരമായ മൂളിച്ചയോ ശബ്ദങ്ങളോ അടച്ചിൽ അനുഭവപ്പെടുകയോ ചെയ്യുക</span>
+                </div>
+            </div>
 
-        <div id="result-box" style="display: none; margin-top: 30px; padding: 30px; background: #e3f2fd; border-radius: 15px; border: 1px solid var(--secondary);">
-            <h4 id="result-status" style="color: var(--primary); font-size: 1.2rem; margin-bottom: 10px;"></h4>
-            <p style="margin-bottom: 20px;">We recommend a professional clinical evaluation at our Vadakara center.</p>
-            <a href="https://wa.me/918921015858?text=I%20completed%20the%20Self-Evaluation%20and%20want%20to%20book%20a%20test." class="btn btn-wa" style="display: inline-block; text-decoration: none;">
-                <i class="fab fa-whatsapp"></i> Book For Consultation
-            </a>
+            <!-- Dynamic Matching Result Banner -->
+            <div class="match-result-card" id="matchCard">
+                <div class="match-header"><i class="fas fa-sparkles"></i> Recommended Clinical Match • അനുയോജ്യമായ സേവനം</div>
+                <div class="match-title" id="matchTitle"></div>
+                <div class="match-malayalam" id="matchMalayalam"></div>
+            </div>
+
+            <!-- Validation Alert -->
+            <div class="quiz-validation-alert" id="quizAlert">
+                <i class="fas fa-exclamation-triangle"></i> ദയവായി ഒരു ഓപ്ഷൻ തിരഞ്ഞെടുക്കുക / Please select an option before proceeding.
+            </div>
+
+            <button type="button" onclick="submitAssessment()" class="btn-primary-glow" style="width: 100%; justify-content: center; margin-top: 12px;">
+                Book Clinical Consultation <i class="fas fa-arrow-right"></i>
+            </button>
         </div>
     </div>
 </section>
 
-<script>
-function calculateQuiz() {
-    const score = document.querySelectorAll('.sc-check:checked').length;
-    const resultBox = document.getElementById('result-box');
-    const statusText = document.getElementById('result-status');
-    
-    resultBox.style.display = "block";
-    
-    if(score >= 2) {
-        statusText.innerHTML = "Significant signs of hearing loss detected. (രണ്ടിലധികം ലക്ഷണങ്ങൾ കാണപ്പെടുന്നു)";
-    } else if(score == 1) {
-        statusText.innerHTML = "Early signs detected. (പ്രാരംഭ ലക്ഷണങ്ങൾ കാണപ്പെടുന്നു)";
-    } else {
-        statusText.innerHTML = "Your hearing seems fine, but periodic check-ups are good!";
-    }
-    
-    // Smooth scroll to the result
-    resultBox.scrollIntoView({ behavior: 'smooth' });
-}
-</script>
-<footer class="main-footer">
+<!-- FLOATING WHATSAPP BUTTON -->
+<a href="https://wa.me/918921015858?text=Hello%20Life%20Audiology!%20I'm%20interested%20in%20your%20services%20in%20Vatakara." class="wa-float" target="_blank" title="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+<!-- BORDERLESS SMART REDIRECTION FOOTER -->
+<footer>
     <div class="footer-grid">
         <div class="footer-col">
-            <h4>Life Audiology And Speech Therapy Center</h4>
-            <p>Your trusted center for hearing and speech rehabilitation in Vatakara.</p>
-            <div style="margin-top: 15px; display: flex; gap: 15px;">
-                <a href="https://wa.me/918921015858" target="_blank" style="color:white; font-size: 1.4rem;"><i class="fab fa-whatsapp"></i></a>
-                <a href="https://www.instagram.com/lifeaudiology/" target="_blank" style="color:white; font-size: 1.4rem;"><i class="fab fa-instagram"></i></a>
+            <h4>Life Audiology & Speech Therapy Centre</h4>
+            <p>North Kerala's modern clinical center for computerized hearing diagnostics, custom digital hearing aid trials, and personalized speech rehabilitation.</p>
+            
+            <div class="social-connector-row">
+                <a href="https://wa.me/918921015858?text=Hello%20Life%20Audiology!" class="social-btn wa" target="_blank" title="Connect on WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="https://www.instagram.com/lifeaudiology/" class="social-btn insta" target="_blank" title="Follow on Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
             </div>
         </div>
 
         <div class="footer-col">
-            <h4>Navigation</h4>
-            <ul>
+            <h4>Quick Links</h4>
+            <ul class="footer-links">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="services.html">Clinical Services</a></li>
+                <li><a href="about.html">About Specialist</a></li>
+                <li><a href="contact.html">Contact Clinic</a></li>
             </ul>
         </div>
 
         <div class="footer-col">
-            <h4>Contact & Hours</h4>
-            <p><i class="fas fa-map-marker-alt"></i> Opp.Near Cee Yam Hospital, Vatakara, Kozhikode,673101 </p>
-            <!-- UPDATED: Clickable Phone -->
-            <p><i class="fas fa-phone"></i> <a href="tel:+918921015858" style="color:inherit; text-decoration:none;">+91 8921015858</a></p>
-            <!-- UPDATED: Clickable Email -->
-            <p><i class="fas fa-envelope"></i> <a href="mailto:lifeaudiologycenter@gmail.com" style="color:inherit; text-decoration:none;">lifeaudiologycenter@gmail.com</a></p>
+            <h4>Connect with Clinic</h4>
+            <p><i class="fas fa-map-marker-alt" style="color: var(--accent);"></i> Opp. Near Cee Yam Hospital, Vatakara, Kerala 673101</p>
             
-            <div style="margin-top: 15px; padding-top: 15px; border-top: 1px solid rgba(255,255,255,0.1);">
-                <h5 style="color: var(--secondary); margin-bottom: 8px; font-size: 0.8rem;">Opening Hours</h5>
-                <p style="font-size: 0.9rem;">Mon - Sat: 9:30 AM - 6:00 PM</p>
-                <p style="font-size: 0.9rem; color: #ff4d4d;">Sunday: Closed</p>
+            <div class="clean-contact-links">
+                <a href="tel:+918921015858" class="clean-contact-item" title="Click to Call Direct">
+                    <i class="fas fa-phone-alt"></i>
+                    <span>+91 8921015858</span>
+                </a>
+
+                <a href="mailto:lifeaudiologycenter@gmail.com" class="clean-contact-item" title="Click to Send Email">
+                    <i class="fas fa-envelope"></i>
+                    <span>lifeaudiologycenter@gmail.com</span>
+                </a>
             </div>
+            
+            <p style="margin-top: 15px; color: var(--accent); font-size: 0.85rem;">
+                <i class="fas fa-clock"></i> MON - SAT: 9:30 AM - 6:00 PM
+            </p>
         </div>
     </div>
-    <div class="footer-bottom">
-        <p>&copy; 2026 Life Audiology And Speech Therapy Center.</p>
+
+    <div style="text-align: center; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 18px; font-size: 0.82rem; color: #64748B;">
+        &copy; 2026 Life Audiology And Speech Therapy Centre. All Rights Reserved.
     </div>
 </footer>
 
-<a href="https://wa.me/918921015858?text=Hello%20Life%20Audiology%21%20I%27m%20interested%20in%20your%20services%20in%20Vatakara.%20Please%20let%20me%20know%20how%20I%20can%20book%20an%20appointment.%0A%0A*Name:*%20%0A*Service:*%20" class="wa-float" target="_blank">
-    <i class="fab fa-whatsapp"></i>
-</a>
-
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
-    AOS.init({ duration: 1000, once: true });
+    AOS.init({ duration: 900, once: true });
 
-    // MOBILE MENU SCRIPT (Crucial for sub-pages)
-    const menuToggle = document.getElementById('mobile-menu');
+    // Mobile Navigation Toggle
+    const mobileMenu = document.getElementById('mobile-menu');
     const navList = document.getElementById('nav-list');
-    
-    if(menuToggle) {
-        menuToggle.addEventListener('click', () => {
-            navList.classList.toggle('active');
-            const icon = menuToggle.querySelector('i');
-            icon.classList.toggle('fa-bars');
-            icon.classList.toggle('fa-times');
+    if (mobileMenu && navList) {
+        mobileMenu.addEventListener('click', () => {
+            navList.style.display = navList.style.display === 'flex' ? 'none' : 'flex';
+            navList.style.flexDirection = 'column';
+            navList.style.position = 'absolute';
+            navList.style.top = '100%';
+            navList.style.left = '0';
+            navList.style.width = '100%';
+            navList.style.background = '#ffffff';
+            navList.style.padding = '20px';
         });
     }
+
+    // Interactive Brand Category Filter
+    function filterBrands(category, btn) {
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        const cards = document.querySelectorAll('.brand-card');
+        cards.forEach(card => {
+            const categories = card.getAttribute('data-category');
+            if (category === 'all' || categories.includes(category)) {
+                card.style.display = 'flex';
+                card.style.animation = 'fadeInMatch 0.4s ease forwards';
+            } else {
+                card.style.display = 'none';
+            }
+        });
+    }
+
+    // Bilingual Self-Evaluation Quiz Engine
+    let selectedTestEn = "";
+    let selectedTestMl = "";
+
+    function handleOptionSelect(element, testEn, testMl) {
+        document.querySelectorAll('.quiz-option').forEach(opt => opt.classList.remove('active'));
+        
+        element.classList.add('active');
+        selectedTestEn = testEn;
+        selectedTestMl = testMl;
+
+        document.getElementById('quizAlert').style.display = 'none';
+
+        const matchCard = document.getElementById('matchCard');
+        document.getElementById('matchTitle').textContent = testEn;
+        document.getElementById('matchMalayalam').textContent = testMl;
+        matchCard.style.display = 'block';
+    }
+
+    function submitAssessment() {
+        if (!selectedTestEn) {
+            const alertBox = document.getElementById('quizAlert');
+            alertBox.style.display = 'block';
+            alertBox.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            return;
+        }
+
+        const message = `Hello Life Audiology! I completed the Self-Screening evaluation on your Services page. My requirement matches with: *${selectedTestEn}* (${selectedTestMl}). Please schedule my consultation at your Vatakara center.`;
+        const waUrl = `https://wa.me/918921015858?text=${encodeURIComponent(message)}`;
+        window.open(waUrl, '_blank');
+    }
 </script>
+
 </body>
 </html>

@@ -105,7 +105,7 @@
             overflow-x: hidden;
         }
 
-        /* --- TICKER ANNOUNCEMENT (FULL WIDTH AUTO SLIDE) --- */
+        /* --- TICKER ANNOUNCEMENT --- */
         .top-announcement-bar {
             background: linear-gradient(90deg, #0A2540, #0077B6);
             color: #ffffff;
@@ -145,7 +145,7 @@
             backdrop-filter: blur(16px);
             -webkit-backdrop-filter: blur(16px);
             border-bottom: 1px solid var(--border-glass);
-            padding: 14px 6%;
+            padding: 12px 6%;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -155,16 +155,24 @@
         .nav-logo {
             display: flex;
             align-items: center;
-            gap: 12px;
+            gap: 10px;
             text-decoration: none;
+            max-width: 80%;
         }
 
-        /* Premium Modern Font Style for Brand Name */
+        .nav-logo-img {
+            height: 38px;
+            width: auto;
+            object-fit: contain;
+            transition: height 0.2s ease;
+        }
+
+        /* Responsive Branding Typography */
         .logo-text {
             font-family: 'Outfit', 'Plus Jakarta Sans', sans-serif;
             font-weight: 800;
             color: var(--primary);
-            font-size: 1.15rem;
+            font-size: clamp(0.9rem, 2.8vw, 1.15rem);
             line-height: 1.15;
             letter-spacing: -0.2px;
             text-transform: uppercase;
@@ -173,8 +181,8 @@
         .logo-text span {
             color: var(--secondary);
             font-weight: 600;
-            font-size: 0.86rem;
-            letter-spacing: 1.2px;
+            font-size: clamp(0.68rem, 2.2vw, 0.84rem);
+            letter-spacing: 0.8px;
             display: block;
         }
 
@@ -217,14 +225,14 @@
             cursor: pointer;
         }
 
-        /* --- HERO SLIDER ENGINE & CROSSFADE --- */
+        /* --- HERO SLIDER ENGINE --- */
         .slider-container {
             position: relative;
             width: 100%;
             height: 85vh;
-            min-height: 560px;
+            min-height: 540px;
             overflow: hidden;
-            background: #FFFDF0;
+            background: #0B132B;
         }
 
         .slide {
@@ -234,7 +242,7 @@
             height: 100%;
             opacity: 0;
             visibility: hidden;
-            transition: opacity 1s ease-in-out, visibility 1s ease-in-out;
+            transition: opacity 0.8s ease-in-out, visibility 0.8s ease-in-out;
             background-size: cover;
             background-position: center;
             display: flex;
@@ -259,13 +267,12 @@
             box-sizing: border-box;
         }
 
-        /* Slide 1: Ganesh Chaturthi Hero Custom Artwork (Contained to Avoid Zoom/Cut-off) */
+        /* Slide 1: Laptop View */
         .ganesh-hero-slide {
             background-image: url('ganesh-chaturthi.png') !important;
-            background-size: contain !important;
+            background-size: cover !important;
             background-position: center center !important;
             background-repeat: no-repeat !important;
-            background-color: #FFFDF0 !important;
             display: flex;
             align-items: flex-end;
             justify-content: flex-end;
@@ -285,11 +292,10 @@
         .ganesh-hero-btns {
             display: flex;
             gap: 14px;
-            margin-bottom: 15px;
+            margin-bottom: 20px;
             flex-wrap: wrap;
         }
 
-        /* Hero Typography */
         .hero-title-responsive {
             font-size: clamp(1.6rem, 4.2vw, 3.4rem);
             font-weight: 800;
@@ -412,7 +418,7 @@
             line-height: 1.25;
         }
 
-        /* --- 3D INTERACTIVE EXPLODING & RECONNECTING DEVICE LAB --- */
+        /* --- 3D INTERACTIVE DEVICE LAB --- */
         .cinematic-3d-section {
             background: radial-gradient(circle at center, #0B243B 0%, #051424 70%, #020A12 100%);
             color: #ffffff;
@@ -1129,8 +1135,30 @@
         @keyframes pulseBanner { 0%, 100% { box-shadow: 0 4px 16px rgba(218, 140, 32, 0.3); } 50% { box-shadow: 0 6px 22px rgba(218, 140, 32, 0.6); } }
         @keyframes speechFade { 0%, 100% { opacity: 0; } 20%, 80% { opacity: 1; } }
 
-        /* Responsive Breakpoints & Clean Proportion Preservation */
+        /* Responsive Breakpoints & Mobile Optimization */
         @media (max-width: 992px) {
+            nav {
+                padding: 10px 4% !important;
+            }
+
+            .nav-logo {
+                gap: 8px !important;
+            }
+
+            .nav-logo-img {
+                height: 30px !important;
+            }
+
+            .logo-text {
+                font-size: 0.88rem !important;
+                letter-spacing: -0.1px !important;
+            }
+
+            .logo-text span {
+                font-size: 0.64rem !important;
+                letter-spacing: 0.6px !important;
+            }
+
             .exploded-lab-grid, .quiz-container { grid-template-columns: 1fr; text-align: center; }
             .bento-grid, .home-brand-grid { grid-template-columns: 1fr; }
             .stats-strip { grid-template-columns: repeat(2, 1fr); }
@@ -1138,11 +1166,12 @@
             .nav-links { display: none; }
             .menu-toggle { display: block; }
 
-            /* Maintain true 16:9 banner proportion so image is never zoomed or cut off */
+            /* Fits 16:9 banner proportionally without zoom or cropping */
             .slider-container {
                 height: auto !important;
-                min-height: 240px !important;
-                aspect-ratio: 16 / 9;
+                min-height: unset !important;
+                aspect-ratio: 16 / 9 !important;
+                background: #FFFDF0 !important;
             }
 
             .ganesh-hero-slide {
@@ -1152,32 +1181,34 @@
             }
 
             .ganesh-hero-slide .ganesh-slide-overlay {
-                padding: 10px 14px !important;
-                justify-content: flex-end !important;
+                padding: 6px 10px !important;
                 align-items: center !important;
+                justify-content: flex-end !important;
+                background: transparent !important;
             }
 
             .ganesh-hero-btns {
-                margin-bottom: 5px !important;
-                gap: 8px !important;
+                margin-bottom: 2px !important;
+                gap: 6px !important;
                 justify-content: center !important;
             }
 
             .ganesh-hero-btns a {
-                padding: 6px 14px !important;
-                font-size: 0.76rem !important;
+                padding: 4px 10px !important;
+                font-size: 0.70rem !important;
+                border-radius: 20px !important;
             }
 
-            /* Responsive Text & Button Adjustments for Slide 2 & 3 */
+            /* Slides 2 and 3 responsive sizing */
             .hero-title-responsive {
-                font-size: clamp(1.25rem, 5vw, 1.8rem) !important;
-                line-height: 1.25 !important;
-                margin-bottom: 8px !important;
+                font-size: clamp(1.1rem, 4.5vw, 1.5rem) !important;
+                line-height: 1.2 !important;
+                margin-bottom: 6px !important;
             }
 
             .hero-desc-responsive {
-                font-size: 0.82rem !important;
-                line-height: 1.4 !important;
+                font-size: 0.76rem !important;
+                line-height: 1.35 !important;
                 padding: 0 8px !important;
                 display: -webkit-box;
                 -webkit-line-clamp: 2;
@@ -1186,14 +1217,14 @@
             }
 
             .hero-btns-row {
-                margin-top: 14px !important;
+                margin-top: 8px !important;
                 gap: 8px !important;
             }
 
             .hero-btns-row .btn-outline-glow,
             .hero-btns-row .btn-primary-glow {
-                padding: 7px 16px !important;
-                font-size: 0.78rem !important;
+                padding: 5px 12px !important;
+                font-size: 0.72rem !important;
             }
         }
     </style>
@@ -1215,7 +1246,7 @@
 <!-- NAVIGATION -->
 <nav>
     <a href="/" class="nav-logo">
-        <img src="logo.png" alt="Logo" style="height: 38px;" onerror="this.style.display='none'">
+        <img src="logo.png" alt="Logo" class="nav-logo-img" onerror="this.style.display='none'">
         <div class="logo-text">
             Life Audiology &amp;
             <span>Speech Therapy</span>
@@ -1550,7 +1581,6 @@
 
     <div class="festive-box" id="ganeshTrigger" onclick="celebrateGanesh()" title="Click Little Ganesha for wishes!">
         <div class="festive-bubble">Happy Ganesh Chaturthi! 🪔</div>
-        <!-- Little Bal Ganesh Mascot -->
         <svg class="kid-ganesh-badge-svg" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M30 42 C12 34 12 62 28 66" fill="#FDBA74" stroke="#EA580C" stroke-width="2"/>
             <path d="M70 42 C88 34 88 62 72 66" fill="#FDBA74" stroke="#EA580C" stroke-width="2"/>

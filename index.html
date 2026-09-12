@@ -105,29 +105,29 @@
             overflow-x: hidden;
         }
 
-        /* --- TICKER ANNOUNCEMENT --- */
+        /* --- TICKER ANNOUNCEMENT (FULL WIDTH AUTO SLIDE) --- */
         .top-announcement-bar {
             background: linear-gradient(90deg, #0A2540, #0077B6);
             color: #ffffff;
-            padding: 10px 5%;
+            padding: 10px 0;
             font-size: 0.85rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+            overflow: hidden;
+            width: 100%;
         }
 
         .ticker-wrap {
+            width: 100%;
             overflow: hidden;
             white-space: nowrap;
         }
 
         .ticker {
             display: inline-block;
-            animation: tickerSlide 26s linear infinite;
+            animation: tickerSlide 22s linear infinite;
         }
 
         .ticker-item {
-            margin-right: 35px;
+            margin-right: 45px;
             font-weight: 500;
         }
 
@@ -217,7 +217,7 @@
             height: 85vh;
             min-height: 560px;
             overflow: hidden;
-            background: #FFFDF0;
+            background: #0B132B;
         }
 
         .slide {
@@ -245,14 +245,14 @@
         .slide-overlay {
             width: 100%;
             max-width: 950px;
-            padding: 0 15px;
+            padding: 0 20px;
             text-align: center;
             color: #ffffff;
             z-index: 3;
             box-sizing: border-box;
         }
 
-        /* Slide 1: Ganesh Chaturthi Hero Artwork */
+        /* Slide 1: Ganesh Chaturthi Hero Custom Artwork */
         .ganesh-hero-slide {
             background-image: url('ganesh-chaturthi.png') !important;
             background-size: cover !important;
@@ -282,6 +282,24 @@
             flex-wrap: wrap;
         }
 
+        /* Hero Typography */
+        .hero-title-responsive {
+            font-size: clamp(1.6rem, 4.2vw, 3.4rem);
+            font-weight: 800;
+            margin-bottom: 12px;
+            line-height: 1.2;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+            word-wrap: break-word;
+        }
+
+        .hero-desc-responsive {
+            font-size: clamp(0.95rem, 2vw, 1.15rem);
+            max-width: 680px;
+            margin: 0 auto;
+            line-height: 1.6;
+            text-shadow: 0 1px 6px rgba(0, 0, 0, 0.6);
+        }
+
         .hero-btns-row {
             display: flex;
             gap: 16px;
@@ -291,17 +309,19 @@
             flex-wrap: wrap;
         }
 
+        /* Prominent, readable buttons across slides */
         .btn-outline-glow {
-            background: rgba(255, 255, 255, 0.25);
+            background: rgba(255, 255, 255, 0.2);
             backdrop-filter: blur(10px);
-            border: 2px solid rgba(255, 255, 255, 0.9);
-            color: #0A2540;
-            font-weight: 800;
+            border: 2px solid rgba(255, 255, 255, 0.85);
+            color: #ffffff;
+            font-weight: 700;
             padding: 13px 28px;
             border-radius: 50px;
             text-decoration: none;
+            display: inline-flex;
+            align-items: center;
             transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
         }
 
         .btn-outline-glow:hover {
@@ -385,7 +405,7 @@
             line-height: 1.25;
         }
 
-        /* --- 3D INTERACTIVE DEVICE LAB --- */
+        /* --- 3D INTERACTIVE EXPLODING & RECONNECTING DEVICE LAB --- */
         .cinematic-3d-section {
             background: radial-gradient(circle at center, #0B243B 0%, #051424 70%, #020A12 100%);
             color: #ffffff;
@@ -1102,7 +1122,7 @@
         @keyframes pulseBanner { 0%, 100% { box-shadow: 0 4px 16px rgba(218, 140, 32, 0.3); } 50% { box-shadow: 0 6px 22px rgba(218, 140, 32, 0.6); } }
         @keyframes speechFade { 0%, 100% { opacity: 0; } 20%, 80% { opacity: 1; } }
 
-        /* Responsive Breakpoints & Mobile Image Aspect Ratio */
+        /* Responsive Breakpoints & Mobile Optimization */
         @media (max-width: 992px) {
             .exploded-lab-grid, .quiz-container { grid-template-columns: 1fr; text-align: center; }
             .bento-grid, .home-brand-grid { grid-template-columns: 1fr; }
@@ -1111,51 +1131,72 @@
             .nav-links { display: none; }
             .menu-toggle { display: block; }
 
-            /* Fits 16:9 banner without cropping artwork or text */
+            /* Mobile adjustments for slider */
             .slider-container {
-                height: auto !important;
-                min-height: unset !important;
-                aspect-ratio: 16 / 9;
+                height: 60vh !important;
+                min-height: 480px !important;
             }
 
+            /* Responsive mobile slide 1 */
             .ganesh-hero-slide {
-                background-size: contain !important;
-                background-position: center center !important;
-                background-color: #FFFDF0 !important;
+                background-size: cover !important;
+                background-position: center 30% !important;
             }
 
             .ganesh-hero-slide .ganesh-slide-overlay {
-                padding: 10px !important;
-                justify-content: flex-end !important;
                 align-items: center !important;
-                background: transparent !important;
+                justify-content: flex-end !important;
+                padding: 20px !important;
             }
 
             .ganesh-hero-btns {
-                margin-bottom: 5px !important;
-                gap: 8px !important;
+                margin-bottom: 10px !important;
                 justify-content: center !important;
+                gap: 10px !important;
             }
 
             .ganesh-hero-btns a {
-                padding: 7px 14px !important;
-                font-size: 0.75rem !important;
+                padding: 10px 18px !important;
+                font-size: 0.85rem !important;
+            }
+
+            /* Prevent mobile text clipping on Slide 2 & 3 */
+            .hero-title-responsive {
+                font-size: clamp(1.45rem, 5.5vw, 2.2rem) !important;
+                line-height: 1.25 !important;
+                margin-bottom: 10px !important;
+                padding: 0 5px !important;
+            }
+
+            .hero-desc-responsive {
+                font-size: 0.92rem !important;
+                line-height: 1.5 !important;
+                padding: 0 10px !important;
+            }
+
+            .hero-btns-row {
+                margin-top: 18px !important;
+                gap: 10px !important;
+            }
+
+            .hero-btns-row .btn-outline-glow,
+            .hero-btns-row .btn-primary-glow {
+                padding: 10px 20px !important;
+                font-size: 0.85rem !important;
             }
         }
     </style>
 </head>
 <body>
 
-<!-- TICKER BAR -->
+<!-- TICKER BAR (CONTINUOUS ROLLING TEXT) -->
 <div class="top-announcement-bar">
-    <div style="font-weight: 700; color: #FFD700;">
-        <i class="fas fa-check-circle"></i> NOW OPEN IN VATAKARA
-    </div>
     <div class="ticker-wrap">
         <div class="ticker">
             <span class="ticker-item">📢 Authorized Dispenser: Phonak • Oticon • Signia • ReSound • Rexton</span>
             <span class="ticker-item">📍 Opp. Near Cee Yam Hospital, Vatakara</span>
             <span class="ticker-item">📞 Book Free Device Trial: +91 8921015858</span>
+            <span class="ticker-item">🌟 Comprehensive Pediatric & Adult Speech Rehabilitation</span>
         </div>
     </div>
 </div>
@@ -1198,12 +1239,12 @@
     </div>
 
     <!-- SLIDE 2: AUDIOLOGY CARE -->
-    <div class="slide" style="background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&q=80&w=1500');">
+    <div class="slide" style="background-image: linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)), url('https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&q=80&w=1500');">
         <div class="slide-overlay">
-            <h1 style="font-size: clamp(2rem, 4vw, 3.4rem); font-weight: 800; margin-bottom: 12px;">Precision Diagnostic Hearing Care</h1>
-            <p style="font-size: 1.1rem; max-width: 680px; margin: 0 auto;">Comprehensive computerized evaluations from newborn screenings to adult speech audiometry.</p>
+            <h1 class="hero-title-responsive">Precision Diagnostic Hearing Care</h1>
+            <p class="hero-desc-responsive">Comprehensive computerized evaluations from newborn screenings to adult speech audiometry.</p>
             <div class="hero-btns-row">
-                <a href="/services" class="btn-outline-glow" style="color: #fff;">Our Services</a>
+                <a href="/services" class="btn-outline-glow">Our Services</a>
                 <a href="https://wa.me/918921015858?text=Hello%20Life%20Audiology!%20I%20would%20like%20to%20book%20an%20audiology%20test." class="btn-primary-glow" target="_blank">
                     <i class="fab fa-whatsapp"></i> Book Now
                 </a>
@@ -1212,12 +1253,12 @@
     </div>
 
     <!-- SLIDE 3: SPEECH THERAPY -->
-    <div class="slide" style="background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1581056771107-24ca5f033842?auto=format&fit=crop&q=80&w=1500');">
+    <div class="slide" style="background-image: linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)), url('https://images.unsplash.com/photo-1581056771107-24ca5f033842?auto=format&fit=crop&q=80&w=1500');">
         <div class="slide-overlay">
-            <h1 style="font-size: clamp(2rem, 4vw, 3.4rem); font-weight: 800; margin-bottom: 12px;">Find Confidence in Every Word</h1>
-            <p style="font-size: 1.1rem; max-width: 680px; margin: 0 auto;">Evidence-based speech therapy for pediatric speech delay, stuttering, and voice recovery.</p>
+            <h1 class="hero-title-responsive">Find Confidence in Every Word</h1>
+            <p class="hero-desc-responsive">Evidence-based speech therapy for pediatric speech delay, stuttering, and voice recovery.</p>
             <div class="hero-btns-row">
-                <a href="/services" class="btn-outline-glow" style="color: #fff;">Our Services</a>
+                <a href="/services" class="btn-outline-glow">Our Services</a>
                 <a href="https://wa.me/918921015858?text=Hello%20Life%20Audiology!%20I%20would%20like%20to%20book%20a%20speech%20therapy%20session." class="btn-primary-glow" target="_blank">
                     <i class="fab fa-whatsapp"></i> Book Now
                 </a>

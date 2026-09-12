@@ -9,11 +9,11 @@
     <meta name="description" content="Leading hearing & speech center in Vatakara near Cee Yam Hospital. Authorized dispenser for Phonak, Oticon, Signia, GN ReSound & Rexton digital hearing aids with live trials.">
     <meta name="keywords" content="Audiology Vatakara, Speech Therapy Vatakara, Phonak Hearing Aid Vatakara, Oticon Dealer Kerala, Signia Hearing Aid Kozhikode, ReSound M&RIE Vatakara, Rexton Hearing Aid, Speech Delay Therapy Vatakara">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://lifeaudiologyvatakara.in/index">
+    <link rel="canonical" href="https://lifeaudiologyvatakara.in/">
 
     <!-- Open Graph / WhatsApp / Social Preview Tags -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://lifeaudiologyvatakara.in/index">
+    <meta property="og:url" content="https://lifeaudiologyvatakara.in/">
     <meta property="og:title" content="Life Audiology & Speech Therapy Centre | Vatakara">
     <meta property="og:description" content="Authorized dispenser of Phonak, Oticon, Signia, ReSound & Rexton digital hearing aids. Computerized hearing testing & child speech therapy in Vatakara.">
     <meta property="og:image" content="https://lifeaudiologyvatakara.in/logo.png">
@@ -44,7 +44,7 @@
       "image": "https://lifeaudiologyvatakara.in/logo.png",
       "telephone": "+918921015858",
       "email": "lifeaudiologycenter@gmail.com",
-      "url": "https://lifeaudiologyvatakara.in/index",
+      "url": "https://lifeaudiologyvatakara.in/",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Opp. Near Cee Yam Hospital",
@@ -173,7 +173,7 @@
 
         .nav-links {
             display: flex;
-            gap: 28px;
+            gap: 24px;
             align-items: center;
         }
 
@@ -252,49 +252,34 @@
             box-sizing: border-box;
         }
 
-        /* Slide 1: Onam Festive */
-        .onam-hero-slide {
-            background: linear-gradient(rgba(10, 20, 15, 0.55), rgba(10, 20, 15, 0.72)),
-                        url('https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&q=80&w=1600') center/cover no-repeat;
+        /* Slide 1: Ganesh Chaturthi Hero Image */
+        .ganesh-hero-slide {
+            background-image: url('ganesh-chaturthi.png') !important;
+            background-size: cover !important;
+            background-position: center center !important;
+            background-repeat: no-repeat !important;
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-end;
         }
 
-        .onam-cursive-intro {
-            font-family: 'Great Vibes', cursive;
-            font-size: clamp(1.8rem, 4vw, 3.2rem);
-            color: #FFE082;
-            letter-spacing: 1.5px;
-            margin-bottom: 2px;
-            text-shadow: 0 2px 8px rgba(0,0,0,0.7);
+        .ganesh-slide-overlay {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: flex-end;
+            padding: 35px 7%;
+            box-sizing: border-box;
+            background: linear-gradient(180deg, transparent 65%, rgba(0, 0, 0, 0.4) 100%);
         }
 
-        .onam-hero-title {
-            font-family: 'Baloo Chettan 2', cursive !important;
-            font-weight: 800 !important;
-            font-size: clamp(1.6rem, 4.5vw, 3.2rem) !important;
-            color: #FFFDF0 !important;
-            line-height: 1.35 !important;
-            text-shadow: 0 4px 16px rgba(0, 0, 0, 0.8), 0 0 30px rgba(255, 215, 0, 0.35) !important;
-            margin: 0 auto 10px auto !important;
-            max-width: 95%;
-        }
-
-        .kasavu-gold-accent {
-            color: #FFD700;
-            background: linear-gradient(45deg, #FFF176, #FFD700, #FFA000);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            font-weight: 800;
-        }
-
-        .onam-handwritten-note {
-            font-family: 'Chilanka', cursive !important;
-            font-size: clamp(1.05rem, 2.5vw, 1.6rem) !important;
-            color: #FFF8E7 !important;
-            max-width: 780px;
-            margin: 0 auto;
-            line-height: 1.55 !important;
-            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.85);
-            font-style: italic;
+        .ganesh-hero-btns {
+            display: flex;
+            gap: 14px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
         }
 
         .hero-btns-row {
@@ -307,15 +292,16 @@
         }
 
         .btn-outline-glow {
-            background: rgba(255, 255, 255, 0.12);
+            background: rgba(255, 255, 255, 0.2);
             backdrop-filter: blur(10px);
-            border: 2px solid rgba(255, 255, 255, 0.8);
-            color: #ffffff;
-            font-weight: 700;
+            border: 2px solid rgba(255, 255, 255, 0.85);
+            color: #0A2540;
+            font-weight: 800;
             padding: 13px 28px;
             border-radius: 50px;
             text-decoration: none;
             transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
         }
 
         .btn-outline-glow:hover {
@@ -399,9 +385,7 @@
             line-height: 1.25;
         }
 
-        /* ============================================================ */
-        /* --- 3D DYNAMIC EXPLODING & RECONNECTING DEVICE LAB --- */
-        /* ============================================================ */
+        /* --- 3D INTERACTIVE EXPLODING & RECONNECTING DEVICE LAB --- */
         .cinematic-3d-section {
             background: radial-gradient(circle at center, #0B243B 0%, #051424 70%, #020A12 100%);
             color: #ffffff;
@@ -587,9 +571,7 @@
             gap: 6px;
         }
 
-        /* ============================================================ */
         /* --- HOMEPAGE AUTHORIZED BRANDS SHOWCASE --- */
-        /* ============================================================ */
         .home-brand-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -813,8 +795,8 @@
             text-align: center;
         }
 
-        /* --- ONAM MAVELI FLOATING WIDGET --- */
-        .onam-widget-container {
+        /* --- KID GANESH FLOATING CORNER WIDGET --- */
+        .festive-widget-container {
             position: fixed;
             bottom: clamp(75px, 12vh, 95px);
             right: clamp(10px, 3vw, 25px);
@@ -828,10 +810,10 @@
             animation: walkIntoScreen 3.2s cubic-bezier(0.22, 1, 0.36, 1) forwards;
         }
 
-        .onam-greeting-card {
+        .festive-greeting-card {
             pointer-events: auto;
             background: linear-gradient(135deg, #FFFDF0, #FFF5CC);
-            border: 1.5px solid #FFD700;
+            border: 1.5px solid #FFB300;
             border-radius: 12px;
             padding: 6px 12px;
             display: flex;
@@ -839,7 +821,7 @@
             justify-content: space-between;
             gap: 6px;
             margin-bottom: 6px;
-            box-shadow: 0 4px 16px rgba(218, 165, 32, 0.3);
+            box-shadow: 0 4px 16px rgba(218, 140, 32, 0.35);
             width: fit-content;
             opacity: 0;
             transform: scale(0.6) translateY(10px);
@@ -847,69 +829,77 @@
                        pulseBanner 2.5s infinite ease-in-out 3.8s;
         }
 
-        .onam-malayalam-text {
+        .festive-malayalam-text {
             font-family: 'Baloo Chettan 2', cursive;
             font-size: clamp(0.78rem, 2.6vw, 0.98rem);
             font-weight: 700;
-            color: #8B4513;
+            color: #B45309;
             line-height: 1.25;
         }
 
-        .onam-close-btn {
+        .festive-close-btn {
             background: none;
             border: none;
             font-size: 1.1rem;
-            color: #8B4513;
+            color: #B45309;
             cursor: pointer;
             padding: 0 0 0 4px;
         }
 
-        .maveli-box {
+        .festive-box {
             position: relative;
-            width: clamp(75px, 18vw, 120px);
+            width: clamp(75px, 17vw, 105px);
             pointer-events: auto;
             cursor: pointer;
             transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
             transform-origin: bottom center;
-            animation: maveliWalkingSteps 3.2s ease-in-out forwards,
-                       floatMaveli 3.5s ease-in-out infinite 3.2s alternate;
+            animation: kidGaneshWobble 4s ease-in-out infinite alternate;
         }
 
-        .maveli-box:hover {
-            transform: scale(1.08) translateY(-4px);
+        @keyframes kidGaneshWobble {
+            0% { transform: translateY(0) rotate(0deg); }
+            35% { transform: translateY(-8px) rotate(-3deg) scale(1.02); }
+            70% { transform: translateY(-4px) rotate(3deg) scale(0.99); }
+            100% { transform: translateY(-10px) rotate(0deg) scale(1.04); }
         }
 
-        .maveli-bubble {
+        .festive-box:hover {
+            transform: scale(1.12) translateY(-6px);
+        }
+
+        .festive-bubble {
             position: absolute;
-            top: -8px;
-            left: -25px;
+            top: -12px;
+            left: -32px;
             background: linear-gradient(135deg, #FFFFFF, #FFF9E6);
-            color: #8B4513;
+            color: #B45309;
             font-family: 'Caveat', cursive;
             font-size: clamp(0.85rem, 2.4vw, 1.1rem);
             font-weight: 700;
-            padding: 3px 8px;
+            padding: 4px 10px;
             border-radius: 12px;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.12);
-            border: 1.5px solid #FFD700;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.14);
+            border: 1.5px solid #FFB300;
             opacity: 0;
             transform: translateY(6px);
-            animation: speechFade 4.5s infinite 3.5s;
+            animation: speechFade 4.5s infinite 2.5s;
             z-index: 10;
             white-space: nowrap;
         }
 
-        .maveli-3d-img {
+        .kid-ganesh-badge-svg {
             width: 100%;
             height: auto;
             display: block;
-            filter: drop-shadow(0 8px 14px rgba(0, 0, 0, 0.3));
-            transform-origin: 75% 45%;
-            animation: maveliWavingHand 1.6s infinite ease-in-out 3.2s;
+            filter: drop-shadow(0 8px 18px rgba(245, 158, 11, 0.45));
+            border-radius: 50%;
+            background: radial-gradient(circle, #FFFBEB 45%, #FEF3C7 85%, #FDE68A 100%);
+            padding: 6px;
+            border: 2px solid #F59E0B;
         }
 
         /* --- MODAL CELEBRATION --- */
-        #onamModalOverlay {
+        #ganeshModalOverlay {
             position: fixed;
             inset: 0;
             background: rgba(10, 15, 30, 0.88);
@@ -924,7 +914,7 @@
             transition: opacity 0.35s ease;
         }
 
-        #onamModalOverlay.active {
+        #ganeshModalOverlay.active {
             opacity: 1;
             pointer-events: auto;
         }
@@ -937,17 +927,17 @@
             pointer-events: none;
         }
 
-        .onam-modal-content {
+        .ganesh-modal-content {
             position: relative;
             z-index: 2;
             background: radial-gradient(circle at center, #FFFDEB 30%, #FFF4C2 100%);
-            border: 2px solid #FFD700;
+            border: 2px solid #FFB300;
             border-radius: 24px;
             padding: 35px 25px;
             max-width: 480px;
             width: 100%;
             text-align: center;
-            box-shadow: 0 15px 45px rgba(255, 215, 0, 0.35);
+            box-shadow: 0 15px 45px rgba(255, 179, 0, 0.4);
         }
 
         .modal-close {
@@ -1108,11 +1098,8 @@
 
         /* Keyframes */
         @keyframes walkIntoScreen { 0% { transform: translateX(180px); opacity: 0; } 100% { transform: translateX(0); opacity: 1; } }
-        @keyframes maveliWalkingSteps { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px) rotate(4deg); } }
-        @keyframes maveliWavingHand { 0%, 100% { transform: rotate(0deg); } 50% { transform: rotate(-8deg) scale(1.02); } }
-        @keyframes floatMaveli { 0% { transform: translateY(0); } 100% { transform: translateY(-6px); } }
         @keyframes bannerPopIn { to { opacity: 1; transform: scale(1) translateY(0); } }
-        @keyframes pulseBanner { 0%, 100% { box-shadow: 0 4px 16px rgba(218, 165, 32, 0.3); } 50% { box-shadow: 0 6px 22px rgba(218, 165, 32, 0.6); } }
+        @keyframes pulseBanner { 0%, 100% { box-shadow: 0 4px 16px rgba(218, 140, 32, 0.3); } 50% { box-shadow: 0 6px 22px rgba(218, 140, 32, 0.6); } }
         @keyframes speechFade { 0%, 100% { opacity: 0; } 20%, 80% { opacity: 1; } }
 
         @media (max-width: 992px) {
@@ -1122,6 +1109,8 @@
             .footer-grid { grid-template-columns: 1fr; }
             .nav-links { display: none; }
             .menu-toggle { display: block; }
+            .ganesh-hero-slide .ganesh-slide-overlay { align-items: center; justify-content: flex-end; }
+            .ganesh-hero-btns { margin-bottom: 15px; justify-content: center; }
         }
     </style>
 </head>
@@ -1143,7 +1132,7 @@
 
 <!-- NAVIGATION -->
 <nav>
-    <a href="index" class="nav-logo">
+    <a href="/" class="nav-logo">
         <img src="logo.png" alt="Logo" style="height: 38px;" onerror="this.style.display='none'">
         <div class="logo-text">Life Audiology &<br><span>Speech Therapy</span></div>
     </a>
@@ -1151,13 +1140,13 @@
     <div class="menu-toggle" id="mobile-menu"><i class="fas fa-bars"></i></div>
 
     <div class="nav-links" id="nav-list">
-        <a href="index">Home</a>
-        <a href="services">Clinical Services</a>
-        <a href="#brands-overview">Hearing Aid Brands</a>
-        <a href="#cinematic-lab">3D Device Lab</a>
-        <a href="#assessment">Self-Test</a>
-        <a href="about">About Specialist</a>
-        <a href="contact">Contact</a>
+        <a href="/">Home</a>
+        <a href="/services">Clinical Services</a>
+        <a href="/#brands-overview">Hearing Aid Brands</a>
+        <a href="/#cinematic-lab">3D Device Lab</a>
+        <a href="/#assessment">Self-Test</a>
+        <a href="/about">About Specialist</a>
+        <a href="/contact">Contact</a>
         <a href="https://wa.me/918921015858?text=Hello%20Life%20Audiology!%20I%20would%20like%20to%20book%20an%20appointment." class="btn-nav" target="_blank">
             <i class="fas fa-calendar-check"></i> Book Consultation
         </a>
@@ -1166,14 +1155,15 @@
 
 <!-- HERO CAROUSEL -->
 <div class="slider-container" id="heroSlider">
-    <!-- SLIDE 1: ONAM FESTIVE THEME -->
-    <div class="slide active onam-hero-slide">
-        <div class="slide-overlay">
-            <div class="onam-cursive-intro">Happy Onam 2026</div>
-            <h1 class="onam-hero-title">ഐശ്വര്യവും സമൃദ്ധിയും നിറഞ്ഞ<br><span class="kasavu-gold-accent">പൊന്നോണാശംസകൾ!</span></h1>
-            <p class="onam-handwritten-note">
-                നന്മയും സന്തോഷവും തുളുമ്പുന്ന ഈ നല്ല പൊന്നോണക്കാലം നിങ്ങളുടെ ജീവിതത്തിൽ ആയുരാരോഗ്യവും സമാധാനവും നിറയ്ക്കട്ടെ.
-            </p>
+    <!-- SLIDE 1: GANESH CHATURTHI ARTWORK -->
+    <div class="slide active ganesh-hero-slide">
+        <div class="ganesh-slide-overlay">
+            <div class="ganesh-hero-btns">
+                <a href="/services" class="btn-outline-glow">Our Services</a>
+                <a href="https://wa.me/918921015858?text=Hello%20Life%20Audiology!%20Happy%20Ganesh%20Chaturthi!%20I%20would%20like%20to%20book%20a%20consultation." class="btn-primary-glow" target="_blank">
+                    <i class="fab fa-whatsapp"></i> Book Consultation
+                </a>
+            </div>
         </div>
     </div>
 
@@ -1183,7 +1173,7 @@
             <h1 style="font-size: clamp(2rem, 4vw, 3.4rem); font-weight: 800; margin-bottom: 12px;">Precision Diagnostic Hearing Care</h1>
             <p style="font-size: 1.1rem; max-width: 680px; margin: 0 auto;">Comprehensive computerized evaluations from newborn screenings to adult speech audiometry.</p>
             <div class="hero-btns-row">
-                <a href="services" class="btn-outline-glow">Our Services</a>
+                <a href="/services" class="btn-outline-glow" style="color: #fff;">Our Services</a>
                 <a href="https://wa.me/918921015858?text=Hello%20Life%20Audiology!%20I%20would%20like%20to%20book%20an%20audiology%20test." class="btn-primary-glow" target="_blank">
                     <i class="fab fa-whatsapp"></i> Book Now
                 </a>
@@ -1197,7 +1187,7 @@
             <h1 style="font-size: clamp(2rem, 4vw, 3.4rem); font-weight: 800; margin-bottom: 12px;">Find Confidence in Every Word</h1>
             <p style="font-size: 1.1rem; max-width: 680px; margin: 0 auto;">Evidence-based speech therapy for pediatric speech delay, stuttering, and voice recovery.</p>
             <div class="hero-btns-row">
-                <a href="services" class="btn-outline-glow">Our Services</a>
+                <a href="/services" class="btn-outline-glow" style="color: #fff;">Our Services</a>
                 <a href="https://wa.me/918921015858?text=Hello%20Life%20Audiology!%20I%20would%20like%20to%20book%20a%20speech%20therapy%20session." class="btn-primary-glow" target="_blank">
                     <i class="fab fa-whatsapp"></i> Book Now
                 </a>
@@ -1297,7 +1287,7 @@
                 <h3>Advanced Audiology</h3>
                 <p>Pure Tone, Speech, & Immittance Audiometry, along with specialized Newborn OAE hearing screenings.</p>
             </div>
-            <a href="services" class="bento-link">Learn Test Details <i class="fas fa-arrow-right"></i></a>
+            <a href="/services" class="bento-link">Learn Test Details <i class="fas fa-arrow-right"></i></a>
         </div>
 
         <div class="bento-card" data-aos="fade-up" data-aos-delay="100">
@@ -1306,7 +1296,7 @@
                 <h3>Speech & Language Rehab</h3>
                 <p>Evidence-based interventions for child speech delay, stammering, autism communication, and voice disorders.</p>
             </div>
-            <a href="services" class="bento-link">Explore Therapies <i class="fas fa-arrow-right"></i></a>
+            <a href="/services" class="bento-link">Explore Therapies <i class="fas fa-arrow-right"></i></a>
         </div>
 
         <div class="bento-card" data-aos="fade-up" data-aos-delay="200">
@@ -1315,14 +1305,12 @@
                 <h3>Digital Hearing Aid Lab</h3>
                 <p>Live hearing aid trials, custom ear-mold fitting, programming, and comprehensive warranty service.</p>
             </div>
-            <a href="services" class="bento-link">View Device Trials <i class="fas fa-arrow-right"></i></a>
+            <a href="/services" class="bento-link">View Device Trials <i class="fas fa-arrow-right"></i></a>
         </div>
     </div>
 </section>
 
-<!-- ============================================================ -->
-<!-- NEW: AUTHORIZED GLOBAL HEARING AID BRANDS OVERVIEW -->
-<!-- ============================================================ -->
+<!-- AUTHORIZED GLOBAL HEARING AID BRANDS OVERVIEW -->
 <section class="section-wrap" id="brands-overview" style="background: #ffffff; border-radius: 32px; margin: 30px auto; box-shadow: 0 10px 40px rgba(0,0,0,0.03);">
     <div class="section-header" data-aos="fade-up">
         <span class="section-tag" style="color: var(--secondary);">Authorized Global Partners</span>
@@ -1341,7 +1329,7 @@
                 <h4>Phonak</h4>
                 <p>Hands-free direct audio streaming to Android & iPhone with AutoSense OS acoustic adaptation.</p>
             </div>
-            <a href="services#brands" class="home-brand-link">Explore Phonak Specs &rarr;</a>
+            <a href="/services#brands" class="home-brand-link">Explore Phonak Specs &rarr;</a>
         </div>
 
         <!-- Oticon -->
@@ -1354,7 +1342,7 @@
                 <h4>Oticon</h4>
                 <p>Deep Neural Network (DNN) chip providing a 360° natural open soundscape without listening fatigue.</p>
             </div>
-            <a href="services#brands" class="home-brand-link">Explore Oticon Specs &rarr;</a>
+            <a href="/services#brands" class="home-brand-link">Explore Oticon Specs &rarr;</a>
         </div>
 
         <!-- Signia -->
@@ -1367,7 +1355,7 @@
                 <h4>Signia</h4>
                 <p>Dual-processor Augmented Focus technology that preserves natural own-voice perception.</p>
             </div>
-            <a href="services#brands" class="home-brand-link">Explore Signia Specs &rarr;</a>
+            <a href="/services#brands" class="home-brand-link">Explore Signia Specs &rarr;</a>
         </div>
 
         <!-- GN ReSound -->
@@ -1380,7 +1368,7 @@
                 <h4>GN ReSound</h4>
                 <p>Organic 3rd microphone inside ear canal for natural spatial localization & wind protection.</p>
             </div>
-            <a href="services#brands" class="home-brand-link">Explore ReSound Specs &rarr;</a>
+            <a href="/services#brands" class="home-brand-link">Explore ReSound Specs &rarr;</a>
         </div>
 
         <!-- Rexton -->
@@ -1393,7 +1381,7 @@
                 <h4>Rexton</h4>
                 <p>Moisture-proof and dust-sealed durable casings engineered for long battery life and high value.</p>
             </div>
-            <a href="services#brands" class="home-brand-link">Explore Rexton Specs &rarr;</a>
+            <a href="/services#brands" class="home-brand-link">Explore Rexton Specs &rarr;</a>
         </div>
     </div>
 </section>
@@ -1467,32 +1455,52 @@
     </div>
 </section>
 
-<!-- WALKING MAVELI ONAM WIDGET -->
-<div class="onam-widget-container" id="onamGreeting">
-    <div class="onam-greeting-card">
-        <span>🌼</span>
-        <span class="onam-malayalam-text">ഹൃദയം നിറഞ്ഞ തിരുവോണാശംസകൾ!</span>
-        <button class="onam-close-btn" onclick="dismissOnam()" title="Close">&times;</button>
+<!-- SMALL BAL GANESH FLOATING CORNER WIDGET -->
+<div class="festive-widget-container" id="ganeshGreeting">
+    <div class="festive-greeting-card">
+        <span>🪔</span>
+        <span class="festive-malayalam-text">ഗണേശോത്സവാശംസകൾ!</span>
+        <button class="festive-close-btn" onclick="dismissFestiveWidget()" title="Close">&times;</button>
     </div>
 
-    <div class="maveli-box" id="maveliTrigger" onclick="celebrateOnam()" title="Click Maveli for a surprise!">
-        <div class="maveli-bubble">Happy Onam! 🥳</div>
-        <img src="Maveli.png" alt="Maveli Character" class="maveli-3d-img" />
+    <div class="festive-box" id="ganeshTrigger" onclick="celebrateGanesh()" title="Click Little Ganesha for wishes!">
+        <div class="festive-bubble">Happy Ganesh Chaturthi! 🪔</div>
+        <!-- Little Bal Ganesh Mascot -->
+        <svg class="kid-ganesh-badge-svg" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M30 42 C12 34 12 62 28 66" fill="#FDBA74" stroke="#EA580C" stroke-width="2"/>
+            <path d="M70 42 C88 34 88 62 72 66" fill="#FDBA74" stroke="#EA580C" stroke-width="2"/>
+            <ellipse cx="50" cy="74" rx="20" ry="14" fill="#FB923C"/>
+            <path d="M32 78 C32 68 68 68 68 78 C68 86 32 86 32 78 Z" fill="#FBBF24" stroke="#D97706" stroke-width="1.2"/>
+            <ellipse cx="50" cy="53" rx="22" ry="18" fill="#FDBA74"/>
+            <circle cx="36" cy="57" r="3.5" fill="#F43F5E" opacity="0.35"/>
+            <circle cx="64" cy="57" r="3.5" fill="#F43F5E" opacity="0.35"/>
+            <ellipse cx="40" cy="48" rx="3.5" ry="4.5" fill="#0F172A"/>
+            <circle cx="41.5" cy="46" r="1.5" fill="#FFFFFF"/>
+            <ellipse cx="60" cy="48" rx="3.5" ry="4.5" fill="#0F172A"/>
+            <circle cx="61.5" cy="46" r="1.5" fill="#FFFFFF"/>
+            <path d="M38 38 L50 18 L62 38 Z" fill="#F59E0B" stroke="#D97706" stroke-width="1.2"/>
+            <circle cx="50" cy="18" r="2.5" fill="#DC2626"/>
+            <path d="M46 40 H54" stroke="#DC2626" stroke-width="1.5"/>
+            <circle cx="50" cy="36" r="1.5" fill="#DC2626"/>
+            <path d="M50 56 C50 67 58 73 63 69 C67 66 65 62 60 63" stroke="#EA580C" stroke-width="5.5" stroke-linecap="round" fill="none"/>
+            <circle cx="30" cy="68" r="5" fill="#FDBA74"/>
+            <path d="M26 68 C26 63 34 63 34 68 Z" fill="#FEF08A" stroke="#EAB308" stroke-width="1.2"/>
+        </svg>
     </div>
 </div>
 
-<!-- FIREWORKS MODAL OVERLAY -->
-<div id="onamModalOverlay" onclick="closeOnamModal(event)">
+<!-- FIREWORKS / BLESSING MODAL OVERLAY -->
+<div id="ganeshModalOverlay" onclick="closeGaneshModal(event)">
     <canvas id="fireworksCanvas"></canvas>
-    <div class="onam-modal-content" onclick="event.stopPropagation()">
-        <button class="modal-close" onclick="closeOnamModal()">&times;</button>
-        <div style="font-size: 2.5rem; margin-bottom: 5px;">🌸</div>
-        <div style="font-family: 'Great Vibes', cursive; font-size: 2rem; color: #C76A00;">Happy Onam 2026!</div>
-        <h2 style="font-family: 'Baloo Chettan 2', cursive; font-size: 1.6rem; color: #8E2800; margin-bottom: 8px;">ഹൃദയം നിറഞ്ഞ തിരുവോണാശംസകൾ!</h2>
+    <div class="ganesh-modal-content" onclick="event.stopPropagation()">
+        <button class="modal-close" onclick="closeGaneshModal()">&times;</button>
+        <div style="font-size: 2.6rem; margin-bottom: 5px;">🪔</div>
+        <div style="font-family: 'Great Vibes', cursive; font-size: 2.2rem; color: #C76A00;">Happy Ganesh Chaturthi 2026!</div>
+        <h2 style="font-family: 'Baloo Chettan 2', cursive; font-size: 1.6rem; color: #9A3412; margin-bottom: 8px;">ഹൃദയം നിറഞ്ഞ വിനായക ചതുർത്ഥി ആശംസകൾ!</h2>
         <p style="font-family: 'Chilanka', cursive; color: #4E342E; line-height: 1.6; margin-bottom: 15px;">
-            ഐശ്വര്യവും സമൃദ്ധിയും ആരോഗ്യവും നിറഞ്ഞ ഒരു നല്ല ഓണക്കാലം നേരുന്നു.
+            വിഘ്നങ്ങൾ നീങ്ങി സൗഖ്യവും ഐശ്വര്യവും ആയുരാരോഗ്യവും നിറഞ്ഞ ഒരു നല്ല നാളെ ആശംസിക്കുന്നു.
         </p>
-        <div style="font-weight: 700; color: #8E2800; font-size: 0.85rem;">
+        <div style="font-weight: 700; color: #9A3412; font-size: 0.85rem;">
             ❤️ Life Audiology & Speech Therapy Centre, Vatakara
         </div>
     </div>
@@ -1523,10 +1531,10 @@
         <div class="footer-col">
             <h4>Quick Links</h4>
             <ul class="footer-links">
-                <li><a href="index">Home</a></li>
-                <li><a href="services">Clinical Services</a></li>
-                <li><a href="about">About Specialist</a></li>
-                <li><a href="contact">Contact Clinic</a></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="/services">Clinical Services</a></li>
+                <li><a href="/about">About Specialist</a></li>
+                <li><a href="/contact">Contact Clinic</a></li>
             </ul>
         </div>
 
@@ -1671,9 +1679,9 @@
         window.open(waUrl, '_blank');
     }
 
-    // Dismiss Onam Corner Badge
-    function dismissOnam() {
-        const widget = document.getElementById('onamGreeting');
+    // Dismiss Corner Badge
+    function dismissFestiveWidget() {
+        const widget = document.getElementById('ganeshGreeting');
         if (widget) {
             widget.style.transition = 'opacity 0.4s ease, transform 0.4s ease';
             widget.style.opacity = '0';
@@ -1725,7 +1733,7 @@
     }
 
     function createFirework(x, y) {
-        const colors = ['#FFD700', '#FF3D00', '#00D4B2', '#0077B6', '#FFF'];
+        const colors = ['#FFD700', '#FF9100', '#00D4B2', '#FF3D00', '#FFFFFF'];
         const color = colors[Math.floor(Math.random() * colors.length)];
         for (let i = 0; i < 35; i++) {
             particles.push(new Particle(x, y, color));
@@ -1749,7 +1757,7 @@
         requestAnimationFrame(loopFireworks);
     }
 
-    function celebrateOnam() {
+    function celebrateGanesh() {
         resizeCanvas();
         fireworksActive = true;
         particles = [];
@@ -1759,11 +1767,11 @@
             }, i * 200);
         }
         requestAnimationFrame(loopFireworks);
-        document.getElementById('onamModalOverlay').classList.add('active');
+        document.getElementById('ganeshModalOverlay').classList.add('active');
     }
 
-    function closeOnamModal() {
-        document.getElementById('onamModalOverlay').classList.remove('active');
+    function closeGaneshModal() {
+        document.getElementById('ganeshModalOverlay').classList.remove('active');
         fireworksActive = false;
     }
 </script>

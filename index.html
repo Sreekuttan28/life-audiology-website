@@ -217,7 +217,7 @@
             height: 85vh;
             min-height: 560px;
             overflow: hidden;
-            background: #0b132b;
+            background: #FFFDF0;
         }
 
         .slide {
@@ -252,7 +252,7 @@
             box-sizing: border-box;
         }
 
-        /* Slide 1: Ganesh Chaturthi Hero Image */
+        /* Slide 1: Ganesh Chaturthi Hero Artwork */
         .ganesh-hero-slide {
             background-image: url('ganesh-chaturthi.png') !important;
             background-size: cover !important;
@@ -292,9 +292,9 @@
         }
 
         .btn-outline-glow {
-            background: rgba(255, 255, 255, 0.2);
+            background: rgba(255, 255, 255, 0.25);
             backdrop-filter: blur(10px);
-            border: 2px solid rgba(255, 255, 255, 0.85);
+            border: 2px solid rgba(255, 255, 255, 0.9);
             color: #0A2540;
             font-weight: 800;
             padding: 13px 28px;
@@ -385,7 +385,7 @@
             line-height: 1.25;
         }
 
-        /* --- 3D INTERACTIVE EXPLODING & RECONNECTING DEVICE LAB --- */
+        /* --- 3D INTERACTIVE DEVICE LAB --- */
         .cinematic-3d-section {
             background: radial-gradient(circle at center, #0B243B 0%, #051424 70%, #020A12 100%);
             color: #ffffff;
@@ -795,7 +795,7 @@
             text-align: center;
         }
 
-        /* --- KID GANESH FLOATING CORNER WIDGET --- */
+        /* --- BAL GANESH FLOATING CORNER WIDGET --- */
         .festive-widget-container {
             position: fixed;
             bottom: clamp(75px, 12vh, 95px);
@@ -1102,6 +1102,7 @@
         @keyframes pulseBanner { 0%, 100% { box-shadow: 0 4px 16px rgba(218, 140, 32, 0.3); } 50% { box-shadow: 0 6px 22px rgba(218, 140, 32, 0.6); } }
         @keyframes speechFade { 0%, 100% { opacity: 0; } 20%, 80% { opacity: 1; } }
 
+        /* Responsive Breakpoints & Mobile Image Aspect Ratio */
         @media (max-width: 992px) {
             .exploded-lab-grid, .quiz-container { grid-template-columns: 1fr; text-align: center; }
             .bento-grid, .home-brand-grid { grid-template-columns: 1fr; }
@@ -1109,8 +1110,37 @@
             .footer-grid { grid-template-columns: 1fr; }
             .nav-links { display: none; }
             .menu-toggle { display: block; }
-            .ganesh-hero-slide .ganesh-slide-overlay { align-items: center; justify-content: flex-end; }
-            .ganesh-hero-btns { margin-bottom: 15px; justify-content: center; }
+
+            /* Fits 16:9 banner without cropping artwork or text */
+            .slider-container {
+                height: auto !important;
+                min-height: unset !important;
+                aspect-ratio: 16 / 9;
+            }
+
+            .ganesh-hero-slide {
+                background-size: contain !important;
+                background-position: center center !important;
+                background-color: #FFFDF0 !important;
+            }
+
+            .ganesh-hero-slide .ganesh-slide-overlay {
+                padding: 10px !important;
+                justify-content: flex-end !important;
+                align-items: center !important;
+                background: transparent !important;
+            }
+
+            .ganesh-hero-btns {
+                margin-bottom: 5px !important;
+                gap: 8px !important;
+                justify-content: center !important;
+            }
+
+            .ganesh-hero-btns a {
+                padding: 7px 14px !important;
+                font-size: 0.75rem !important;
+            }
         }
     </style>
 </head>

@@ -115,6 +115,7 @@
         .ticker-wrap {
             overflow: hidden;
             white-space: nowrap;
+            width: 100%;
         }
 
         .ticker {
@@ -206,9 +207,7 @@
             cursor: pointer;
         }
 
-        /* ============================================================ */
         /* --- CLEAN & ELEGANT HERO HEADER --- */
-        /* ============================================================ */
         .services-header {
             background: linear-gradient(rgba(10, 37, 64, 0.82), rgba(10, 37, 64, 0.88)), 
                         url('https://images.unsplash.com/photo-1590611936760-eeb9bc593018?auto=format&fit=crop&q=80&w=1500') center/cover no-repeat;
@@ -292,9 +291,7 @@
             line-height: 1.25;
         }
 
-        /* ============================================================ */
         /* --- BRAND SHOWCASE WITH PHOTOGRAPHY --- */
-        /* ============================================================ */
         .brand-filter-bar {
             display: flex;
             justify-content: center;
@@ -364,17 +361,19 @@
             align-items: center;
             justify-content: center;
             margin-bottom: 16px;
+            border: 1px solid #E2E8F0;
         }
 
         .brand-img-wrap img {
             width: 100%;
             height: 100%;
-            object-fit: cover;
+            object-fit: contain;
+            padding: 10px;
             transition: transform 0.4s ease;
         }
 
         .brand-card:hover .brand-img-wrap img {
-            transform: scale(1.06);
+            transform: scale(1.08);
         }
 
         .brand-badge {
@@ -436,9 +435,7 @@
             color: var(--accent);
         }
 
-        /* ============================================================ */
-        /* --- CINEMATIC DARK GLASSMORPHISM COMPARISON MATRIX TABLE --- */
-        /* ============================================================ */
+        /* --- CINEMATIC MATRIX TABLE --- */
         .comparison-matrix-container {
             margin-top: 60px;
             background: radial-gradient(circle at center, #0B243B 0%, #061829 100%);
@@ -768,7 +765,7 @@
             box-shadow: 0 12px 25px rgba(0, 212, 178, 0.5);
         }
 
-        /* --- BORDERLESS SMART REDIRECTION FOOTER --- */
+        /* --- BORDERLESS FOOTER --- */
         footer {
             background: var(--primary-dark);
             color: #ffffff;
@@ -923,7 +920,7 @@
 
 <!-- TICKER BAR -->
 <div class="top-announcement-bar">
-       <div class="ticker-wrap">
+    <div class="ticker-wrap">
         <div class="ticker">
             <span class="ticker-item">📢 Authorized Dispenser: Phonak • Oticon • Signia • ReSound • Rexton</span>
             <span class="ticker-item">📍 Opp. Near Cee Yam Hospital, Vatakara</span>
@@ -935,7 +932,7 @@
 <!-- NAVIGATION -->
 <nav>
     <a href="index.html" class="nav-logo">
-        <img src="logo.png" alt="Logo" style="height: 38px;" onerror="this.style.display='none'">
+        <img src="logo.png" alt="Logo" style="height: 38px;" onerror="this.onerror=null; this.src='assets/images/logo.png';">
         <div class="logo-text">Life Audiology &<br><span>Speech Therapy</span></div>
     </a>
 
@@ -954,9 +951,7 @@
     </div>
 </nav>
 
-<!-- ============================================================ -->
-<!-- SIMPLE & ELEGANT HERO HEADER -->
-<!-- ============================================================ -->
+<!-- HERO HEADER -->
 <header class="services-header">
     <div class="header-content-box" data-aos="zoom-in">
         <div class="header-tag">
@@ -967,9 +962,7 @@
     </div>
 </header>
 
-<!-- ============================================================ -->
 <!-- AUTHORIZED GLOBAL DIGITAL HEARING AID BRANDS SHOWCASE -->
-<!-- ============================================================ -->
 <section class="section-wrap" id="brands">
     <div class="section-header" data-aos="fade-up">
         <span class="section-tag">Global Technology Partners</span>
@@ -995,7 +988,7 @@
                 </div>
 
                 <div class="brand-img-wrap">
-                    <img src="https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcRM8DA5u2FYHUsG3UKIt7u0HnyIbIcqxaa3Win9v7dLygpiPS3uDNRouVTG4iHoDjQAQeVSV26k5R6HDro" alt="Phonak Hearing Aid Model">
+                    <img src="assets/images/Phonak.png" alt="Phonak Hearing Aids Vatakara" loading="lazy" onerror="this.onerror=null; this.src='Phonak.png';">
                 </div>
 
                 <h3>Phonak</h3>
@@ -1018,7 +1011,7 @@
                 </div>
 
                 <div class="brand-img-wrap">
-                    <img src="https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcRuCyr6l1ESOTdNwKOURG5OHxsVpihU8IRQBTNhKnWvKNFjdGglm-us4lK17UfmqYpnHzes67X338D1Tbc" alt="Oticon Hearing Aid Model">
+                    <img src="assets/images/oticon.png" alt="Oticon Hearing Aids Vatakara" loading="lazy" onerror="this.onerror=null; this.src='oticon.png';">
                 </div>
 
                 <h3>Oticon</h3>
@@ -1041,7 +1034,7 @@
                 </div>
 
                 <div class="brand-img-wrap">
-                    <img src="https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcRFy-ffZIV0m6xLLUqPQMeB3Zv67TTwahpGQ2oUFRuCzwA623dgU3F_Njff_oy_Udv06iJ3n-cnGrRcVUU" alt="Signia Hearing Aid Model">
+                    <img src="assets/images/signia.png" alt="Signia Hearing Aids Vatakara" loading="lazy" onerror="this.onerror=null; this.src='signia.png';">
                 </div>
 
                 <h3>Signia</h3>
@@ -1064,7 +1057,7 @@
                 </div>
 
                 <div class="brand-img-wrap">
-                    <img src="https://www.gnhearing.com/-/media/partnerportal/resound/products/omnia/full-line-up/lifestyle/1800x1800/rs_omnia_minirie_hero_light-bg-1800x1800.ashx?h=1800&w=1800&la=en-IN&hash=CEFC9395384C9251626C243053A064B2" alt="ReSound Hearing Aid Model">
+                    <img src="assets/images/resound.png" alt="GN ReSound Hearing Aids Vatakara" loading="lazy" onerror="this.onerror=null; this.src='https://www.gnhearing.com/-/media/partnerportal/resound/products/omnia/full-line-up/lifestyle/1800x1800/rs_omnia_minirie_hero_light-bg-1800x1800.ashx?h=1800&w=1800&la=en-IN&hash=CEFC9395384C9251626C243053A064B2';">
                 </div>
 
                 <h3>GN ReSound</h3>
@@ -1087,7 +1080,7 @@
                 </div>
 
                 <div class="brand-img-wrap">
-                    <img src="https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcRFy-ffZIV0m6xLLUqPQMeB3Zv67TTwahpGQ2oUFRuCzwA623dgU3F_Njff_oy_Udv06iJ3n-cnGrRcVUU" alt="Rexton Hearing Aid Model">
+                    <img src="assets/images/Rexton.png" alt="Rexton Hearing Aids Vatakara" loading="lazy" onerror="this.onerror=null; this.src='Rexton.png';">
                 </div>
 
                 <h3>Rexton</h3>
@@ -1103,7 +1096,7 @@
         </div>
     </div>
 
-    <!-- CINEMATIC DARK GLASSMORPHISM COMPARISON MATRIX TABLE -->
+    <!-- COMPARISON MATRIX TABLE -->
     <div class="comparison-matrix-container" data-aos="fade-up">
         <h3>Side-by-Side Brand Feature Matrix</h3>
         <p class="matrix-subtitle">Clinical comparison across key patient requirements.</p>
@@ -1293,9 +1286,7 @@
     </div>
 </section>
 
-<!-- ============================================================ -->
 <!-- 60-SEC SELF-EVALUATION QUIZ WITH BILINGUAL MATCH -->
-<!-- ============================================================ -->
 <section class="section-wrap" id="quiz">
     <div class="quiz-container" data-aos="zoom-in">
         <div>
@@ -1373,7 +1364,7 @@
     <i class="fab fa-whatsapp"></i>
 </a>
 
-<!-- BORDERLESS SMART REDIRECTION FOOTER -->
+<!-- BORDERLESS FOOTER -->
 <footer>
     <div class="footer-grid">
         <div class="footer-col">

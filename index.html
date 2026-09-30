@@ -31,7 +31,7 @@
     <!-- Google Typography -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Baloo+Chettan+2:wght@600;700;800&family=Chilanka&family=Caveat:wght@600;700&family=Great+Vibes&family=Outfit:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Baloo+Chettan+2:wght@600;700;800&family=Outfit:wght@500;600;700;800;900&display=swap" rel="stylesheet">
 
     <meta name="google-site-verification" content="TNwDsCpj-ceJZMFH5-8pXSEoVfyGPrb0R7BiZpZ_d8Y" />
 
@@ -167,7 +167,6 @@
             transition: height 0.2s ease;
         }
 
-        /* Responsive Branding Typography */
         .logo-text {
             font-family: 'Outfit', 'Plus Jakarta Sans', sans-serif;
             font-weight: 800;
@@ -230,7 +229,7 @@
             position: relative;
             width: 100%;
             height: 85vh;
-            min-height: 540px;
+            min-height: 520px;
             overflow: hidden;
             background: #0B132B;
         }
@@ -267,39 +266,10 @@
             box-sizing: border-box;
         }
 
-        /* Slide 1: Laptop View */
-        .ganesh-hero-slide {
-            background-image: url('ganesh-chaturthi.png') !important;
-            background-size: cover !important;
-            background-position: center center !important;
-            background-repeat: no-repeat !important;
-            display: flex;
-            align-items: flex-end;
-            justify-content: flex-end;
-        }
-
-        .ganesh-slide-overlay {
-            width: 100%;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
-            align-items: flex-end;
-            padding: 35px 7%;
-            box-sizing: border-box;
-        }
-
-        .ganesh-hero-btns {
-            display: flex;
-            gap: 14px;
-            margin-bottom: 20px;
-            flex-wrap: wrap;
-        }
-
         .hero-title-responsive {
-            font-size: clamp(1.6rem, 4.2vw, 3.4rem);
+            font-size: clamp(1.8rem, 4.2vw, 3.4rem);
             font-weight: 800;
-            margin-bottom: 12px;
+            margin-bottom: 14px;
             line-height: 1.2;
             text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
             word-wrap: break-word;
@@ -326,7 +296,7 @@
             background: rgba(255, 255, 255, 0.25);
             backdrop-filter: blur(10px);
             border: 2px solid rgba(255, 255, 255, 0.85);
-            color: #0A2540;
+            color: #ffffff;
             font-weight: 800;
             padding: 13px 28px;
             border-radius: 50px;
@@ -828,164 +798,6 @@
             text-align: center;
         }
 
-        /* --- BAL GANESH FLOATING CORNER WIDGET --- */
-        .festive-widget-container {
-            position: fixed;
-            bottom: clamp(75px, 12vh, 95px);
-            right: clamp(10px, 3vw, 25px);
-            z-index: 9998;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-end;
-            pointer-events: none;
-            font-family: 'Chilanka', cursive;
-            max-width: min(340px, 85vw);
-            animation: walkIntoScreen 3.2s cubic-bezier(0.22, 1, 0.36, 1) forwards;
-        }
-
-        .festive-greeting-card {
-            pointer-events: auto;
-            background: linear-gradient(135deg, #FFFDF0, #FFF5CC);
-            border: 1.5px solid #FFB300;
-            border-radius: 12px;
-            padding: 6px 12px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 6px;
-            margin-bottom: 6px;
-            box-shadow: 0 4px 16px rgba(218, 140, 32, 0.35);
-            width: fit-content;
-            opacity: 0;
-            transform: scale(0.6) translateY(10px);
-            animation: bannerPopIn 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) 3.2s forwards,
-                       pulseBanner 2.5s infinite ease-in-out 3.8s;
-        }
-
-        .festive-malayalam-text {
-            font-family: 'Baloo Chettan 2', cursive;
-            font-size: clamp(0.78rem, 2.6vw, 0.98rem);
-            font-weight: 700;
-            color: #B45309;
-            line-height: 1.25;
-        }
-
-        .festive-close-btn {
-            background: none;
-            border: none;
-            font-size: 1.1rem;
-            color: #B45309;
-            cursor: pointer;
-            padding: 0 0 0 4px;
-        }
-
-        .festive-box {
-            position: relative;
-            width: clamp(75px, 17vw, 105px);
-            pointer-events: auto;
-            cursor: pointer;
-            transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
-            transform-origin: bottom center;
-            animation: kidGaneshWobble 4s ease-in-out infinite alternate;
-        }
-
-        @keyframes kidGaneshWobble {
-            0% { transform: translateY(0) rotate(0deg); }
-            35% { transform: translateY(-8px) rotate(-3deg) scale(1.02); }
-            70% { transform: translateY(-4px) rotate(3deg) scale(0.99); }
-            100% { transform: translateY(-10px) rotate(0deg) scale(1.04); }
-        }
-
-        .festive-box:hover {
-            transform: scale(1.12) translateY(-6px);
-        }
-
-        .festive-bubble {
-            position: absolute;
-            top: -12px;
-            left: -32px;
-            background: linear-gradient(135deg, #FFFFFF, #FFF9E6);
-            color: #B45309;
-            font-family: 'Caveat', cursive;
-            font-size: clamp(0.85rem, 2.4vw, 1.1rem);
-            font-weight: 700;
-            padding: 4px 10px;
-            border-radius: 12px;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.14);
-            border: 1.5px solid #FFB300;
-            opacity: 0;
-            transform: translateY(6px);
-            animation: speechFade 4.5s infinite 2.5s;
-            z-index: 10;
-            white-space: nowrap;
-        }
-
-        .kid-ganesh-badge-svg {
-            width: 100%;
-            height: auto;
-            display: block;
-            filter: drop-shadow(0 8px 18px rgba(245, 158, 11, 0.45));
-            border-radius: 50%;
-            background: radial-gradient(circle, #FFFBEB 45%, #FEF3C7 85%, #FDE68A 100%);
-            padding: 6px;
-            border: 2px solid #F59E0B;
-        }
-
-        /* --- MODAL CELEBRATION --- */
-        #ganeshModalOverlay {
-            position: fixed;
-            inset: 0;
-            background: rgba(10, 15, 30, 0.88);
-            backdrop-filter: blur(6px);
-            z-index: 99999;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 14px;
-            opacity: 0;
-            pointer-events: none;
-            transition: opacity 0.35s ease;
-        }
-
-        #ganeshModalOverlay.active {
-            opacity: 1;
-            pointer-events: auto;
-        }
-
-        #fireworksCanvas {
-            position: absolute;
-            inset: 0;
-            width: 100%;
-            height: 100%;
-            pointer-events: none;
-        }
-
-        .ganesh-modal-content {
-            position: relative;
-            z-index: 2;
-            background: radial-gradient(circle at center, #FFFDEB 30%, #FFF4C2 100%);
-            border: 2px solid #FFB300;
-            border-radius: 24px;
-            padding: 35px 25px;
-            max-width: 480px;
-            width: 100%;
-            text-align: center;
-            box-shadow: 0 15px 45px rgba(255, 179, 0, 0.4);
-        }
-
-        .modal-close {
-            position: absolute;
-            top: 14px;
-            right: 14px;
-            background: #D84315;
-            color: #fff;
-            border: none;
-            width: 28px;
-            height: 28px;
-            border-radius: 50%;
-            cursor: pointer;
-        }
-
         /* --- BORDERLESS SMART REDIRECTION FOOTER --- */
         footer {
             background: var(--primary-dark);
@@ -1129,12 +941,6 @@
             transform: scale(1.12);
         }
 
-        /* Keyframes */
-        @keyframes walkIntoScreen { 0% { transform: translateX(180px); opacity: 0; } 100% { transform: translateX(0); opacity: 1; } }
-        @keyframes bannerPopIn { to { opacity: 1; transform: scale(1) translateY(0); } }
-        @keyframes pulseBanner { 0%, 100% { box-shadow: 0 4px 16px rgba(218, 140, 32, 0.3); } 50% { box-shadow: 0 6px 22px rgba(218, 140, 32, 0.6); } }
-        @keyframes speechFade { 0%, 100% { opacity: 0; } 20%, 80% { opacity: 1; } }
-
         /* Responsive Breakpoints & Mobile Optimization */
         @media (max-width: 992px) {
             nav {
@@ -1166,65 +972,32 @@
             .nav-links { display: none; }
             .menu-toggle { display: block; }
 
-            /* Fits 16:9 banner proportionally without zoom or cropping */
             .slider-container {
-                height: auto !important;
-                min-height: unset !important;
-                aspect-ratio: 16 / 9 !important;
-                background: #FFFDF0 !important;
+                height: 65vh !important;
+                min-height: 420px !important;
             }
 
-            .ganesh-hero-slide {
-                background-size: contain !important;
-                background-position: center center !important;
-                background-color: #FFFDF0 !important;
-            }
-
-            .ganesh-hero-slide .ganesh-slide-overlay {
-                padding: 6px 10px !important;
-                align-items: center !important;
-                justify-content: flex-end !important;
-                background: transparent !important;
-            }
-
-            .ganesh-hero-btns {
-                margin-bottom: 2px !important;
-                gap: 6px !important;
-                justify-content: center !important;
-            }
-
-            .ganesh-hero-btns a {
-                padding: 4px 10px !important;
-                font-size: 0.70rem !important;
-                border-radius: 20px !important;
-            }
-
-            /* Slides 2 and 3 responsive sizing */
             .hero-title-responsive {
-                font-size: clamp(1.1rem, 4.5vw, 1.5rem) !important;
+                font-size: clamp(1.4rem, 4.5vw, 1.9rem) !important;
                 line-height: 1.2 !important;
-                margin-bottom: 6px !important;
+                margin-bottom: 8px !important;
             }
 
             .hero-desc-responsive {
-                font-size: 0.76rem !important;
-                line-height: 1.35 !important;
-                padding: 0 8px !important;
-                display: -webkit-box;
-                -webkit-line-clamp: 2;
-                -webkit-box-orient: vertical;
-                overflow: hidden;
+                font-size: 0.85rem !important;
+                line-height: 1.45 !important;
+                padding: 0 10px !important;
             }
 
             .hero-btns-row {
-                margin-top: 8px !important;
-                gap: 8px !important;
+                margin-top: 14px !important;
+                gap: 10px !important;
             }
 
             .hero-btns-row .btn-outline-glow,
             .hero-btns-row .btn-primary-glow {
-                padding: 5px 12px !important;
-                font-size: 0.72rem !important;
+                padding: 8px 18px !important;
+                font-size: 0.82rem !important;
             }
         }
     </style>
@@ -1271,23 +1044,11 @@
 
 <!-- HERO CAROUSEL -->
 <div class="slider-container" id="heroSlider">
-    <!-- SLIDE 1: GANESH CHATURTHI ARTWORK -->
-    <div class="slide active ganesh-hero-slide">
-        <div class="ganesh-slide-overlay">
-            <div class="ganesh-hero-btns">
-                <a href="/services" class="btn-outline-glow">Our Services</a>
-                <a href="https://wa.me/918921015858?text=Hello%20Life%20Audiology!%20Happy%20Ganesh%20Chaturthi!%20I%20would%20like%20to%20book%20a%20consultation." class="btn-primary-glow" target="_blank">
-                    <i class="fab fa-whatsapp"></i> Book Consultation
-                </a>
-            </div>
-        </div>
-    </div>
-
-    <!-- SLIDE 2: AUDIOLOGY CARE -->
-    <div class="slide" style="background-image: linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)), url('https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&q=80&w=1500');">
+    <!-- SLIDE 1: AUDIOLOGY CARE -->
+    <div class="slide active" style="background-image: linear-gradient(rgba(10,37,64,0.72),rgba(10,37,64,0.72)), url('https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&q=80&w=1500');">
         <div class="slide-overlay">
             <h1 class="hero-title-responsive">Precision Diagnostic Hearing Care</h1>
-            <p class="hero-desc-responsive">Comprehensive computerized evaluations from newborn screenings to adult speech audiometry.</p>
+            <p class="hero-desc-responsive">Comprehensive computerized evaluations from newborn screenings to adult speech audiometry in Vatakara.</p>
             <div class="hero-btns-row">
                 <a href="/services" class="btn-outline-glow">Our Services</a>
                 <a href="https://wa.me/918921015858?text=Hello%20Life%20Audiology!%20I%20would%20like%20to%20book%20an%20audiology%20test." class="btn-primary-glow" target="_blank">
@@ -1297,11 +1058,11 @@
         </div>
     </div>
 
-    <!-- SLIDE 3: SPEECH THERAPY -->
-    <div class="slide" style="background-image: linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)), url('https://images.unsplash.com/photo-1581056771107-24ca5f033842?auto=format&fit=crop&q=80&w=1500');">
+    <!-- SLIDE 2: SPEECH THERAPY -->
+    <div class="slide" style="background-image: linear-gradient(rgba(10,37,64,0.72),rgba(10,37,64,0.72)), url('https://images.unsplash.com/photo-1581056771107-24ca5f033842?auto=format&fit=crop&q=80&w=1500');">
         <div class="slide-overlay">
             <h1 class="hero-title-responsive">Find Confidence in Every Word</h1>
-            <p class="hero-desc-responsive">Evidence-based speech therapy for pediatric speech delay, stuttering, and voice recovery.</p>
+            <p class="hero-desc-responsive">Evidence-based speech therapy for pediatric speech delay, stuttering, and adult voice rehabilitation.</p>
             <div class="hero-btns-row">
                 <a href="/services" class="btn-outline-glow">Our Services</a>
                 <a href="https://wa.me/918921015858?text=Hello%20Life%20Audiology!%20I%20would%20like%20to%20book%20a%20speech%20therapy%20session." class="btn-primary-glow" target="_blank">
@@ -1571,56 +1332,6 @@
     </div>
 </section>
 
-<!-- SMALL BAL GANESH FLOATING CORNER WIDGET -->
-<div class="festive-widget-container" id="ganeshGreeting">
-    <div class="festive-greeting-card">
-        <span>🪔</span>
-        <span class="festive-malayalam-text">ഗണേശോത്സവാശംസകൾ!</span>
-        <button class="festive-close-btn" onclick="dismissFestiveWidget()" title="Close">&times;</button>
-    </div>
-
-    <div class="festive-box" id="ganeshTrigger" onclick="celebrateGanesh()" title="Click Little Ganesha for wishes!">
-        <div class="festive-bubble">Happy Ganesh Chaturthi! 🪔</div>
-        <svg class="kid-ganesh-badge-svg" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M30 42 C12 34 12 62 28 66" fill="#FDBA74" stroke="#EA580C" stroke-width="2"/>
-            <path d="M70 42 C88 34 88 62 72 66" fill="#FDBA74" stroke="#EA580C" stroke-width="2"/>
-            <ellipse cx="50" cy="74" rx="20" ry="14" fill="#FB923C"/>
-            <path d="M32 78 C32 68 68 68 68 78 C68 86 32 86 32 78 Z" fill="#FBBF24" stroke="#D97706" stroke-width="1.2"/>
-            <ellipse cx="50" cy="53" rx="22" ry="18" fill="#FDBA74"/>
-            <circle cx="36" cy="57" r="3.5" fill="#F43F5E" opacity="0.35"/>
-            <circle cx="64" cy="57" r="3.5" fill="#F43F5E" opacity="0.35"/>
-            <ellipse cx="40" cy="48" rx="3.5" ry="4.5" fill="#0F172A"/>
-            <circle cx="41.5" cy="46" r="1.5" fill="#FFFFFF"/>
-            <ellipse cx="60" cy="48" rx="3.5" ry="4.5" fill="#0F172A"/>
-            <circle cx="61.5" cy="46" r="1.5" fill="#FFFFFF"/>
-            <path d="M38 38 L50 18 L62 38 Z" fill="#F59E0B" stroke="#D97706" stroke-width="1.2"/>
-            <circle cx="50" cy="18" r="2.5" fill="#DC2626"/>
-            <path d="M46 40 H54" stroke="#DC2626" stroke-width="1.5"/>
-            <circle cx="50" cy="36" r="1.5" fill="#DC2626"/>
-            <path d="M50 56 C50 67 58 73 63 69 C67 66 65 62 60 63" stroke="#EA580C" stroke-width="5.5" stroke-linecap="round" fill="none"/>
-            <circle cx="30" cy="68" r="5" fill="#FDBA74"/>
-            <path d="M26 68 C26 63 34 63 34 68 Z" fill="#FEF08A" stroke="#EAB308" stroke-width="1.2"/>
-        </svg>
-    </div>
-</div>
-
-<!-- FIREWORKS / BLESSING MODAL OVERLAY -->
-<div id="ganeshModalOverlay" onclick="closeGaneshModal(event)">
-    <canvas id="fireworksCanvas"></canvas>
-    <div class="ganesh-modal-content" onclick="event.stopPropagation()">
-        <button class="modal-close" onclick="closeGaneshModal()">&times;</button>
-        <div style="font-size: 2.6rem; margin-bottom: 5px;">🪔</div>
-        <div style="font-family: 'Great Vibes', cursive; font-size: 2.2rem; color: #C76A00;">Happy Ganesh Chaturthi 2026!</div>
-        <h2 style="font-family: 'Baloo Chettan 2', cursive; font-size: 1.6rem; color: #9A3412; margin-bottom: 8px;">ഹൃദയം നിറഞ്ഞ വിനായക ചതുർത്ഥി ആശംസകൾ!</h2>
-        <p style="font-family: 'Chilanka', cursive; color: #4E342E; line-height: 1.6; margin-bottom: 15px;">
-            വിഘ്നങ്ങൾ നീങ്ങി സൗഖ്യവും ഐശ്വര്യവും ആയുരാരോഗ്യവും നിറഞ്ഞ ഒരു നല്ല നാളെ ആശംസിക്കുന്നു.
-        </p>
-        <div style="font-weight: 700; color: #9A3412; font-size: 0.85rem;">
-            ❤️ Life Audiology & Speech Therapy Centre, Vatakara
-        </div>
-    </div>
-</div>
-
 <!-- FLOATING WHATSAPP -->
 <a href="https://wa.me/918921015858?text=Hello%20Life%20Audiology!%20I%20would%20like%20to%20book%20an%20appointment." class="wa-float" target="_blank" title="Chat on WhatsApp">
     <i class="fab fa-whatsapp"></i>
@@ -1756,11 +1467,10 @@
     function advanceSlide() {
         const nextIdx = (currentSlideIdx + 1) % slides.length;
         showSlide(nextIdx);
-        const nextDelay = nextIdx === 0 ? 6500 : 5000;
         clearTimeout(sliderTimer);
-        sliderTimer = setTimeout(advanceSlide, nextDelay);
+        sliderTimer = setTimeout(advanceSlide, 5000);
     }
-    sliderTimer = setTimeout(advanceSlide, 6500);
+    sliderTimer = setTimeout(advanceSlide, 5000);
 
     // Bilingual Self-Evaluation Quiz Engine
     let selectedTestEn = "";
@@ -1792,102 +1502,6 @@
         const message = `Hello Life Audiology! I completed the Self-Screening evaluation on your Home page. My requirement matches with: *${selectedTestEn}* (${selectedTestMl}). Please schedule my consultation at your Vatakara center.`;
         const waUrl = `https://wa.me/918921015858?text=${encodeURIComponent(message)}`;
         window.open(waUrl, '_blank');
-    }
-
-    // Dismiss Corner Badge
-    function dismissFestiveWidget() {
-        const widget = document.getElementById('ganeshGreeting');
-        if (widget) {
-            widget.style.transition = 'opacity 0.4s ease, transform 0.4s ease';
-            widget.style.opacity = '0';
-            widget.style.transform = 'translateY(100px)';
-            setTimeout(() => widget.remove(), 400);
-        }
-    }
-
-    // Fireworks Canvas Engine
-    let fireworksActive = false;
-    let particles = [];
-    const canvas = document.getElementById('fireworksCanvas');
-    const ctx = canvas.getContext('2d');
-
-    function resizeCanvas() {
-        canvas.width = window.innerWidth;
-        canvas.height = window.innerHeight;
-    }
-    window.addEventListener('resize', resizeCanvas);
-
-    class Particle {
-        constructor(x, y, color) {
-            this.x = x;
-            this.y = y;
-            this.color = color;
-            const angle = Math.random() * Math.PI * 2;
-            const speed = Math.random() * 5 + 2;
-            this.vx = Math.cos(angle) * speed;
-            this.vy = Math.sin(angle) * speed;
-            this.alpha = 1;
-            this.decay = Math.random() * 0.015 + 0.012;
-            this.size = Math.random() * 3 + 1.5;
-        }
-        update() {
-            this.x += this.vx;
-            this.y += this.vy;
-            this.vy += 0.06;
-            this.alpha -= this.decay;
-        }
-        draw() {
-            ctx.save();
-            ctx.globalAlpha = Math.max(this.alpha, 0);
-            ctx.fillStyle = this.color;
-            ctx.beginPath();
-            ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
-            ctx.fill();
-            ctx.restore();
-        }
-    }
-
-    function createFirework(x, y) {
-        const colors = ['#FFD700', '#FF9100', '#00D4B2', '#FF3D00', '#FFFFFF'];
-        const color = colors[Math.floor(Math.random() * colors.length)];
-        for (let i = 0; i < 35; i++) {
-            particles.push(new Particle(x, y, color));
-        }
-    }
-
-    function loopFireworks() {
-        if (!fireworksActive && particles.length === 0) {
-            ctx.clearRect(0, 0, canvas.width, canvas.height);
-            return;
-        }
-        ctx.clearRect(0, 0, canvas.width, canvas.height);
-        if (fireworksActive && Math.random() < 0.12) {
-            createFirework(Math.random() * canvas.width * 0.8 + canvas.width * 0.1, Math.random() * canvas.height * 0.4 + canvas.height * 0.1);
-        }
-        particles.forEach((p, idx) => {
-            p.update();
-            p.draw();
-            if (p.alpha <= 0) particles.splice(idx, 1);
-        });
-        requestAnimationFrame(loopFireworks);
-    }
-
-    function celebrateGanesh() {
-        resizeCanvas();
-        fireworksActive = true;
-        particles = [];
-        for (let i = 0; i < 3; i++) {
-            setTimeout(() => {
-                createFirework(window.innerWidth * (0.2 + i * 0.3), window.innerHeight * 0.3);
-            }, i * 200);
-        }
-        requestAnimationFrame(loopFireworks);
-        document.getElementById('ganeshModalOverlay').classList.add('active');
-    }
-
-    function closeGaneshModal() {
-        document.getElementById('ganeshModalOverlay').classList.remove('active');
-        fireworksActive = false;
     }
 </script>
 
